@@ -75,7 +75,7 @@ public class PointsService implements Serializable {
         List<PointCustom> selectedPoints = pointDto.getSelectedPoints();
         List<Long> ids = Lists.newArrayList();
         for (PointCustom selectedPoint : selectedPoints) {
-            ids.add(selectedPoint.());
+            ids.add(selectedPoint.getId());
         }
         for (Long id : ids) {
             PointCustom pointCustom = entityManager.find(PointCustom.class, id);
