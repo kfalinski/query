@@ -1,0 +1,18 @@
+<ui:composition template="/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+        <h:form>
+        <p:panelGrid>
+            <p:row>
+                <p:column>
+                    <p:fileUpload fileUploadListener="#{pointsService.savePoints}"  cancelLabel="Anuluj"
+                                  uploadLabel="Wgraj plik"/>
+                </p:column>
+            </p:row>
+        </p:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>
