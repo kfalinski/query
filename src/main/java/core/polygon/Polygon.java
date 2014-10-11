@@ -19,7 +19,7 @@ public class Polygon implements Serializable {
     private Double area;
     private String name;
 
-    @ManyToMany
+    @ElementCollection(targetClass = PointCustom.class)
     private List<PointCustom> points;
 
     public Polygon() {

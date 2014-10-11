@@ -20,7 +20,10 @@ public class QPolyline extends EntityPathBase<Polyline> {
 
     public static final QPolyline polyline = new QPolyline("polyline");
 
-    public final NumberPath<Integer> id = createNumber("id", Integer.class);
+    public final core.QBaseEntity _super = new core.QBaseEntity(this);
+
+    //inherited
+    public final NumberPath<Long> id = _super.id;
 
     public final NumberPath<Double> length = createNumber("length", Double.class);
 

@@ -1,64 +1,29 @@
 package core.polyline;
 
+import core.BaseEntity;
 import core.point.PointCustom;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
 /**
-* Created by Krzysztof on 2014-10-02.
-*/
+ * Created by Krzysztof on 2014-10-02.
+ */
+@EqualsAndHashCode(callSuper = false)
+@Data
 @Entity
-public class Polyline implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+@AllArgsConstructor
+@NoArgsConstructor
+public class Polyline extends BaseEntity implements Serializable {
 
     private String name;
 
     private Double length;
 
-    @ManyToMany
+    @OneToMany
     private List<PointCustom> points ;
 
-    public Polyline() {
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public List<PointCustom> getPoints() {
-        return points;
-    }
-
-    public void setPoints(List<PointCustom> points) {
-        this.points = points;
-    }
-
-    public Polyline(List<PointCustom> points) {
-        this.points = points;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public void setLength(double length) {
-        this.length = length;
-    }
 }

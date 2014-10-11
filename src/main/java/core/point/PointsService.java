@@ -83,6 +83,7 @@ public class PointsService implements Serializable {
         }
     }
 
+
     public List<String> loadFile(InputStream event) throws IOException {
         List<String> lines = Lists.newArrayList();
         InputStreamReader ipsr = new InputStreamReader(event);

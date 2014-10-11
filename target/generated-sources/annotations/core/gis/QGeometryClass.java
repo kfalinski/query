@@ -7,6 +7,7 @@ import com.mysema.query.types.path.*;
 import com.mysema.query.types.PathMetadata;
 import javax.annotation.Generated;
 import com.mysema.query.types.Path;
+import com.mysema.query.types.path.PathInits;
 
 
 /**
@@ -21,7 +22,9 @@ public class QGeometryClass extends EntityPathBase<GeometryClass> {
 
     public final core.QBaseEntity _super = new core.QBaseEntity(this);
 
-    public final ComparablePath<com.vividsolutions.jts.geom.Geometry> geometry = createComparable("geometry", com.vividsolutions.jts.geom.Geometry.class);
+    public final ListPath<org.postgis.Geometry, SimplePath<org.postgis.Geometry>> geometryGis = this.<org.postgis.Geometry, SimplePath<org.postgis.Geometry>>createList("geometryGis", org.postgis.Geometry.class, SimplePath.class, PathInits.DIRECT2);
+
+    public final ListPath<com.vividsolutions.jts.geom.Geometry, ComparablePath<com.vividsolutions.jts.geom.Geometry>> geometryVivid = this.<com.vividsolutions.jts.geom.Geometry, ComparablePath<com.vividsolutions.jts.geom.Geometry>>createList("geometryVivid", com.vividsolutions.jts.geom.Geometry.class, ComparablePath.class, PathInits.DIRECT2);
 
     //inherited
     public final NumberPath<Long> id = _super.id;
