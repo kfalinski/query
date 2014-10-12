@@ -1,6 +1,7 @@
 package core.point;
 
 import com.google.common.collect.Lists;
+import core.gis.PointGisBean;
 import core.gis.PointGisDao;
 import core.polygon.Polygon;
 import core.polygon.PolygonBean;
@@ -36,6 +37,9 @@ public class PointsService implements Serializable {
 
     @Autowired
     private PolylineDao polylineDao;
+
+    @Autowired
+    private PointGisBean pointGisBean;
 
     @Autowired
     private PolylineDto polylineDto;
@@ -100,6 +104,11 @@ public class PointsService implements Serializable {
         return lines;
     }
 
+    public void populatePointGIS() {
+        pointGisBean.setPointVividList(pointGisDao.loadPointGises());
+    }
+
+
     private void splitLinesAndSave(List<String> lines) {
         Date start;
         Date end;
@@ -132,12 +141,11 @@ public class PointsService implements Serializable {
                 pointDao.savePoint(custom);
             }
 
-            pointGisDao.savePoints(pointList);
+//            pointGisDao.savePoints(pointList);
 
         }
         end = new Date();
         System.out.println(end.getTime() - start.getTime());
-        pointGisDao.savePoints(pointList);
 
     }
 

@@ -24,10 +24,6 @@ public class QPointGis extends EntityPathBase<PointGis> {
     //inherited
     public final NumberPath<Long> id = _super.id;
 
-    public final SimplePath<org.postgis.PGgeometry> pGgeometry = createSimple("pGgeometry", org.postgis.PGgeometry.class);
-
-    public final SimplePath<org.postgis.Point> pointPG = createSimple("pointPG", org.postgis.Point.class);
-
     public final ComparablePath<com.vividsolutions.jts.geom.Point> pointVivid = createComparable("pointVivid", com.vividsolutions.jts.geom.Point.class);
 
     public QPointGis(String variable) {

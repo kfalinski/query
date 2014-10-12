@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * Created by Krzysztof on 2014-10-12.
  */
@@ -17,8 +19,8 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 public class PointGisBean {
 
-    private Point pointVivid;
-    private org.postgis.Point pointGis;
+    private List<PointGis> pointVividList;
+//    private org.postgis.Point pointGis;
 
 
 

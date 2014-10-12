@@ -24,11 +24,11 @@ public class PointGis extends BaseEntity {
     @Column(name = "pointVivid")
     @Type(type = "org.hibernate.spatial.GeometryType")
     private Point pointVivid;
-    @Column(name = "pointPG", nullable = true, columnDefinition = "Geometry")
-    private org.postgis.Point pointPG;
-    @Column(name = "pgGeometry")
-    @Type(type = "org.hibernate.spatial.GeometryType")
-    private PGgeometry pGgeometry;
+//    @Column(name = "pointPG", nullable = true, columnDefinition = "Geometry")
+//    private org.postgis.Point pointPG;
+//    @Column(name = "pgGeometry")
+//    @Type(type = "org.hibernate.spatial.GeometryType")
+//    private PGgeometry pGgeometry;
 
     public void cos() {
 
