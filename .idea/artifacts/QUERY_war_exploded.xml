@@ -40,11 +40,13 @@
           <element id="library" level="project" name="Maven: org.postgis:postgis-jdbc:1.5.2" />
           <element id="library" level="project" name="Maven: com.vividsolutions:jts:1.13" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:4.3.5.Final" />
-          <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-core:3.4.3" />
-          <element id="library" level="project" name="Maven: com.google.guava:guava:14.0" />
+          <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-core:3.5.0" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
           <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
           <element id="library" level="project" name="Maven: com.mysema.commons:mysema-commons-lang:0.2.4" />
           <element id="library" level="project" name="Maven: com.infradna.tool:bridge-method-annotation:1.13" />
+          <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-spatial:3.5.0" />
+          <element id="library" level="project" name="Maven: org.geolatte:geolatte-geom:0.13" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-jpa:3.4.3" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />

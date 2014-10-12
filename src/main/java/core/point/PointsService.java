@@ -1,6 +1,7 @@
 package core.point;
 
 import com.google.common.collect.Lists;
+import core.gis.PointGisDao;
 import core.polygon.Polygon;
 import core.polygon.PolygonBean;
 import core.polygon.PolygonDao;
@@ -9,6 +10,7 @@ import core.polyline.Polyline;
 import core.polyline.PolylineBean;
 import core.polyline.PolylineDao;
 import core.polyline.PolylineDto;
+import org.postgis.Point;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -45,6 +47,9 @@ public class PointsService implements Serializable {
     private PolylineBean polylineBean;
 
     @Autowired
+    private PointGisDao pointGisDao;
+
+    @Autowired
     private PolygonBean polygonBean;
 
     @Autowired
@@ -52,7 +57,6 @@ public class PointsService implements Serializable {
 
     @Autowired
     private PointDao pointDao;
-
 
     public void savePoints(FileUploadEvent event) throws IOException {
         try {
@@ -101,7 +105,8 @@ public class PointsService implements Serializable {
         Date end;
         start = new Date();
 
-        List<PointCustom> pointList = Lists.newArrayList();
+        List<Point> pointList = Lists.newArrayList();
+        List<PointCustom> pointCustomList = Lists.newArrayList();
         for (String line : lines) {
             String[] splitted = line.split(" ");
             List<String> splittedList = Lists.newArrayList();
@@ -119,12 +124,21 @@ public class PointsService implements Serializable {
             double x = Double.valueOf(splittedList.get(2));
             double y = Double.valueOf(splittedList.get(3));
             double z = Double.valueOf(splittedList.get(4));
+            Point pointGis = new Point(x, y, z);
+            pointList.add(pointGis);
             PointCustom pointCustom = new PointCustom(name, code, x, y, z);
-            pointList.add(pointCustom);
+            pointCustomList.add(pointCustom);
+            for (PointCustom custom : pointCustomList) {
+                pointDao.savePoint(custom);
+            }
+
+            pointGisDao.savePoints(pointList);
+
         }
         end = new Date();
         System.out.println(end.getTime() - start.getTime());
-        pointDao.savePoints(pointList);
+        pointGisDao.savePoints(pointList);
+
     }
 
     public void populatePolygonBean() {
