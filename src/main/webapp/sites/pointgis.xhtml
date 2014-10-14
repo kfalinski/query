@@ -6,9 +6,10 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{pointsService.populatePointGIS()}"
+            <p:commandButton actionListener="#{pointsService.populatePointGIS()}" update="table"/>
+            <p:commandButton actionListener="#{pointsService.showMap()}"
 
-                             update="table" value="ładuj pointGisy"/>
+                             update="table" value="poka mape"/>
             <p:dataTable id="table" value="#{pointGisBean.pointVividList}" var="pointGIS"
                          styleClass="order-table" paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"

@@ -11,6 +11,16 @@ import core.polyline.Polyline;
 import core.polyline.PolylineBean;
 import core.polyline.PolylineDao;
 import core.polyline.PolylineDto;
+import org.geotools.data.FileDataStore;
+import org.geotools.data.FileDataStoreFinder;
+import org.geotools.data.simple.SimpleFeatureSource;
+import org.geotools.map.FeatureLayer;
+import org.geotools.map.Layer;
+import org.geotools.map.MapContent;
+import org.geotools.styling.SLD;
+import org.geotools.styling.Style;
+import org.geotools.swing.JMapFrame;
+import org.geotools.swing.data.JFileDataStoreChooser;
 import org.postgis.Point;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,7 +117,27 @@ public class PointsService implements Serializable {
     public void populatePointGIS() {
         pointGisBean.setPointVividList(pointGisDao.loadPointGises());
     }
+    public void showMap() throws Exception {
+        // display a data store file chooser dialog for shapefiles
+        File file = JFileDataStoreChooser.showOpenFile("shp", null);
+        if (file == null) {
+            return;
+        }
 
+        FileDataStore store = FileDataStoreFinder.getDataStore(file);
+        SimpleFeatureSource featureSource = store.getFeatureSource();
+
+        // Create a map content and add our shapefile to it
+        MapContent map = new MapContent();
+        map.setTitle("Quickstart");
+
+        Style style = SLD.createSimpleStyle(featureSource.getSchema());
+        Layer layer = new FeatureLayer(featureSource, style);
+        map.addLayer(layer);
+
+        // Now display the map
+        JMapFrame.showMap(map);
+    }
 
     private void splitLinesAndSave(List<String> lines) {
         Date start;
@@ -137,12 +167,12 @@ public class PointsService implements Serializable {
             pointList.add(pointGis);
             PointCustom pointCustom = new PointCustom(name, code, x, y, z);
             pointCustomList.add(pointCustom);
-            for (PointCustom custom : pointCustomList) {
-                pointDao.savePoint(custom);
-            }
 
 //            pointGisDao.savePoints(pointList);
 
+        }
+        for (PointCustom custom : pointCustomList) {
+            pointDao.savePoint(custom);
         }
         end = new Date();
         System.out.println(end.getTime() - start.getTime());
