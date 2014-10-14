@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="PostgreSQL - postgis_21_sample@localhost" uuid="394ef8d0-956f-451c-b2bc-df6d63d0f157">
+  <data-source name="PostgreSQL - postgis_21_sample@localhost" uuid="394ef8d0-956f-451c-b2bc-df6d63d0f157">
     <database-info product="PostgreSQL" version="9.3.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
@@ -1559,24 +1559,6 @@
       <column name="path" sqlType="_int4" precision="10" scale="0" nullable="true" jdbcType="2003"/>
       <column name="geom" sqlType="geometry" precision="2147483647" scale="0" nullable="true" jdbcType="1111"/>
     </table>
-    <table name="geometryclass" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="id" sqlType="bigserial" precision="19" scale="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnZ2VvbWV0cnljbGFzc19pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
-      <column name="pggeometry" sqlType="bytea" precision="2147483647" scale="0" nullable="true" jdbcType="-2"/>
-      <column name="pointgis" sqlType="bytea" precision="2147483647" scale="0" nullable="true" jdbcType="-2"/>
-      <primary-key name="geometryclass_pkey" columns="id"/>
-    </table>
-    <table name="geometryclass_id_seq" schema="public" catalog="postgis_21_sample" type="SEQUENCE">
-      <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
-      <column name="last_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="start_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="increment_by" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="max_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="min_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="cache_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-      <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-    </table>
     <table name="geomval" schema="public" catalog="postgis_21_sample" type="TYPE">
       <column name="geom" sqlType="geometry" precision="2147483647" scale="0" nullable="true" jdbcType="1111"/>
       <column name="val" sqlType="float8" precision="17" scale="17" nullable="true" jdbcType="8"/>
@@ -1599,86 +1581,6 @@
       <column name="id1" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="id2" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="geom" sqlType="geometry" precision="2147483647" scale="0" nullable="true" jdbcType="1111"/>
-    </table>
-    <table name="pointcustom" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="id" sqlType="bigserial" precision="19" scale="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgncG9pbnRjdXN0b21faWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
-      <column name="code" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="x" sqlType="float8" precision="17" scale="17" nullable="false" jdbcType="8"/>
-      <column name="y" sqlType="float8" precision="17" scale="17" nullable="false" jdbcType="8"/>
-      <column name="z" sqlType="float8" precision="17" scale="17" nullable="false" jdbcType="8"/>
-      <primary-key name="pointcustom_pkey" columns="id"/>
-      <exported-key name="fk_rhq21roqcefjisnkfh2c8s1q3" table="polygon_pointcustom" schema="public" catalog="postgis_21_sample" columns="points_id"/>
-      <exported-key name="fk_54yoiw23rpptcutbhxe7ajtno" table="polyline_pointcustom" schema="public" catalog="postgis_21_sample" columns="points_id"/>
-    </table>
-    <table name="pointcustom_id_seq" schema="public" catalog="postgis_21_sample" type="SEQUENCE">
-      <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
-      <column name="last_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="start_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="increment_by" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="max_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="min_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="cache_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-      <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-    </table>
-    <table name="points" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="name" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
-      <column name="point" sqlType="geometry" precision="2147483647" scale="0" nullable="true" jdbcType="1111"/>
-    </table>
-    <table name="polygon" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgncG9seWdvbl9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
-      <column name="area" sqlType="float8" precision="17" scale="17" nullable="true" jdbcType="8"/>
-      <column name="length" sqlType="float8" precision="17" scale="17" nullable="true" jdbcType="8"/>
-      <column name="name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="polygon_pkey" columns="id"/>
-      <exported-key name="fk_thfe4s60wbhyh27qjgifg7d3r" table="polygon_pointcustom" schema="public" catalog="postgis_21_sample" columns="polygon_id"/>
-    </table>
-    <table name="polygon_id_seq" schema="public" catalog="postgis_21_sample" type="SEQUENCE">
-      <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
-      <column name="last_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="start_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="increment_by" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="max_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="min_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="cache_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-      <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-    </table>
-    <table name="polygon_pointcustom" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="polygon_id" sqlType="int4" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="points_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <foreign-key name="fk_rhq21roqcefjisnkfh2c8s1q3" columns="points_id" ref-table="pointcustom" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="fk_thfe4s60wbhyh27qjgifg7d3r" columns="polygon_id" ref-table="polygon" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="uk_rhq21roqcefjisnkfh2c8s1q3" unique="true" columns="points_id"/>
-    </table>
-    <table name="polyline" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="id" sqlType="bigserial" precision="19" scale="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgncG9seWxpbmVfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
-      <column name="length" sqlType="float8" precision="17" scale="17" nullable="true" jdbcType="8"/>
-      <column name="name" sqlType="varchar" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="polyline_pkey" columns="id"/>
-      <exported-key name="fk_jv81qln0n7vtf9wf0thmgkh12" table="polyline_pointcustom" schema="public" catalog="postgis_21_sample" columns="polyline_id"/>
-    </table>
-    <table name="polyline_id_seq" schema="public" catalog="postgis_21_sample" type="SEQUENCE">
-      <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
-      <column name="last_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="start_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="increment_by" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="max_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="min_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="cache_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-      <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-    </table>
-    <table name="polyline_pointcustom" schema="public" catalog="postgis_21_sample" type="TABLE">
-      <column name="polyline_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="points_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <foreign-key name="fk_54yoiw23rpptcutbhxe7ajtno" columns="points_id" ref-table="pointcustom" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="fk_jv81qln0n7vtf9wf0thmgkh12" columns="polyline_id" ref-table="polyline" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="uk_54yoiw23rpptcutbhxe7ajtno" unique="true" columns="points_id"/>
     </table>
     <table name="rastbandarg" schema="public" catalog="postgis_21_sample" type="TYPE">
       <column name="rast" sqlType="raster" precision="2147483647" scale="0" nullable="true" jdbcType="1111"/>
@@ -2808,7 +2710,7 @@
         <parameter name="returnValue" sqlType="box" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="box" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
@@ -4084,7 +3986,7 @@
         <parameter name="returnValue" sqlType="circle" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="circle" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
@@ -4974,7 +4876,7 @@
     <procedure name="dist_cpoly" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPC0+IG9wZXJhdG9y">
       <prototype>
         <parameter name="$1" sqlType="circle" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="float8" precision="0" scale="0" nullable="true" jdbcType="8" type="5" index="0"/>
       </prototype>
     </procedure>
@@ -6493,7 +6395,7 @@
     <procedure name="gist_poly_consistent" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="R2lTVCBzdXBwb3J0">
       <prototype>
         <parameter name="$1" sqlType="internal" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="$3" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="1" index="3"/>
         <parameter name="$4" sqlType="oid" precision="0" scale="0" nullable="true" jdbcType="-5" type="1" index="4"/>
         <parameter name="$5" sqlType="internal" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="5"/>
@@ -10873,7 +10775,7 @@
         <parameter name="returnValue" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="5" index="0"/>
       </prototype>
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="5" index="0"/>
       </prototype>
     </procedure>
@@ -11579,7 +11481,7 @@
     </procedure>
     <procedure name="path" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="Y29udmVydCBwb2x5Z29uIHRvIHBhdGg=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="path" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
@@ -13195,7 +13097,7 @@
         <parameter name="returnValue" sqlType="point" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="point" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
@@ -13316,155 +13218,155 @@
     </procedure>
     <procedure name="poly_above" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgfD4+IG9wZXJhdG9y">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_below" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPDx8IG9wZXJhdG9y">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_center" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgQEAgb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="point" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_contain" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgQD4gb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_contain_pt" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgQD4gb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="$2" sqlType="point" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_contained" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPEAgb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_distance" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPC0+IG9wZXJhdG9y">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="float8" precision="0" scale="0" nullable="true" jdbcType="8" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_in" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="SS9P">
       <prototype>
         <parameter name="$1" sqlType="cstring" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_left" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPDwgb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_npoints" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgIyBvcGVyYXRvcg==">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_out" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="SS9P">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="cstring" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_overabove" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgfCY+IG9wZXJhdG9y">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_overbelow" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgJjx8IG9wZXJhdG9y">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_overlap" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgJiYgb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_overleft" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgJjwgb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_overright" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgJj4gb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_recv" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="SS9P">
       <prototype>
         <parameter name="$1" sqlType="internal" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_right" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPj4gb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_same" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2Ygfj0gb3BlcmF0b3I=">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="poly_send" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="SS9P">
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="bytea" precision="0" scale="0" nullable="true" jdbcType="-2" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="polygon" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="Y29udmVydCBjaXJjbGUgdG8gMTItdmVydGV4IHBvbHlnb24=">
       <prototype>
         <parameter name="$1" sqlType="box" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
         <parameter name="$1" sqlType="path" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
         <parameter name="$1" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="1" index="1"/>
         <parameter name="$2" sqlType="circle" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
         <parameter name="$1" sqlType="circle" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="popen" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="b3BlbiBwYXRo">
@@ -13585,7 +13487,7 @@
     <procedure name="pt_contained_poly" schema="pg_catalog" catalog="postgis_21_sample" type="2" remarks="aW1wbGVtZW50YXRpb24gb2YgPEAgb3BlcmF0b3I=">
       <prototype>
         <parameter name="$1" sqlType="point" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="2"/>
+        <parameter name="$2" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
       </prototype>
     </procedure>
@@ -19881,7 +19783,7 @@
         <parameter name="returnValue" sqlType="geometry" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
-        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="1" index="1"/>
+        <parameter name="$1" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
         <parameter name="returnValue" sqlType="geometry" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
       <prototype>
@@ -20778,7 +20680,7 @@
     <procedure name="polygon" schema="public" catalog="postgis_21_sample" type="2">
       <prototype>
         <parameter name="$1" sqlType="geometry" precision="0" scale="0" nullable="true" jdbcType="1111" type="1" index="1"/>
-        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="2002" type="5" index="0"/>
+        <parameter name="returnValue" sqlType="polygon" precision="0" scale="0" nullable="true" jdbcType="1111" type="5" index="0"/>
       </prototype>
     </procedure>
     <procedure name="populate_geometry_columns" schema="public" catalog="postgis_21_sample" type="2" remarks="YXJnczogcmVsYXRpb25fb2lkLCB1c2VfdHlwbW9kPXRydWUgLSBFbnN1cmVzIGdlb21ldHJ5IGNvbHVtbnMgYXJlIGRlZmluZWQgd2l0aCB0eXBlIG1vZGlmaWVycyBvciBoYXZlIGFwcHJvcHJpYXRlIHNwYXRpYWwgY29uc3RyYWludHMgVGhpcyBlbnN1cmVzIHRoZXkgd2lsbCBiZSByZWdpc3RlcmVkIGNvcnJlY3RseSBpbiBnZW9tZXRyeV9jb2x1bW5zIHZpZXcuIEJ5IGRlZmF1bHQgd2lsbCBjb252ZXJ0IGFsbCBnZW9tZXRyeSBjb2x1bW5zIHdpdGggbm8gdHlwZSBtb2RpZmllciB0byBvbmVzIHdpdGggdHlwZSBtb2RpZmllcnMuIFRvIGdldCBvbGQgYmVoYXZpb3Igc2V0IHVzZV90eXBtb2Q9ZmFsc2U=">

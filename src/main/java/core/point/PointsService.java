@@ -1,6 +1,7 @@
 package core.point;
 
 import com.google.common.collect.Lists;
+import com.mysema.query.jpa.impl.JPADeleteClause;
 import core.gis.PointGisBean;
 import core.gis.PointGisDao;
 import core.polygon.Polygon;
@@ -84,21 +85,22 @@ public class PointsService implements Serializable {
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void deletePoints() {
-        int deletedCount = entityManager.createQuery("DELETE FROM PointCustom ").executeUpdate();
-        System.out.println(deletedCount);
+        QPointCustom pointCustom = QPointCustom.pointCustom;
+        new JPADeleteClause(entityManager, pointCustom).execute();
+        //        int deletedCount = entityManager.createQuery("DELETE FROM PointCustom ");
+//        System.out.println(deletedCount);
+
     }
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void deleteSelectedPoints() {
         List<PointCustom> selectedPoints = pointDto.getSelectedPoints();
+        QPointCustom pointCustom = QPointCustom.pointCustom;
         List<Long> ids = Lists.newArrayList();
         for (PointCustom selectedPoint : selectedPoints) {
             ids.add(selectedPoint.getId());
         }
-        for (Long id : ids) {
-            PointCustom pointCustom = entityManager.find(PointCustom.class, id);
-            entityManager.remove(pointCustom);
-        }
+        new JPADeleteClause(entityManager, pointCustom).where(pointCustom.id.in(ids)).execute();
     }
 
 
@@ -117,6 +119,7 @@ public class PointsService implements Serializable {
     public void populatePointGIS() {
         pointGisBean.setPointVividList(pointGisDao.loadPointGises());
     }
+
     public void showMap() throws Exception {
         // display a data store file chooser dialog for shapefiles
         File file = JFileDataStoreChooser.showOpenFile("shp", null);

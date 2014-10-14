@@ -2,6 +2,7 @@
   <artifact type="exploded-war" name="QUERY:war exploded">
     <output-path>$PROJECT_DIR$/target/geo</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="QUERY/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="QUERY" />
@@ -84,7 +85,6 @@
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-jpamodelgen:4.3.6.Final" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="QUERY/web/Web" />
     </root>
   </artifact>
 </component>
