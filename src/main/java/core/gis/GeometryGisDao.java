@@ -1,8 +1,6 @@
 package core.gis;
 
-import com.google.common.collect.Lists;
 import com.mysema.query.jpa.impl.JPAQuery;
-import org.postgis.Point;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,18 +14,24 @@ import java.util.List;
  */
 @Component
 @Transactional(propagation = Propagation.REQUIRES_NEW)
-public class PointGisDao {
+public class GeometryGisDao {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    private QPointGis qPointGis=QPointGis.pointGis;
+    private QGeometryGis qGeometryGis = QGeometryGis.geometryGis;
 
-    public List<PointGis> loadPointGises(){
+    public List<GeometryGis> loadPointGises() {
         JPAQuery query = new JPAQuery(entityManager);
 //        query=query.list()
 
-        return query.from(qPointGis).list(qPointGis);
+        return query.from(qGeometryGis).list(qGeometryGis);
+    }
+
+    public void saveGeometryGIS(GeometryGis geometryGis) {
+        entityManager.persist(geometryGis);
+        entityManager.flush();
+
     }
 
 //    public void savePoints(List<Point> pointList) {

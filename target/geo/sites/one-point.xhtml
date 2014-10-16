@@ -58,7 +58,42 @@
                     </p:column>
                 </p:row>
             </p:panelGrid>
-            <h:commandButton action="#{pointBean.savePoint}" value="Zapisz punkt"/>
+            <h:commandButton action="#{pointsService.saveXYZPoint}" value="Zapisz punkt"/>
+            <p:panelGrid>
+                <p:row>
+                    <p:column colspan="2" style="background-color: deeppink">
+                        <p:outputLabel value="WKT"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Nazwa punktu"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointBean.wktName}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Kod"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointBean.wktCode}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="WKT"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointBean.wktValue}" style="width: auto"/>
+                    </p:column>
+                </p:row>
+                <h:commandButton action="#{pointsService.saveWktToGeometry()}" value="Zapisz punkt WKT"/>
+            </p:panelGrid>
         </h:form>
     </ui:define>
 </ui:composition>

@@ -1,6 +1,5 @@
 package core.gis;
 
-import com.vividsolutions.jts.geom.Point;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 public class PointGisBean {
 
-    private List<PointGis> pointVividList;
+    private List<GeometryGis> pointVividList;
 //    private org.postgis.Point pointGis;
 
 

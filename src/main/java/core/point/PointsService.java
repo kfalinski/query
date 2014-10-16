@@ -2,8 +2,12 @@ package core.point;
 
 import com.google.common.collect.Lists;
 import com.mysema.query.jpa.impl.JPADeleteClause;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.io.ParseException;
+import com.vividsolutions.jts.io.WKTReader;
+import core.gis.GeometryGis;
+import core.gis.GeometryGisDao;
 import core.gis.PointGisBean;
-import core.gis.PointGisDao;
 import core.polygon.Polygon;
 import core.polygon.PolygonBean;
 import core.polygon.PolygonDao;
@@ -47,6 +51,9 @@ public class PointsService implements Serializable {
     private PolygonDao polygonDao;
 
     @Autowired
+    private PointBean pointBean;
+
+    @Autowired
     private PolylineDao polylineDao;
 
     @Autowired
@@ -62,7 +69,7 @@ public class PointsService implements Serializable {
     private PolylineBean polylineBean;
 
     @Autowired
-    private PointGisDao pointGisDao;
+    private GeometryGisDao geometryGisDao;
 
     @Autowired
     private PolygonBean polygonBean;
@@ -117,7 +124,7 @@ public class PointsService implements Serializable {
     }
 
     public void populatePointGIS() {
-        pointGisBean.setPointVividList(pointGisDao.loadPointGises());
+        pointGisBean.setPointVividList(geometryGisDao.loadPointGises());
     }
 
     public void showMap() throws Exception {
@@ -140,6 +147,32 @@ public class PointsService implements Serializable {
 
         // Now display the map
         JMapFrame.showMap(map);
+    }
+
+    public void saveWktToGeometry() {
+        String wktPoint = pointBean.getWktValue();
+        String wktName = pointBean.getWktName();
+        String wktCode = pointBean.getWktCode();
+        WKTReader fromText = new WKTReader();
+        Geometry geom;
+        GeometryGis geometryGis;
+        try {
+            geom = fromText.read(wktPoint);
+            geometryGis = new GeometryGis(wktName, wktCode, geom);
+        } catch (ParseException e) {
+            throw new RuntimeException("Not a WKT string:" + wktPoint);
+        }
+        geometryGisDao.saveGeometryGIS(geometryGis);
+    }
+
+    public void saveXYZPoint() {
+        PointCustom pointCustom = new PointCustom();
+        pointCustom.setName(pointBean.getName());
+        pointCustom.setCode(pointBean.getCode());
+        pointCustom.setX(pointBean.getX());
+        pointCustom.setY(pointBean.getY());
+        pointCustom.setZ(pointBean.getZ());
+        pointDao.savePoint(pointCustom);
     }
 
     private void splitLinesAndSave(List<String> lines) {

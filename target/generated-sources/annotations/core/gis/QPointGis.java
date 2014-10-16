@@ -13,7 +13,7 @@ import com.mysema.query.types.Path;
  * QPointGis is a Querydsl query type for PointGis
  */
 @Generated("com.mysema.query.codegen.EntitySerializer")
-public class QPointGis extends EntityPathBase<PointGis> {
+public class QPointGis extends EntityPathBase<GeometryGis> {
 
     private static final long serialVersionUID = -1494995027L;
 
@@ -21,21 +21,25 @@ public class QPointGis extends EntityPathBase<PointGis> {
 
     public final core.QBaseEntity _super = new core.QBaseEntity(this);
 
+    public final StringPath code = createString("code");
+
     //inherited
     public final NumberPath<Long> id = _super.id;
+
+    public final StringPath name = createString("name");
 
     public final ComparablePath<com.vividsolutions.jts.geom.Point> pointVivid = createComparable("pointVivid", com.vividsolutions.jts.geom.Point.class);
 
     public QPointGis(String variable) {
-        super(PointGis.class, forVariable(variable));
+        super(GeometryGis.class, forVariable(variable));
     }
 
-    public QPointGis(Path<? extends PointGis> path) {
+    public QPointGis(Path<? extends GeometryGis> path) {
         super(path.getType(), path.getMetadata());
     }
 
     public QPointGis(PathMetadata<?> metadata) {
-        super(PointGis.class, metadata);
+        super(GeometryGis.class, metadata);
     }
 
 }

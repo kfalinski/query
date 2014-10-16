@@ -6,10 +6,12 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
-@StaticMetamodel(PointGis.class)
+@StaticMetamodel(GeometryGis.class)
 public abstract class PointGis_ extends core.BaseEntity_ {
 
-	public static volatile SingularAttribute<PointGis, Point> pointVivid;
+	public static volatile SingularAttribute<GeometryGis, String> code;
+	public static volatile SingularAttribute<GeometryGis, String> name;
+	public static volatile SingularAttribute<GeometryGis, Point> pointVivid;
 
 }
 
