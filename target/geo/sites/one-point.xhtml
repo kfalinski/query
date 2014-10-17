@@ -4,6 +4,7 @@
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
+
         <h:form>
 
             <p:panelGrid>
@@ -58,7 +59,9 @@
                     </p:column>
                 </p:row>
             </p:panelGrid>
-            <h:commandButton action="#{pointsService.saveXYZPoint}" value="Zapisz punkt"/>
+            <h:commandButton
+                    action="#{pointsService.saveXYZPointToGeometry(pointBean.name,pointBean.code,pointBean.x,pointBean.y,pointBean.z)}"
+                    value="Zapisz punkt"/>
             <p:panelGrid>
                 <p:row>
                     <p:column colspan="2" style="background-color: deeppink">
@@ -89,7 +92,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.wktValue}" style="width: auto"/>
+                        <p:inputText value="#{pointBean.wktValue}" style="width: 35em"/>
                     </p:column>
                 </p:row>
                 <h:commandButton action="#{pointsService.saveWktToGeometry()}" value="Zapisz punkt WKT"/>

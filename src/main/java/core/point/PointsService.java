@@ -2,7 +2,9 @@ package core.point;
 
 import com.google.common.collect.Lists;
 import com.mysema.query.jpa.impl.JPADeleteClause;
+import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.io.ParseException;
 import com.vividsolutions.jts.io.WKTReader;
 import core.gis.GeometryGis;
@@ -16,6 +18,7 @@ import core.polyline.Polyline;
 import core.polyline.PolylineBean;
 import core.polyline.PolylineDao;
 import core.polyline.PolylineDto;
+import org.apache.commons.math3.stat.regression.SimpleRegression;
 import org.geotools.data.FileDataStore;
 import org.geotools.data.FileDataStoreFinder;
 import org.geotools.data.simple.SimpleFeatureSource;
@@ -80,6 +83,7 @@ public class PointsService implements Serializable {
     @Autowired
     private PointDao pointDao;
 
+    @Transactional(propagation = Propagation.REQUIRED)
     public void savePoints(FileUploadEvent event) throws IOException {
         try {
             splitLinesAndSave(loadFile(event.getFile().getInputstream()));
@@ -98,7 +102,6 @@ public class PointsService implements Serializable {
 //        System.out.println(deletedCount);
 
     }
-
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void deleteSelectedPoints() {
         List<PointCustom> selectedPoints = pointDto.getSelectedPoints();
@@ -165,14 +168,12 @@ public class PointsService implements Serializable {
         geometryGisDao.saveGeometryGIS(geometryGis);
     }
 
-    public void saveXYZPoint() {
-        PointCustom pointCustom = new PointCustom();
-        pointCustom.setName(pointBean.getName());
-        pointCustom.setCode(pointBean.getCode());
-        pointCustom.setX(pointBean.getX());
-        pointCustom.setY(pointBean.getY());
-        pointCustom.setZ(pointBean.getZ());
-        pointDao.savePoint(pointCustom);
+
+    public GeometryGis saveXYZPointToGeometry(String name, String code, double x, double y, double z) {
+        Coordinate coordinate = new Coordinate(x, y, z);
+        GeometryFactory geometryFactory = new GeometryFactory();
+        com.vividsolutions.jts.geom.Point point = geometryFactory.createPoint(coordinate);
+        return new GeometryGis(name, code, point);
     }
 
     private void splitLinesAndSave(List<String> lines) {
@@ -182,12 +183,14 @@ public class PointsService implements Serializable {
 
         List<Point> pointList = Lists.newArrayList();
         List<PointCustom> pointCustomList = Lists.newArrayList();
+        List<GeometryGis> geometryGises = Lists.newArrayList();
         for (String line : lines) {
             String[] splitted = line.split(" ");
             List<String> splittedList = Lists.newArrayList();
             for (String s : splitted) {
-                if (!s.contentEquals(""))
+                if (!s.contentEquals("")) {
                     splittedList.add(s);
+                }
             }
             if (splittedList.size() < 5) {
                 while (splittedList.size() < 5) {
@@ -203,13 +206,11 @@ public class PointsService implements Serializable {
             pointList.add(pointGis);
             PointCustom pointCustom = new PointCustom(name, code, x, y, z);
             pointCustomList.add(pointCustom);
-
-//            pointGisDao.savePoints(pointList);
+            geometryGises.add(saveXYZPointToGeometry(pointCustom.getName(), pointCustom.getCode(), pointCustom.getX(), pointCustom.getY(), pointCustom.getZ()));
 
         }
-        for (PointCustom custom : pointCustomList) {
-            pointDao.savePoint(custom);
-        }
+        pointDao.savePoints(pointCustomList);
+        geometryGisDao.saveGeometryGIS(geometryGises);
         end = new Date();
         System.out.println(end.getTime() - start.getTime());
 
@@ -283,9 +284,9 @@ public class PointsService implements Serializable {
 
         for (int i = 0; i < (count - 1); i++)      // count is point number of polygon
         {
-            sum_but_no_result += x[i] * y[i + 1] + y[i] * x[i + 1];
+            sum_but_no_result += x[i] * y[i + 1] - y[i] * x[i + 1];
         }
-        sum_but_no_result += x[count - 1] * y[0] + y[count - 1] * x[0];
+        sum_but_no_result += x[count - 1] * y[0] - y[count - 1] * x[0];
 
         return Math.abs(sum_but_no_result) / 2.0f;
     }

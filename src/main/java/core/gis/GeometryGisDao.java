@@ -34,6 +34,14 @@ public class GeometryGisDao {
 
     }
 
+    public void saveGeometryGIS(List<GeometryGis> geometryGis) {
+        for (GeometryGis geometry : geometryGis) {
+            entityManager.persist(geometry);
+        }
+        entityManager.flush();
+
+    }
+
 //    public void savePoints(List<Point> pointList) {
 //        for (Point point : pointList) {
 //            PointGis pointGis = new PointGis();

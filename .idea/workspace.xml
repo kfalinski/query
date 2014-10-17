@@ -66,25 +66,81 @@
     <favorites_list name="QUERY" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54396">
+    <splitter split-orientation="horizontal" split-proportion="0.35851747">
       <split-first>
         <leaf>
-          <file leaf-file-name="pointgis.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/pointgis.xhtml">
+          <file leaf-file-name="PointsService.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointsService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="561">
-                  <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+                <state vertical-scroll-proportion="0.74725276" vertical-offset="714" max-vertical-offset="4233">
+                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PointsService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointsService.java">
+          <file leaf-file-name="faces-config.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1721" max-vertical-offset="4267">
-                  <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
+                <state vertical-scroll-proportion="-6.233333" vertical-offset="0" max-vertical-offset="289">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="profiles_settings.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136">
+                  <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jsxgraph.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/jsxgraph.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1207">
+                  <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pointgis.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/pointgis.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="561">
+                  <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Coordinate.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/Coordinate.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="6222">
+                  <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#0#11495#0" expanded="false" />
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#3250#3251#0" expanded="false" />
+                    <element signature="e#3274#3275#0" expanded="false" />
+                    <element signature="e#3483#3484#0" expanded="false" />
+                    <element signature="e#3512#3513#0" expanded="false" />
+                    <element signature="e#3683#3684#0" expanded="false" />
+                    <element signature="e#3718#3719#0" expanded="false" />
+                    <element signature="e#8018#8019#0" expanded="false" />
+                    <element signature="e#8070#8071#0" expanded="false" />
+                    <element signature="e#10324#10325#0" expanded="false" />
+                    <element signature="e#10345#10346#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -92,18 +148,20 @@
           <file leaf-file-name="GeometryGisDao.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGisDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-                  <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="935">
+                  <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PointGis_.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/core/gis/PointGis_.java">
+          <file leaf-file-name="load-points.xhtml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.371875" vertical-offset="0" max-vertical-offset="640">
-                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="391">
+                  <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
@@ -112,24 +170,65 @@
           <file leaf-file-name="PointGisBean.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/PointGisBean.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-                  <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="510">
+                  <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="addMarkers.xhtml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/addMarkers.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6736597" vertical-offset="204" max-vertical-offset="1037">
+                  <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="WKTReader.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/io/WKTReader.java">
+          <file leaf-file-name="testContext.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/testContext.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="11900">
-                  <caret line="144" column="10" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#26549#0" expanded="false" />
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#5098#5099#0" expanded="false" />
-                    <element signature="e#5135#5136#0" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/applicationContext.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="918">
+                  <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ef.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/ef.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="408">
+                  <caret line="5" column="32" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="4658">
+                  <caret line="68" column="36" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="36" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -137,33 +236,21 @@
           <file leaf-file-name="AddMarkersView.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1020">
-                  <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="850">
+                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                   <folding>
-                    <element signature="e#788#789#0" expanded="false" />
-                    <element signature="e#821#822#0" expanded="false" />
-                    <element signature="e#853#854#0" expanded="false" />
-                    <element signature="e#881#882#0" expanded="false" />
-                    <element signature="e#923#924#0" expanded="false" />
-                    <element signature="e#957#958#0" expanded="false" />
-                    <element signature="e#987#988#0" expanded="false" />
-                    <element signature="e#1013#1014#0" expanded="false" />
-                    <element signature="e#1051#1052#0" expanded="false" />
-                    <element signature="e#1081#1082#0" expanded="false" />
-                    <element signature="e#1111#1112#0" expanded="false" />
-                    <element signature="e#1137#1138#0" expanded="false" />
-                    <element signature="e#1175#1176#0" expanded="false" />
-                    <element signature="e#1205#1206#0" expanded="false" />
+                    <element signature="e#699#700#0" expanded="true" />
+                    <element signature="e#749#750#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="DefaultMapModel.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.0/primefaces-5.0-sources.jar!/org/primefaces/model/map/DefaultMapModel.java">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/DefaultMapModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1666">
-                  <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1666">
+                  <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#3301#0" expanded="false" />
                     <element signature="imports" expanded="false" />
@@ -182,110 +269,94 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="load-points.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+          <file leaf-file-name="Polygon.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/Polygon.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="391">
-                  <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PointBean.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointBean.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
-                  <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="969">
+                  <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
                   <folding>
+                    <element signature="e#0#2005#0" expanded="false" />
                     <element signature="imports" expanded="false" />
+                    <element signature="e#938#939#0" expanded="false" />
+                    <element signature="e#976#977#0" expanded="false" />
+                    <element signature="e#1016#1017#0" expanded="false" />
+                    <element signature="e#1041#1042#0" expanded="false" />
+                    <element signature="e#1170#1171#0" expanded="false" />
+                    <element signature="e#1189#1190#0" expanded="false" />
+                    <element signature="e#1234#1235#0" expanded="false" />
+                    <element signature="e#1259#1260#0" expanded="false" />
+                    <element signature="e#1295#1296#0" expanded="false" />
+                    <element signature="e#1320#1321#0" expanded="false" />
+                    <element signature="e#1371#1372#0" expanded="false" />
+                    <element signature="e#1408#1409#0" expanded="false" />
+                    <element signature="e#1445#1446#0" expanded="false" />
+                    <element signature="e#1472#1473#0" expanded="false" />
+                    <element signature="e#1527#1528#0" expanded="false" />
+                    <element signature="e#1568#1569#0" expanded="false" />
+                    <element signature="e#1601#1602#0" expanded="false" />
+                    <element signature="e#1627#1628#0" expanded="false" />
+                    <element signature="e#1677#1678#0" expanded="false" />
+                    <element signature="e#1716#1717#0" expanded="false" />
+                    <element signature="e#1750#1751#0" expanded="false" />
+                    <element signature="e#1773#1774#0" expanded="false" />
+                    <element signature="e#1820#1821#0" expanded="false" />
+                    <element signature="e#1853#1854#0" expanded="false" />
+                    <element signature="e#1888#1889#0" expanded="false" />
+                    <element signature="e#1913#1914#0" expanded="false" />
+                    <element signature="e#1965#1966#0" expanded="false" />
+                    <element signature="e#2002#2003#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="PointDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointDao.java">
+          <file leaf-file-name="LatLng.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/LatLng.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="731">
-                  <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="969">
+                  <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
                   <folding>
-                    <element signature="imports" expanded="false" />
+                    <element signature="e#0#1714#0" expanded="false" />
+                    <element signature="e#856#857#0" expanded="false" />
+                    <element signature="e#873#874#0" expanded="false" />
+                    <element signature="e#900#901#0" expanded="false" />
+                    <element signature="e#917#918#0" expanded="false" />
+                    <element signature="e#958#959#0" expanded="false" />
+                    <element signature="e#1001#1002#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addMarkers.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/addMarkers.xhtml">
+          <file leaf-file-name="Polyline.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/Polyline.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1394">
-                  <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="one-point.xhtml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/one-point.xhtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-27.307692" vertical-offset="888" max-vertical-offset="1768">
-                  <caret line="94" column="75" selection-start-line="94" selection-start-column="75" selection-end-line="94" selection-end-column="75" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="4539">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GeometryGis.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGis.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="665">
-                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
-                  <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="faces-config.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PostgreSQL - baza@localhost" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://db-console:/267618db/b67c57a7-297f-49fd-a32d-700be81a5fcf/">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="765">
+                  <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#1658#0" expanded="false" />
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#874#875#0" expanded="false" />
+                    <element signature="e#912#913#0" expanded="false" />
+                    <element signature="e#953#954#0" expanded="false" />
+                    <element signature="e#978#979#0" expanded="false" />
+                    <element signature="e#1108#1109#0" expanded="false" />
+                    <element signature="e#1127#1128#0" expanded="false" />
+                    <element signature="e#1172#1173#0" expanded="false" />
+                    <element signature="e#1197#1198#0" expanded="false" />
+                    <element signature="e#1233#1234#0" expanded="false" />
+                    <element signature="e#1258#1259#0" expanded="false" />
+                    <element signature="e#1309#1310#0" expanded="false" />
+                    <element signature="e#1346#1347#0" expanded="false" />
+                    <element signature="e#1383#1384#0" expanded="false" />
+                    <element signature="e#1410#1411#0" expanded="false" />
+                    <element signature="e#1465#1466#0" expanded="false" />
+                    <element signature="e#1506#1507#0" expanded="false" />
+                    <element signature="e#1539#1540#0" expanded="false" />
+                    <element signature="e#1565#1566#0" expanded="false" />
+                    <element signature="e#1615#1616#0" expanded="false" />
+                    <element signature="e#1654#1655#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -298,6 +369,10 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -340,6 +415,20 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="geo Maven Webapp" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="geo Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -410,106 +499,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QUERY" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QUERY" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QUERY" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="point" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QUERY" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,6 +612,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -650,6 +725,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,7 +814,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="point" />
+              <option name="myItemId" value="polyline" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,6 +848,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -756,38 +875,41 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.lastSelected" value="com.zeroturnaround.javarebel.idea.plugin.settings.AdvancedConfigurable" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gmaps4jsf-examples2-3.0.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gisfaces-1.3.1/gisfaces-1.3.1" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\Projects\query\lib" />
       <recent name="C:\Java\Projects\QUERY\src\main\webapp\sites" />
       <recent name="C:\Java\Projects\spring-data-jpa-examples\QUERY\src\main\webapp\WEB-INF" />
       <recent name="C:\Java\Projects\spring-data-jpa-examples\QUERY\src\main\webapp" />
       <recent name="C:\Java\Projects\spring-data-jpa-examples\QUERY\src\main\java" />
-      <recent name="C:\Java\Projects\spring-data-jpa-examples\QUERY\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Java\Projects\query\src\main\webapp\resources\img" />
+      <recent name="C:\Java\Projects\query\src\main\webapp" />
+      <recent name="C:\Java\Projects\query\src\main\resources\css" />
+      <recent name="C:\Java\Projects\query\src\main\resources" />
       <recent name="C:\Java\Projects\QUERY\src\test\java" />
-      <recent name="C:\Java\Projects\QUERY\src\main\webapp\WEB-INF\directory" />
-      <recent name="C:\Java\Projects\spring-data-jpa-examples\QUERY\src\main\webapp\WEB-INF\directory" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="core" />
@@ -818,6 +940,18 @@
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="gisfaces-1.3.1.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/gisfaces-1.3.1.jar" />
+      <envs />
+      <RunnerSettings RunnerId="JarDebug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="JarDebug" />
       <method />
     </configuration>
     <configuration default="false" name="pointServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -949,6 +1083,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/gisfaces-1.3.1.jar" />
       <envs />
       <method />
     </configuration>
@@ -1124,12 +1259,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="false" name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -1168,9 +1297,8 @@
     </configuration>
     <configuration default="false" name="mvn" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.12" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sites/index.xhtml" />
-      <option name="COMMON_VM_ARGUMENTS" value="-Dmaven.test.skip=true" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dmaven.test.skip=true -e" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="QUERY:war exploded">
@@ -1280,16 +1408,18 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install  war:exploded" />
       </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Maven.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.mvn" />
-      <item index="2" class="java.lang.String" itemvalue="Application.JavaGIS" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.pointServiceTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.JavaGIS" />
+      <item index="1" class="java.lang.String" itemvalue="JAR Application.gisfaces-1.3.1.jar" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.pointServiceTest" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.Unnamed" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.mvn" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.JavaGIS" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.pointServiceTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.gisfaces-1.3.1.jar" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JavaGIS" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.pointServiceTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1332,11 +1462,16 @@
       <workItem from="1413409819116" duration="6590000" />
       <workItem from="1413489252459" duration="3393000" />
       <workItem from="1413492757726" duration="923000" />
+      <workItem from="1413494858335" duration="5449000" />
+      <workItem from="1413566078665" duration="86000" />
+      <workItem from="1413566242246" duration="8000" />
+      <workItem from="1413566267275" duration="10091000" />
+      <workItem from="1413579031389" duration="1476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57700000" />
+    <option name="totallyTimeSpent" value="74853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1345,9 +1480,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4929134" sideWeight="0.22913617" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26821542" sideWeight="0.26614583" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11770833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2171875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1355,27 +1490,27 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26821542" sideWeight="0.7338542" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47624075" sideWeight="0.7338542" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26821542" sideWeight="0.26614583" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47624075" sideWeight="0.26614583" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15364583" sideWeight="0.62467194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15260416" sideWeight="0.62467194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15885799" sideWeight="0.3726708" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15885799" sideWeight="0.3727034" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1417,15 +1552,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/core/point/PointsService.java</url>
-          <line>164</line>
+          <line>242</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/core/point/PointsService.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/resources/js/prime-map.js</url>
+          <line>3</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="10" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1434,255 +1586,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/polyline/PolylineBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="459">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pointServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1377">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/util/JPAUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/SomeGeographicClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/polyline/PolylineDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051987767" vertical-offset="0" max-vertical-offset="654">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JavaGIS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="680">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/394ef8d0-956f-451c-b2bc-df6d63d0f157">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>394ef8d0-956f-451c-b2bc-df6d63d0f157</OriginalElement>
-          <nodes>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.public.raster_overviews</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_shdescription</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_index</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_user_functions</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_opclass</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_description</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_event_trigger</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_class</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_foreign_table</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_attrdef</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_ts_config</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_prepared_statements</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_all_sequences</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_cursors</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_all_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_amop</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_sys_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_conversion</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_tablespace</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_largeobject_metadata</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_default_acl</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_enum</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_user_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_xact_all_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_am</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_available_extensions</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_largeobject</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_trigger</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_replication</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stats</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_auth_members</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_aggregate</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_ts_template</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_opfamily</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_group</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_activity</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_operator</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_namespace</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_proc</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_settings</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_timezone_names</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_authid</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_views</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_seclabels</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_xact_user_functions</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_cast</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_roles</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_type</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_ts_parser</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_inherits</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.public.raster_columns</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_xact_user_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_xact_sys_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_seclabel</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.public.geography_columns</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_database</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_matviews</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_rules</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_collation</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_prepared_xacts</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_user_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_depend</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_extension</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_amproc</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_rewrite</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_timezone_abbrevs</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_sys_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_database_conflicts</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_shadow</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_language</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_attribute</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_sys_sequences</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statistic</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_pltemplate</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_locks</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_user_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_sys_indexes</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.public.spatial_ref_sys</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_all_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.public.geometry_columns</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_shdepend</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_stat_sys_tables</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_available_extension_versions</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_user</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_database</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_constraint</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_statio_user_sequences</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_ts_config_map</node>
-            <node x="" y="">394ef8d0-956f-451c-b2bc-df6d63d0f157.table:postgis_21_sample.pg_catalog.pg_range</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.1" x="2096.0" y="2008.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mysema/querydsl/querydsl-jpa/3.4.3/querydsl-jpa-3.4.3.jar!/com/mysema/query/jpa/impl/AbstractJPAQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="4335">
-          <caret line="39" column="83" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mysema/querydsl/querydsl-core/3.5.0/querydsl-core-3.5.0.jar!/com/mysema/query/support/ProjectableQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mysema/querydsl/querydsl-core/3.5.0/querydsl-core-3.5.0.jar!/com/mysema/query/support/QueryBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="816">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mysema/querydsl/querydsl-jpa/3.4.3/querydsl-jpa-3.4.3.jar!/com/mysema/query/jpa/JPAQueryBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2227">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mysema/querydsl/querydsl-jpa/3.4.3/querydsl-jpa-3.4.3.jar!/com/mysema/query/jpa/impl/JPAQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/core/gis/GeometryClass.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="714">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/core/gis/GeometryClass_.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
@@ -1707,9 +1610,9 @@
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.geometry_columns</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.spatial_ref_sys</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.somegeographicclass</node>
-            <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.raster_columns</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.polyline_pointcustom</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.pointgis</node>
+            <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.raster_columns</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.geometryclass</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.polygon</node>
             <node x="" y="">b67c57a7-297f-49fd-a32d-700be81a5fcf.table:baza.public.polygon_pointcustom</node>
@@ -1733,11 +1636,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="385">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
@@ -1748,9 +1650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="459">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1765,25 +1664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1025" max-vertical-offset="1428">
           <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1227#1228#0" expanded="false" />
-            <element signature="e#1316#1317#0" expanded="false" />
-            <element signature="e#1348#1349#0" expanded="false" />
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#1420#1421#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1530#1531#0" expanded="false" />
-            <element signature="e#1570#1571#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1704#1705#0" expanded="false" />
-            <element signature="e#1738#1739#0" expanded="false" />
-            <element signature="e#1786#1787#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1791,7 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1411">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1806,7 +1685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="425">
           <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1814,65 +1692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="663">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/points.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="655" max-vertical-offset="1003">
-          <caret line="50" column="83" selection-start-line="50" selection-start-column="83" selection-end-line="50" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="918">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1020">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="e#788#789#0" expanded="false" />
-            <element signature="e#821#822#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#923#924#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1205#1206#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/pointgis.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="561">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1880,12 +1699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="11900">
           <caret line="144" column="10" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26549#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#5098#5099#0" expanded="false" />
-            <element signature="e#5135#5136#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1893,6 +1706,300 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1666">
           <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.1.1.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="10132">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="3162">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/GeometryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3795" max-vertical-offset="9078">
+          <caret line="275" column="15" selection-start-line="275" selection-start-column="15" selection-end-line="275" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#21776#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4004#4005#0" expanded="false" />
+            <element signature="e#4043#4044#0" expanded="false" />
+            <element signature="e#9695#9696#0" expanded="false" />
+            <element signature="e#9726#9727#0" expanded="false" />
+            <element signature="e#10218#10219#0" expanded="false" />
+            <element signature="e#10262#10263#0" expanded="false" />
+            <element signature="e#11414#11415#0" expanded="false" />
+            <element signature="e#11463#11464#0" expanded="false" />
+            <element signature="e#12469#12470#0" expanded="false" />
+            <element signature="e#12519#12520#0" expanded="false" />
+            <element signature="e#12852#12853#0" expanded="false" />
+            <element signature="e#12895#12896#0" expanded="false" />
+            <element signature="e#14928#14929#0" expanded="false" />
+            <element signature="e#14976#14977#0" expanded="false" />
+            <element signature="e#15417#15418#0" expanded="false" />
+            <element signature="e#15478#15479#0" expanded="false" />
+            <element signature="e#15913#15914#0" expanded="false" />
+            <element signature="e#15974#15975#0" expanded="false" />
+            <element signature="e#16401#16402#0" expanded="false" />
+            <element signature="e#16444#16445#0" expanded="false" />
+            <element signature="e#20195#20196#0" expanded="false" />
+            <element signature="e#20242#20243#0" expanded="false" />
+            <element signature="e#21617#21618#0" expanded="false" />
+            <element signature="e#21638#21639#0" expanded="false" />
+            <element signature="e#21728#21729#0" expanded="false" />
+            <element signature="e#21770#21771#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/impl/CoordinateArraySequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="4063">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#7947#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2528#2529#0" expanded="false" />
+            <element signature="e#2558#2559#0" expanded="false" />
+            <element signature="e#4734#4735#0" expanded="false" />
+            <element signature="e#4765#4766#0" expanded="false" />
+            <element signature="e#4969#4970#0" expanded="false" />
+            <element signature="e#5016#5017#0" expanded="false" />
+            <element signature="e#5381#5382#0" expanded="false" />
+            <element signature="e#5418#5419#0" expanded="false" />
+            <element signature="e#5532#5533#0" expanded="false" />
+            <element signature="e#5569#5570#0" expanded="false" />
+            <element signature="e#6455#6456#0" expanded="false" />
+            <element signature="e#6490#6491#0" expanded="false" />
+            <element signature="e#7212#7213#0" expanded="false" />
+            <element signature="e#7240#7241#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="6222">
+          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#11495#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3250#3251#0" expanded="false" />
+            <element signature="e#3274#3275#0" expanded="false" />
+            <element signature="e#3483#3484#0" expanded="false" />
+            <element signature="e#3512#3513#0" expanded="false" />
+            <element signature="e#3683#3684#0" expanded="false" />
+            <element signature="e#3718#3719#0" expanded="false" />
+            <element signature="e#8018#8019#0" expanded="false" />
+            <element signature="e#8070#8071#0" expanded="false" />
+            <element signature="e#10324#10325#0" expanded="false" />
+            <element signature="e#10345#10346#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/PointGisBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="391">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="935">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7057" max-vertical-offset="9792">
+          <caret line="482" column="0" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/jsxgraph.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/pointgis.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="561">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/one-point.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/polylines.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8076925" vertical-offset="53" max-vertical-offset="578">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://localhost:8080/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=5.1">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/prime-map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="646">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/js-css-head.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/points.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="1020">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/template.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="816">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1.jar!/org/primefaces/model/map/DefaultMapModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.24" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/Polyline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1658#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#874#875#0" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+            <element signature="e#978#979#0" expanded="false" />
+            <element signature="e#1108#1109#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1197#1198#0" expanded="false" />
+            <element signature="e#1233#1234#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1309#1310#0" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+            <element signature="e#1506#1507#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
+            <element signature="e#1565#1566#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="false" />
+            <element signature="e#1654#1655#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/DefaultMapModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="e#0#3301#0" expanded="false" />
             <element signature="imports" expanded="false" />
@@ -1910,102 +2017,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/Polygon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="391">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#2005#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+            <element signature="e#976#977#0" expanded="false" />
+            <element signature="e#1016#1017#0" expanded="false" />
+            <element signature="e#1041#1042#0" expanded="false" />
+            <element signature="e#1170#1171#0" expanded="false" />
+            <element signature="e#1189#1190#0" expanded="false" />
+            <element signature="e#1234#1235#0" expanded="false" />
+            <element signature="e#1259#1260#0" expanded="false" />
+            <element signature="e#1295#1296#0" expanded="false" />
+            <element signature="e#1320#1321#0" expanded="false" />
+            <element signature="e#1371#1372#0" expanded="false" />
+            <element signature="e#1408#1409#0" expanded="false" />
+            <element signature="e#1445#1446#0" expanded="false" />
+            <element signature="e#1472#1473#0" expanded="false" />
+            <element signature="e#1527#1528#0" expanded="false" />
+            <element signature="e#1568#1569#0" expanded="false" />
+            <element signature="e#1601#1602#0" expanded="false" />
+            <element signature="e#1627#1628#0" expanded="false" />
+            <element signature="e#1677#1678#0" expanded="false" />
+            <element signature="e#1716#1717#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
+            <element signature="e#1773#1774#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1853#1854#0" expanded="false" />
+            <element signature="e#1888#1889#0" expanded="false" />
+            <element signature="e#1913#1914#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2002#2003#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/addMarkers.xhtml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1-sources.jar!/org/primefaces/model/map/LatLng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1394">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1714#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#873#874#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+            <element signature="e#958#959#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4539">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="4658">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/ef.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="408">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/testContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="731">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/one-point.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.307692" vertical-offset="888" max-vertical-offset="1768">
-          <caret line="94" column="75" selection-start-line="94" selection-start-column="75" selection-end-line="94" selection-end-column="75" />
+        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGis.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="665">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="918">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/PointGisBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state vertical-scroll-proportion="-6.233333" vertical-offset="0" max-vertical-offset="289">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0-sources.jar!/org/opengis/geometry/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2989011" vertical-offset="0" max-vertical-offset="455">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/point/PointsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1721" max-vertical-offset="4267">
-          <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.74725276" vertical-offset="714" max-vertical-offset="4233">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/GeometryGisDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/addMarkers.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/core/gis/PointGis_.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.371875" vertical-offset="0" max-vertical-offset="640">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6736597" vertical-offset="204" max-vertical-offset="1037">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -2029,7 +2158,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (QUERY)|Web</last-edited>
+          <last-edited>Spring (QUERY)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2064,7 +2193,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JRebel|QUERY</last-edited>
+          <last-edited>Web|QUERY</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2087,7 +2216,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Maven: org.hibernate:hibernate-jpamodelgen:4.3.6.Final</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -8,7 +8,5 @@
         <property name="useCodeAsDefaultMessage" value="true"/>
     </bean>
 
-    <bean id="todoService" name="todoService" class="org.mockito.Mockito" factory-method="mock">
-        <constructor-arg value="net.petrikainulainen.spring.testmvc.todo.service.TodoService"/>
-    </bean>
+
 </beans>

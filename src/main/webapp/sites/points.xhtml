@@ -18,7 +18,8 @@
             <p:commandButton actionListener="#{pointsService.populatePolylineBean}"
                              value="stwórz polilinię"/>
             <p:dataTable id="table" value="#{pointDto.allPoints}" var="point"
-                         styleClass="order-table" paginator="true" selection="#{pointDto.selectedPoints}" selectionMode="multiple"
+                         styleClass="order-table" paginator="true" selection="#{pointDto.selectedPoints}"
+                         selectionMode="multiple"
                          rowKey='#{point.id}'
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"
@@ -29,7 +30,7 @@
                 <p:column headerText="Nazwa">
                     <p:outputLabel value=" #{point.name}"/>
                 </p:column>
-                <p:column headerText="Kod">
+                <p:column headerText="Kod" sortBy="#{point.code}">
                     <p:outputLabel value=" #{point.code}"/>
                 </p:column>
                 <p:column headerText="X">
