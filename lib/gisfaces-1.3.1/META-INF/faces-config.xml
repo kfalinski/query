@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<faces-config
+	version="2.0"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+
+	<name>gisfaces</name>
+
+	<application>
+		<system-event-listener>
+			<system-event-listener-class>com.gisfaces.util.lifecycle.PostConstructApplicationEventListener</system-event-listener-class>
+			<system-event-class>javax.faces.event.PostConstructApplicationEvent</system-event-class>
+		</system-event-listener>
+	</application>
+
+	<component>
+		<component-type>com.gisfaces.component.Map</component-type>
+		<component-class>com.gisfaces.component.UIMap</component-class>
+	</component>
+	<component>
+		<component-type>com.gisfaces.component.MapService</component-type>
+		<component-class>com.gisfaces.component.UIMapService</component-class>
+	</component>
+	<component>
+		<component-type>com.gisfaces.component.MapServiceLayer</component-type>
+		<component-class>com.gisfaces.component.UIMapServiceLayer</component-class>
+	</component>
+
+</faces-config>

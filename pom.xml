@@ -65,11 +65,17 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
-            <dependency>
-                <groupId>org.opengis</groupId>
-                <artifactId>geoapi</artifactId>
-                <version>3.0.0</version>
-            </dependency>
+        <dependency>
+            <groupId>org.opengis</groupId>
+            <artifactId>geoapi</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esri.geometry</groupId>
+            <artifactId>esri-geometry-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.javassist</groupId>
@@ -162,10 +168,10 @@
             <version>1.0.10</version>
         </dependency>
         <dependency>
-        <groupId>org.primefaces.themes</groupId>
-        <artifactId>ui-darkness</artifactId>
-        <version>1.0.10</version>
-    </dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>ui-darkness</artifactId>
+            <version>1.0.10</version>
+        </dependency>
         <dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>vader</artifactId>
@@ -203,16 +209,16 @@
             <artifactId>gmaps4jsf-core</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>de.micromata.jak</groupId>
+            <artifactId>JavaAPIforKml</artifactId>
+            <version>2.2.1</version>
+        </dependency>
     </dependencies>
     <repositories>
         <repository>
             <id>googlecode.com</id>
             <url>http://gmaps4jsf.googlecode.com/svn/trunk/gmaps4jsf-repo</url>
-        </repository>
-        <repository>
-            <id>maven2-repository.dev.java.net</id>
-            <name>Java.net repository</name>
-            <url>http://download.java.net/maven/2</url>
         </repository>
         <repository>
             <id>osgeo</id>
@@ -236,6 +242,15 @@
             <name>PrimeFaces Maven Repository</name>
             <url>http://repository.primefaces.org</url>
             <layout>default</layout>
+        </repository>
+        <repository>
+            <id>maven2-repository.dev.java.net</id>
+            <name>Java.net Maven 2 Repository</name>
+            <url>http://download.java.net/maven/2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
     <build>
@@ -262,7 +277,45 @@
                     </dependency>
                 </dependencies>
             </plugin>
-        </plugins>
-        <finalName>geo</finalName>
-    </build>
-</project>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-antrun-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>xjc-invocation</id>-->
+                        <!--<phase>generate-sources</phase>-->
+                        <!--<configuration>-->
+                            <!--<tasks>-->
+                                <!--<property name="src.dir" location="src/main"/>-->
+                                <!--<property name="src.dir.gen" location="#{src.dir}/java"/>-->
+                                <!--<property name="schema.dir" value="#{src.dir}/resources/schema"/>-->
+                                <!--<property name="schema.dir.kml" location="#{schema.dir}/ogckml/ogckml22.xsd"/>-->
+                                <!--<property name="schema.dir.kml.binding" value="#{schema.dir}/ogckml/JAK_binding.xjb"/>-->
+                                <!--<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask"-->
+                                         <!--classpathref="maven.compile.classpath"/>-->
+                                <!--<description>generate JAK from OGC's KML schema</description>-->
+                                <!--<mkdir dir="#{src.dir.gen}/de/micromata/opengis/kml/"/>-->
+                                <!--<delete>-->
+                                    <!--<fileset dir="#{src.dir.gen}/de/micromata/opengis/kml/" includes="**"/>-->
+                                <!--</delete>-->
+                                <!--<xjc extension="true" binding="#{schema.dir.kml.binding}" destdir="#{src.dir.gen}"-->
+                                     <!--removeOldOutput="yes" schema="#{schema.dir}/ogckml/kml22gx.xsd">-->
+                                <!--<arg value="-XJavaForKmlApi"/>-->
+                                <!--&lt;!&ndash; the XJC plugins that creates JAK &ndash;&gt;-->
+                            <!--</xjc>-->
+                            <!--<exec executable="perl" dir="${basedir}"> &lt;!&ndash; remove the damn JAXBElements &ndash;&gt;-->
+                                <!--<arg file="scripts/CleanUpGeneratedJAXBSourceFolder.pl"/>-->
+                                <!--<arg file="#{src.dir.gen}/de/micromata/opengis/kml"/>-->
+                            <!--</exec>-->
+                        <!--</tasks>-->
+                    <!--</configuration>-->
+                    <!--<goals>-->
+                        <!--<goal>run</goal>-->
+                    <!--</goals>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
+    </plugins>
+    <finalName>geo</finalName>
+</build>
+        </project>

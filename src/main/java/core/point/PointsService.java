@@ -21,6 +21,7 @@ import core.polyline.PolylineDto;
 import org.apache.commons.math3.stat.regression.SimpleRegression;
 import org.geotools.data.FileDataStore;
 import org.geotools.data.FileDataStoreFinder;
+import org.geotools.data.shapefile.ShapefileDataStoreFactory;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.map.FeatureLayer;
 import org.geotools.map.Layer;
@@ -31,6 +32,7 @@ import org.geotools.swing.JMapFrame;
 import org.geotools.swing.data.JFileDataStoreChooser;
 import org.postgis.Point;
 import org.primefaces.event.FileUploadEvent;
+import org.primefaces.model.UploadedFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
@@ -84,6 +86,11 @@ public class PointsService implements Serializable {
     private PointDao pointDao;
 
     @Transactional(propagation = Propagation.REQUIRED)
+    public void uploadCSV(FileUploadEvent event){
+        UploadedFile file = event.getFile();
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
     public void savePoints(FileUploadEvent event) throws IOException {
         try {
             splitLinesAndSave(loadFile(event.getFile().getInputstream()));
@@ -93,7 +100,6 @@ public class PointsService implements Serializable {
             e.printStackTrace();
         }
     }
-
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void deletePoints() {
         QPointCustom pointCustom = QPointCustom.pointCustom;
@@ -102,6 +108,8 @@ public class PointsService implements Serializable {
 //        System.out.println(deletedCount);
 
     }
+
+
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void deleteSelectedPoints() {
         List<PointCustom> selectedPoints = pointDto.getSelectedPoints();
@@ -112,7 +120,6 @@ public class PointsService implements Serializable {
         }
         new JPADeleteClause(entityManager, pointCustom).where(pointCustom.id.in(ids)).execute();
     }
-
 
     public List<String> loadFile(InputStream event) throws IOException {
         List<String> lines = Lists.newArrayList();
@@ -152,6 +159,7 @@ public class PointsService implements Serializable {
         JMapFrame.showMap(map);
     }
 
+
     public void saveWktToGeometry() {
         String wktPoint = pointBean.getWktValue();
         String wktName = pointBean.getWktName();
@@ -167,7 +175,6 @@ public class PointsService implements Serializable {
         }
         geometryGisDao.saveGeometryGIS(geometryGis);
     }
-
 
     public GeometryGis saveXYZPointToGeometry(String name, String code, double x, double y, double z) {
         Coordinate coordinate = new Coordinate(x, y, z);
@@ -216,6 +223,7 @@ public class PointsService implements Serializable {
 
     }
 
+
     public void populatePolygonBean() {
         double length = 0.0;
         List<PointCustom> pointCustomList = pointDto.getSelectedPoints();
@@ -234,6 +242,8 @@ public class PointsService implements Serializable {
         polygonBean.setLength(length);
         polygonDao.savePolygon(polygon);
     }
+
+
 
     public void populatePolylineBean() {
         double length = 0.0;

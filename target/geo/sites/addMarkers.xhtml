@@ -20,19 +20,20 @@
         </h:head>
         <h:form prependId="false">
             <p:growl id="messages" showDetail="true"/>
-            <p:gmap id="gmap" center="36.890257,30.707417" zoom="13" type="HYBRID" style="width:600px;height:400px"
-                    model="#{addMarkersView.emptyModel}" onPointClick="handlePointClick(event);" widgetVar="map"/>
-            <gis:map mapPanel="panel1" coordinatesPanel="panel2" geocoderPanel="panel3" latitude="39.828175"
-                     longitude="-98.5795" zoom="4">
-                <gis:layer number="a" visible="s" where="f"/>
-                <gis:service type="tiled"
-                             url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
-                <gis:service type="dynamic"
-                             url="http://maps.ngdc.noaa.gov/arcgis/rest/services/graticule/MapServer"/>
-                <f:ajax event="click" render="growl1" listener="#{mapBean.doMapClickListener}"></f:ajax>
-                <f:ajax event="extent" render="growl1" listener="#{mapBean.doMapExtentListener}"></f:ajax>
-                <f:ajax event="select" render="growl1" listener="#{mapBean.doMapSelectListener}"></f:ajax>
-            </gis:map>
+            <!--<p:gmap id="gmap" center="36.890257,30.707417" zoom="13" type="HYBRID" style="width:600px;height:400px"-->
+                    <!--model="#{addMarkersView.emptyModel}" onPointClick="handlePointClick(event);" widgetVar="map"/>-->
+            <h:panelGroup id="panel1" layout="block" styleClass="gisfacesMapPanel"/>
+            <gis:map mapPanel="panel1"  latitude="39.828175" longitude="-98.5795" zoom="4"/>
+            <!--<gis:map mapPanel="panel1" coordinatesPanel="panel2" geocoderPanel="panel3" latitude="39.828175"-->
+                     <!--longitude="-98.5795" zoom="4">-->
+                <!--<gis:service type="tiled"-->
+                             <!--url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>-->
+                <!--<gis:service type="dynamic"-->
+                             <!--url="http://maps.ngdc.noaa.gov/arcgis/rest/services/graticule/MapServer"/>-->
+
+                <!--&lt;!&ndash;<f:ajax event="extent" render="growl1" listener="#{mapBean.doMapExtentListener}"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<f:ajax event="select" render="growl1" listener="#{mapBean.doMapSelectListener}"/>&ndash;&gt;-->
+            <!--</gis:map>-->
             <p:dialog widgetVar="dlg" showEffect="fade" header="Utwórz nowy punkt">
                 <h:panelGrid columns="2">
                     <h:outputLabel for="title" value="Nazwa:"/>

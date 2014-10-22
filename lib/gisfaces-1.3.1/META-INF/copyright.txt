@@ -1,0 +1,3 @@
+/* Copyright © 2014 Geer Services Inc - All Rights Reserved */
+/* GISFaces was created by Chris Duncan (chris@geerservices.com) */
+

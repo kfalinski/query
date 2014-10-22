@@ -37,6 +37,9 @@
           <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
           <element id="library" level="project" name="Maven: org.opengis:geoapi:3.0.0" />
           <element id="library" level="project" name="Maven: javax.measure:jsr-275:0.9.3" />
+          <element id="library" level="project" name="Maven: com.esri.geometry:esri-geometry-api:1.2" />
+          <element id="library" level="project" name="Maven: org.json:json:20090211" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.2-GA" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-spatial:4.3" />
           <element id="library" level="project" name="Maven: postgresql:postgresql:8.4-701.jdbc4" />
@@ -90,6 +93,12 @@
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-jpamodelgen:4.3.6.Final" />
           <element id="library" level="project" name="Maven: com.googlecode.gmaps4jsf:gmaps4jsf-core:3.0.0" />
+          <element id="library" level="project" name="Maven: de.micromata.jak:JavaAPIforKml:2.2.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2" />
+          <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-xjc:2.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
