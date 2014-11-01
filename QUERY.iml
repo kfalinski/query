@@ -10,13 +10,13 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-          <root url="file://$MODULE_DIR$/src/main/webapp/resources" />
-          <root url="file://$MODULE_DIR$/target/generated-sources/annotations" />
-          <root url="file://$MODULE_DIR$/target/generated-sources/apt" />
           <root url="file://$MODULE_DIR$/target/generated-sources/java" />
           <root url="file://$MODULE_DIR$/target/generated-sources/resources" />
+          <root url="file://$MODULE_DIR$/target/generated-sources/apt" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/webapp/resources" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/target/generated-sources/annotations" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -26,19 +26,6 @@
           <file>file://$MODULE_DIR$/src/main/webapp/resources/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/main/webapp/resources/testContext.xml</file>
         </fileset>
-      </configuration>
-    </facet>
-    <facet type="JRebel" name="JRebel">
-      <configuration>
-        <option name="autosync" value="false" />
-        <option name="deleteUnindexed" value="true" />
-        <option name="manualXML" value="false" />
-        <option name="masterModuleName" />
-        <option name="remotingEnabled" value="false" />
-        <option name="scanAllFiles" value="false" />
-        <option name="secure" value="true" />
-        <option name="url" />
-        <option name="xmlDir" />
       </configuration>
     </facet>
   </component>
@@ -51,9 +38,9 @@
       <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/apt" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/geo" />
       <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
@@ -168,3 +155,4 @@
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-xjc:2.2" level="project" />
   </component>
 </module>
+
