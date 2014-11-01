@@ -3,7 +3,6 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
-                xmlns:gis="http://gisfaces.com/"
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
 
@@ -11,14 +10,6 @@
         <h:outputText value="Louisville Public Safety and Land Records"></h:outputText>
 
         <h:panelGroup id="panel1" layout="block" styleClass="gisfacesMapPanel"></h:panelGroup>
-
-        <gis:map mapPanel="panel1" background="topo" latitude="38.2" longitude="-85.7" zoom="10">
-            <gis:service id="parcels" type="dynamic" url="http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer" opacity="0.25"></gis:service>
-            <gis:service id="cameras" type="dynamic" url="http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_PublicSafety_Louisville/MapServer"></gis:service>
-            <f:ajax event="click" render="messages1" listener="#{mapBean.doMapClickListener}"></f:ajax>
-            <!--<f:ajax event="extent" render="messages1" listener="#{mapBean.doMapExtentListener}"></f:ajax>-->
-            <!--<f:ajax event="select" render="messages1" listener="#{mapBean.doMapSelectListener}"></f:ajax>-->
-        </gis:map>
 
         <h:outputText value="Click on a feature to see its attributes."></h:outputText>
 

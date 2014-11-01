@@ -6,7 +6,6 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:gmap id="gmap" center="36.890257,30.707417" zoom="13" type="HYBRID" style="width:600px;height:400px"/>
             <p:commandButton actionListener="#{pointsService.populatePointDto}"
                              update="table" value="ładuj punkty z bazy"/>
             <p:commandButton actionListener="#{pointsService.deletePoints}"

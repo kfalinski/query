@@ -3,7 +3,6 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
-                xmlns:gis="http://gisfaces.com/"
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <h:head>
@@ -23,17 +22,7 @@
             <!--<p:gmap id="gmap" center="36.890257,30.707417" zoom="13" type="HYBRID" style="width:600px;height:400px"-->
                     <!--model="#{addMarkersView.emptyModel}" onPointClick="handlePointClick(event);" widgetVar="map"/>-->
             <h:panelGroup id="panel1" layout="block" styleClass="gisfacesMapPanel"/>
-            <gis:map mapPanel="panel1"  latitude="39.828175" longitude="-98.5795" zoom="4"/>
-            <!--<gis:map mapPanel="panel1" coordinatesPanel="panel2" geocoderPanel="panel3" latitude="39.828175"-->
-                     <!--longitude="-98.5795" zoom="4">-->
-                <!--<gis:service type="tiled"-->
-                             <!--url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>-->
-                <!--<gis:service type="dynamic"-->
-                             <!--url="http://maps.ngdc.noaa.gov/arcgis/rest/services/graticule/MapServer"/>-->
 
-                <!--&lt;!&ndash;<f:ajax event="extent" render="growl1" listener="#{mapBean.doMapExtentListener}"/>&ndash;&gt;-->
-                <!--&lt;!&ndash;<f:ajax event="select" render="growl1" listener="#{mapBean.doMapSelectListener}"/>&ndash;&gt;-->
-            <!--</gis:map>-->
             <p:dialog widgetVar="dlg" showEffect="fade" header="Utwórz nowy punkt">
                 <h:panelGrid columns="2">
                     <h:outputLabel for="title" value="Nazwa:"/>
