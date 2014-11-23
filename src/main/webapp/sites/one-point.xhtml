@@ -19,7 +19,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.name}"/>
+                        <p:inputText value="#{pointToSaveBean.name}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -28,7 +28,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.code}"/>
+                        <p:inputText value="#{pointToSaveBean.code}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -37,7 +37,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.x}"/>
+                        <p:inputText value="#{pointToSaveBean.x}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -46,7 +46,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.y}"/>
+                        <p:inputText value="#{pointToSaveBean.y}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -55,12 +55,12 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.z}"/>
+                        <p:inputText value="#{pointToSaveBean.z}"/>
                     </p:column>
                 </p:row>
             </p:panelGrid>
             <h:commandButton
-                    action="#{pointsService.saveXYZPointToGeometry(pointBean.name,pointBean.code,pointBean.x,pointBean.y,pointBean.z)}"
+                    action="#{pointsService.saveXYZPointToGeometry(pointToSaveBean.name,pointToSaveBean.code,pointToSaveBean.x,pointToSaveBean.y,pointToSaveBean.z)}"
                     value="Zapisz punkt"/>
             <p:panelGrid>
                 <p:row>
@@ -74,7 +74,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.wktName}"/>
+                        <p:inputText value="#{pointToSaveBean.wktName}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -83,7 +83,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.wktCode}"/>
+                        <p:inputText value="#{pointToSaveBean.wktCode}"/>
                     </p:column>
                 </p:row>
                 <p:row>
@@ -92,7 +92,7 @@
                     </p:column>
 
                     <p:column>
-                        <p:inputText value="#{pointBean.wktValue}" style="width: 35em"/>
+                        <p:inputText value="#{pointToSaveBean.wktValue}" style="width: 35em"/>
                     </p:column>
                 </p:row>
                 <h:commandButton action="#{pointsService.saveWktToGeometry()}" value="Zapisz punkt WKT"/>
