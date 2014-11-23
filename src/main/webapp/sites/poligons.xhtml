@@ -9,7 +9,7 @@
         <h:form>
             <p:commandButton actionListener="#{pointsService.populatepolygonDto}"
                              update="table" value="ładuj poligony"/>
-            <p:dataTable id="table" value="#{polygonBean.polygonList}" var="polygon"
+            <p:dataTable id="table" value="#{polygonDto.allPolygons}" var="polygon"
                          styleClass="order-table" paginator="true"
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"

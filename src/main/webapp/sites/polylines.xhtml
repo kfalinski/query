@@ -8,7 +8,7 @@
         <h:form>
             <p:commandButton actionListener="#{pointsService.populatepolylineDto}"
                              update="table" value="ładuj polilinie"/>
-            <p:dataTable id="table" value="#{polylineBean.allPoints}" var="polyline"
+            <p:dataTable id="table" value="#{polylineDto.allPolylines}" var="polyline"
                          styleClass="order-table" paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"
                          rowClasses="order-table-odd-row,order-table-even-row">
@@ -21,7 +21,7 @@
                 </p:column>
                 <p:column headerText="Długość">
 
-                    <!--<p:outputLabel value=" #{polyline.}"/>-->
+                    <p:outputLabel value=" #{polyline.length}"/>
                 </p:column>
             </p:dataTable>
         </h:form>

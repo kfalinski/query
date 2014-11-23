@@ -8,16 +8,16 @@
         <h:form>
             <p:commandButton actionListener="#{pointsService.populatePointDto}"
                              update="table" value="ładuj punkty z bazy"/>
-            <!--<p:commandButton actionListener="#{pointsService}"-->
-            <!--update="table" value="usuń wszystkie punkty"/>-->
-            <!--<p:commandButton actionListener="#{pointsService}"-->
-            <!--update="table" value="usuń zaznaczone punkty"/>-->
+            <p:commandButton actionListener="#{pointsService.deletePoints}"
+                             update="table" value="usuń wszystkie punkty"/>
+            <p:commandButton actionListener="#{pointsService.deleteSelectedPoints}"
+                             update="table" value="usuń zaznaczone punkty"/>
             <p:commandButton actionListener="#{pointsService.populatePolygonBean}"
                              value="stwórz poligon"/>
             <p:commandButton actionListener="#{pointsService.populatePolylineBean}"
                              value="stwórz polilinię"/>
-            <p:dataTable id="table" value="#{pointBean.allPoints}" var="point"
-                         styleClass="order-table" paginator="true" selection="#{pointBean.selectedPoints}"
+            <p:dataTable id="table" value="#{pointDto.allPoints}" var="point"
+                         styleClass="order-table" paginator="true" selection="#{pointDto.selectedPoints}"
                          selectionMode="multiple"
                          rowKey='#{point.id}'
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"

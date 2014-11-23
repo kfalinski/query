@@ -9,9 +9,9 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <querydsl.version>3.5.0</querydsl.version>
-        <spring.version>4.1.2.RELEASE</spring.version>
-        <hibernate.version>4.3.7.Final</hibernate.version>
+        <querydsl.version>3.4.3</querydsl.version>
+        <spring.version>4.1.1.RELEASE</spring.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <geotools.version>12-RC1</geotools.version>
@@ -66,6 +66,18 @@
             <version>${hibernate.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.opengis</groupId>
+            <artifactId>geoapi</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esri.geometry</groupId>
+            <artifactId>esri-geometry-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>3.18.2-GA</version>
@@ -92,7 +104,7 @@
         <dependency>
             <groupId>com.mysema.querydsl</groupId>
             <artifactId>querydsl-spatial</artifactId>
-            <version>${querydsl.version}</version>
+            <version>3.5.0</version>
         </dependency>
 
         <dependency>
@@ -121,12 +133,6 @@
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>5.1</version>
-        </dependency>
-        <!-- for PostgreSQL usage -->
-        <dependency>
-            <groupId>org.postgis</groupId>
-            <artifactId>postgis-jdbc</artifactId>
-            <version>1.3.3</version>
         </dependency>
         <!-- JSF -->
         <dependency>
@@ -187,9 +193,26 @@
             <version>4.3.6.Final</version>
         </dependency>
         <dependency>
-            <groupId>org.geolatte</groupId>
-            <artifactId>geolatte-common</artifactId>
-            <version>0.6</version>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.1.1.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.gmaps4jsf</groupId>
+            <artifactId>gmaps4jsf-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>de.micromata.jak</groupId>
+            <artifactId>JavaAPIforKml</artifactId>
+            <version>2.2.1</version>
         </dependency>
     </dependencies>
     <repositories>
@@ -229,25 +252,9 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
     </repositories>
     <build>
-
         <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <webResources>
-                            <resource>
-                                <!-- this is relative to the pom.xml directory -->
-                                <directory>src/main/webapp/resources</directory>
-                            </resource>
-                        </webResources>
-                    </configuration>
-                </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -270,15 +277,45 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
-                <groupId>com.mysema.querydsl</groupId>
-                <artifactId>querydsl-maven-plugin</artifactId>
-                <version>${querydsl.version}</version>
-                <configuration>
-                    <spatial>true</spatial>
-                </configuration>
-            </plugin>
-        </plugins>
-        <finalName>geo</finalName>
-    </build>
-</project>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-antrun-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>xjc-invocation</id>-->
+                        <!--<phase>generate-sources</phase>-->
+                        <!--<configuration>-->
+                            <!--<tasks>-->
+                                <!--<property name="src.dir" location="src/main"/>-->
+                                <!--<property name="src.dir.gen" location="#{src.dir}/java"/>-->
+                                <!--<property name="schema.dir" value="#{src.dir}/resources/schema"/>-->
+                                <!--<property name="schema.dir.kml" location="#{schema.dir}/ogckml/ogckml22.xsd"/>-->
+                                <!--<property name="schema.dir.kml.binding" value="#{schema.dir}/ogckml/JAK_binding.xjb"/>-->
+                                <!--<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask"-->
+                                         <!--classpathref="maven.compile.classpath"/>-->
+                                <!--<description>generate JAK from OGC's KML schema</description>-->
+                                <!--<mkdir dir="#{src.dir.gen}/de/micromata/opengis/kml/"/>-->
+                                <!--<delete>-->
+                                    <!--<fileset dir="#{src.dir.gen}/de/micromata/opengis/kml/" includes="**"/>-->
+                                <!--</delete>-->
+                                <!--<xjc extension="true" binding="#{schema.dir.kml.binding}" destdir="#{src.dir.gen}"-->
+                                     <!--removeOldOutput="yes" schema="#{schema.dir}/ogckml/kml22gx.xsd">-->
+                                <!--<arg value="-XJavaForKmlApi"/>-->
+                                <!--&lt;!&ndash; the XJC plugins that creates JAK &ndash;&gt;-->
+                            <!--</xjc>-->
+                            <!--<exec executable="perl" dir="${basedir}"> &lt;!&ndash; remove the damn JAXBElements &ndash;&gt;-->
+                                <!--<arg file="scripts/CleanUpGeneratedJAXBSourceFolder.pl"/>-->
+                                <!--<arg file="#{src.dir.gen}/de/micromata/opengis/kml"/>-->
+                            <!--</exec>-->
+                        <!--</tasks>-->
+                    <!--</configuration>-->
+                    <!--<goals>-->
+                        <!--<goal>run</goal>-->
+                    <!--</goals>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
+    </plugins>
+    <finalName>geo</finalName>
+</build>
+        </project>

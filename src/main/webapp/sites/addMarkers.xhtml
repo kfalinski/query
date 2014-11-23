@@ -25,18 +25,18 @@
 
             <p:dialog widgetVar="dlg" showEffect="fade" header="Utwórz nowy punkt">
                 <h:panelGrid columns="2">
-                    <!--<h:outputLabel for="title" value="Nazwa:"/>-->
-                    <!--<p:inputText id="title" value="#{addMarkersView.title}"/>-->
+                    <h:outputLabel for="title" value="Nazwa:"/>
+                    <p:inputText id="title" value="#{addMarkersView.title}"/>
 
                     <f:facet name="footer">
-                        <!--<p:commandButton value="Add" actionListener="#{addMarkersView.addMarker}"-->
-                                         <!--oncomplete="markerAddComplete()"/>-->
-                        <!--<p:commandButton value="Cancel" onclick="return cancel()"/>-->
+                        <p:commandButton value="Add" actionListener="#{addMarkersView.addMarker}"
+                                         oncomplete="markerAddComplete()"/>
+                        <p:commandButton value="Cancel" onclick="return cancel()"/>
                     </f:facet>
                 </h:panelGrid>
 
-                <!--<h:inputHidden id="lat" value="#{addMarkersView.lat}"/>-->
-                <!--<h:inputHidden id="lng" value="#{addMarkersView.lng}"/>-->
+                <h:inputHidden id="lat" value="#{addMarkersView.lat}"/>
+                <h:inputHidden id="lng" value="#{addMarkersView.lng}"/>
 
             </p:dialog>
 
