@@ -10,7 +10,7 @@
             <p:commandButton actionListener="#{pointsService.showMap()}"
 
                              update="table" value="poka mape"/>
-            <p:dataTable id="table" value="#{pointGisBean.pointVividList}" var="pointGIS"
+            <p:dataTable id="table" value="#{pointGisBean.pointGISList}" var="pointGIS"
                          styleClass="order-table" paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"
                          rowClasses="order-table-odd-row,order-table-even-row">
@@ -19,7 +19,7 @@
                 </p:column>
                 <p:column headerText="Nazwa">
 
-                    <p:outputLabel value=" #{pointGIS.pointVivid}"/>
+                    <p:outputLabel value=" #{pointGIS.name}"/>
                 </p:column>
 
             </p:dataTable>
