@@ -8,10 +8,8 @@ import com.mysema.query.types.path.EntityPathBase;
 import com.mysema.query.types.path.EnumPath;
 import com.mysema.query.types.path.NumberPath;
 import core.BaseEntity;
+import core.QBaseEntity;
 import org.springframework.transaction.annotation.Transactional;
-import pl.azymut.emporium.persistence.BaseEntity;
-import pl.azymut.emporium.persistence.EntityStatusEnum;
-import pl.azymut.emporium.persistence.QBaseEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -20,8 +18,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
+import static core.utils.Collectors.toOrderedSet;
 import static java.util.stream.Collectors.toList;
-import static pl.azymut.emporium.util.stream.EmporiumCollectors.toOrderedSet;
 
 // Created by krzysztoff on 2014-11-21.
 public abstract class GenericDao {
@@ -78,27 +76,19 @@ public abstract class GenericDao {
     protected <T extends BaseEntity> JPQLQuery buildQuery(EntityPathBase<T> entityPath) {
         JPQLQuery query = new JPAQuery(em);
         query = query.from(entityPath);
-        query = makeActiveQuery(query, entityPath);
         return query;
     }
 
     public <T extends BaseEntity> void remove(T entity) {
-        entity.setEntityStatus(EntityStatusEnum.REMOVED);
-        save(entity);
+        em.remove(entity);
+        em.flush();
     }
 
     public <T extends BaseEntity> void removeAll(List<T> entityList) {
         for (T entity : entityList) {
-            entity.setEntityStatus(EntityStatusEnum.REMOVED);
+            em.remove(entity);
         }
-        saveMany(entityList);
-    }
-
-    private <T extends BaseEntity> JPQLQuery makeActiveQuery(JPQLQuery query, EntityPath<T> entityPath) {
-        EnumPath<EntityStatusEnum> qEntityStatusField = QBaseEntity.baseEntity.entityStatus;
-        EnumPath<EntityStatusEnum> entityStatusPath = new EnumPath<>(qEntityStatusField.getType(),
-                PathMetadataFactory.forProperty(entityPath, qEntityStatusField.getMetadata().getName()));
-        return query.where(entityStatusPath.eq(EntityStatusEnum.ACTIVE));
+        em.flush();
     }
 
     private <T extends BaseEntity> T saveInternal(T entity) {

@@ -1,16 +1,18 @@
 package core;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
-* Created by Krzysztof on 2014-10-11.
-*/
+ * Created by Krzysztof on 2014-10-11.
+ */
 @Getter
 @Setter
+@NoArgsConstructor
 @MappedSuperclass
 public abstract class BaseEntity implements Serializable {
     private static final long serialVersionUID = 6548347367579720578L;
@@ -19,9 +21,6 @@ public abstract class BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
-    private String name;
-    private String code;
 
     @Override
     public int hashCode() {

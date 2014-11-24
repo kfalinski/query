@@ -1,4 +1,15 @@
 C:\Java\Projects\query\src\main\java\core\gis\AddMarkersView.java
-C:\Java\Projects\query\src\main\java\core\gis\GeometryGisDao.java
+C:\Java\Projects\query\src\main\java\core\utils\GenericDao.java
+C:\Java\Projects\query\src\main\java\core\polyline\LegacyPolyline.java
 C:\Java\Projects\query\src\main\java\core\BaseEntity.java
 C:\Java\Projects\query\src\main\java\core\gis\GeometryGis.java
+C:\Java\Projects\query\src\main\java\core\point\LegacyPointDto.java
+C:\Java\Projects\query\src\main\java\core\polyline\PolylineDao.java
+C:\Java\Projects\query\src\main\java\core\point\LegacyPointDao.java
+C:\Java\Projects\query\src\main\java\core\point\LegayPointBean.java
+C:\Java\Projects\query\src\main\java\core\point\LegacyPoint.java
+C:\Java\Projects\query\src\main\java\core\polygon\PolygonDao.java
+C:\Java\Projects\query\src\main\java\core\utils\GeoService.java
+C:\Java\Projects\query\src\main\java\core\gis\GeometryGisDao.java
+C:\Java\Projects\query\src\main\java\core\polygon\LegacyPolygon.java
+C:\Java\Projects\query\src\main\java\core\utils\Collectors.java
