@@ -1,0 +1,30 @@
+### Java template
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+
+target/
+.idea/
+.classpath
+.project
+.settings/
+eCommerce.iml
+btm1.tlog
+btm2.tlog
+Emporium.iml
+*.iml
+deploy-poligon.bat
+deploy-poligon.zip
+*.log
+*.log.20*
+core/build/reports/tests/
+Emporium.ipr
+Emporium.iws
+admin/build/reports/
+build/reports/
+cms2/build/reports/
