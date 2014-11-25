@@ -7,7 +7,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Type;
+import org.realityforge.jeo.geolatte.jpa.PostgisConverter;
 
+import javax.persistence.Convert;
+import javax.persistence.Converter;
 import javax.persistence.Entity;
 
 /**
@@ -23,10 +26,9 @@ public class GeometryGis extends BaseEntity {
 
     @Type(type = "org.hibernate.spatial.GeometryType")
     private Geometry geometryJTS;
-    @Type(type = "org.hibernate.spatial.GeometryType")
+
+//    @Convert(converter = PostgisConverter.class)
     private org.geolatte.geom.Geometry geometryLatte;
 
     private org.postgis.Geometry geometryPOSTGIS;
-
-
 }

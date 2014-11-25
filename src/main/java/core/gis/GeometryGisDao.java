@@ -5,7 +5,9 @@ import com.mysema.query.jpa.JPQLQuery;
 import com.mysema.query.spatial.path.GeometryPath;
 import com.mysema.query.spatial.path.GeometryPaths;
 import com.mysema.query.types.CollectionExpression;
+import com.mysema.query.types.PathMetadataFactory;
 import com.mysema.query.types.path.ComparablePath;
+import com.mysema.query.types.path.EnumPath;
 import com.vividsolutions.jts.awt.PointShapeFactory;
 import core.utils.GenericDao;
 import org.geolatte.geom.Geometry;
@@ -38,24 +40,26 @@ public class GeometryGisDao extends GenericDao {
         JPQLQuery query = buildQuery(qGeometryGis);
         Geometry geometry = Wkt.fromWkt("LINESTRING(2 3,4 5,6 5,7 8)");
         GeometryGis geometryGis = new GeometryGis();
+
         try {
             org.postgis.Geometry geometryPOSTGIS = new LineString("LINESTRING(2 3,4 5,6 5,7 8)");
             geometryGis.setGeometryPOSTGIS(geometryPOSTGIS);
+
             save(geometryGis);
         } catch (SQLException e) {
             e.printStackTrace();
         }
 //        geometryGis.setGeometryPOSTGIS(PGGeTyConvegeometry);
 
-//        GeometryPath<Geometry> geometryPath = qGeometryGis.geometryLatte;
-//        query.where(qGeometryGis.geometryJTS.)
-//        query.where(geometry.)
-//        query.where(qGeometryGis.geometryLatte.)
+        GeometryPath<Geometry> geometryPath = new GeometryPath(org.geolatte.geom.Geometry.class,
+                PathMetadataFactory.forProperty(QGeometryGis.geometryGis, qGeometryGis.geometryLatte.getMetadata().getName()));
+        query.where(geometryPath.contains(geometry));
 //query=query.where(qGeometryGis.geometryLatte.)
 //        query = query.leftJoin( qGeometryGis.geometryLatte);
 //        GeometryPath<Geometry> geometryPaths = qGeometryGis.geometryLatte;
 //        query=query.where(geometryPaths.)
 //        GeometryPath<Geometry> geometryPath = qGeometryGis.geometryLatte;
+        List<Long> list = query.list(qGeometryGis.id);
         return findAllNoFetch(null);
     }
 
