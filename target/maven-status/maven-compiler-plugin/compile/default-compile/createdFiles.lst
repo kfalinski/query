@@ -1,6 +1,8 @@
 core\polyline\PolylineDao.class
 core\BaseEntity.class
+core\gis\GIS.class
 core\gis\QGeometryGis.class
+core\gis\QGIS.class
 core\point\LegacyPointDao.class
 core\polyline\LegacyPolyline.class
 core\gis\GeometryGis_.class
@@ -22,3 +24,5 @@ core\polyline\LegacyPolyline_.class
 core\BaseEntity_.class
 core\polygon\QLegacyPolygon.class
 core\polyline\QLegacyPolyline.class
+core\gis\GeometryPredicates.class
+core\gis\GIS_.class

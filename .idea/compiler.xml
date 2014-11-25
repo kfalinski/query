@@ -21,7 +21,6 @@
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processor name="com.mysema.query.apt.jpa.JPAAnnotationProcessor" />
         <processor name="lombok.core.AnnotationProcessor" />
         <processor name="org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor" />
         <processorPath useClasspath="true" />
@@ -33,4 +32,3 @@
     </bytecodeTargetLevel>
   </component>
 </project>
-
