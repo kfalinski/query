@@ -6,8 +6,8 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{pointsService.populatePointDto}"
-                             update="table" value="ładuj punkty z bazy"/>
+            <p:commandButton actionListener="#{geometryGisDao.loadPointGises}"
+                         value="ładuj punkty z bazy"/>
             <!--<p:commandButton actionListener="#{pointsService}"-->
             <!--update="table" value="usuń wszystkie punkty"/>-->
             <!--<p:commandButton actionListener="#{pointsService}"-->
@@ -16,37 +16,37 @@
                              value="stwórz poligon"/>
             <p:commandButton actionListener="#{pointsService.populatePolylineBean}"
                              value="stwórz polilinię"/>
-            <p:dataTable id="table" value="#{pointBean.allPoints}" var="point"
-                         styleClass="order-table" paginator="true" selection="#{pointBean.selectedPoints}"
-                         selectionMode="multiple"
-                         rowKey='#{point.id}'
-                         paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         headerClass="order-table-header" rows="15"
-                         rowClasses="order-table-odd-row,order-table-even-row">
-                <p:column headerText="Id">
-                    <p:outputLabel value="#{point.id}"/>
-                </p:column>
-                <p:column headerText="Nazwa">
-                    <p:outputLabel value=" #{point.name}"/>
-                </p:column>
-                <p:column headerText="Kod" sortBy="#{point.code}">
-                    <p:outputLabel value=" #{point.code}"/>
-                </p:column>
-                <p:column headerText="X">
+            <!--<p:dataTable id="table" value="#{pointBean.allPoints}" var="point"-->
+                         <!--styleClass="order-table" paginator="true" selection="#{pointBean.selectedPoints}"-->
+                         <!--selectionMode="multiple"-->
+                         <!--rowKey='#{point.id}'-->
+                         <!--paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"-->
+                         <!--headerClass="order-table-header" rows="15"-->
+                         <!--rowClasses="order-table-odd-row,order-table-even-row">-->
+                <!--<p:column headerText="Id">-->
+                    <!--<p:outputLabel value="#{point.id}"/>-->
+                <!--</p:column>-->
+                <!--<p:column headerText="Nazwa">-->
+                    <!--<p:outputLabel value=" #{point.name}"/>-->
+                <!--</p:column>-->
+                <!--<p:column headerText="Kod" sortBy="#{point.code}">-->
+                    <!--<p:outputLabel value=" #{point.code}"/>-->
+                <!--</p:column>-->
+                <!--<p:column headerText="X">-->
 
-                    <p:outputLabel value=" #{point.x}"/>
-                </p:column>
+                    <!--<p:outputLabel value=" #{point.x}"/>-->
+                <!--</p:column>-->
 
-                <p:column headerText="Y">
-                    <p:outputLabel value="#{point.y}"/>
-                </p:column>
+                <!--<p:column headerText="Y">-->
+                    <!--<p:outputLabel value="#{point.y}"/>-->
+                <!--</p:column>-->
 
-                <p:column headerText="Z">
-                    <p:outputLabel value="#{point.z}"/>
+                <!--<p:column headerText="Z">-->
+                    <!--<p:outputLabel value="#{point.z}"/>-->
 
-                </p:column>
+                <!--</p:column>-->
 
-            </p:dataTable>
+            <!--</p:dataTable>-->
             <script type="text/javascript"
                     src="http://maps.google.com/maps/api/js?sensor=false"></script>
         </h:form>

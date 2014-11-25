@@ -41,6 +41,24 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>1.7.0.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
         <!-- EL -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -57,7 +75,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.14.8</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
         <!--Hibernate-->
         <dependency>
@@ -122,6 +140,12 @@
             <artifactId>primefaces</artifactId>
             <version>5.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.mysema.querydsl</groupId>
+            <artifactId>querydsl-collections</artifactId>
+            <version>3.5.1</version>
+        </dependency>
+
         <!-- for PostgreSQL usage -->
         <!--<dependency>-->
             <!--<groupId>org.postgis</groupId>-->
@@ -189,8 +213,19 @@
         <dependency>
             <groupId>org.geolatte</groupId>
             <artifactId>geolatte-common</artifactId>
-            <version>0.6</version>
+            <version>0.7</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.geolatte</groupId>-->
+            <!--<artifactId>geolatte-common-hibernate</artifactId>-->
+            <!--<version>0.7</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.geolatte</groupId>-->
+            <!--<artifactId>geolatte-geom</artifactId>-->
+            <!--<version>0.14</version>-->
+        <!--</dependency>-->
+
     </dependencies>
     <repositories>
         <repository>
@@ -232,22 +267,7 @@
 
     </repositories>
     <build>
-
         <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <webResources>
-                            <resource>
-                                <!-- this is relative to the pom.xml directory -->
-                                <directory>src/main/webapp/resources</directory>
-                            </resource>
-                        </webResources>
-                    </configuration>
-                </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -260,7 +280,6 @@
                         <annotationProcessor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</annotationProcessor>
                         <annotationProcessor>com.mysema.query.apt.jpa.JPAAnnotationProcessor</annotationProcessor>
                     </annotationProcessors>
-
                 </configuration>
                 <dependencies>
                     <dependency>

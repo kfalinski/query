@@ -22,6 +22,11 @@ public class GeometryGis extends BaseEntity {
     private String code;
 
     @Type(type = "org.hibernate.spatial.GeometryType")
-    private Geometry geometry;
+    private Geometry geometryJTS;
+    @Type(type = "org.hibernate.spatial.GeometryType")
+    private org.geolatte.geom.Geometry geometryLatte;
+
+    private org.postgis.Geometry geometryPOSTGIS;
+
 
 }
