@@ -6,22 +6,32 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{pointsService.populatePointGIS()}" update="table"/>
-            <p:commandButton actionListener="#{pointsService.showMap()}"
-
-                             update="table" value="poka mape"/>
-            <p:dataTable id="table" value="#{pointGisBean.pointGISList}" var="pointGIS"
-                         styleClass="order-table" paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+            <p:commandButton actionListener="#{gisPointDao.loadGisPoints}"
+                             update="table" value="ładuj punkty z bazy"/>
+            <p:commandButton actionListener="#{geoService.saveGisPoints}" value="Zapisz gisy" update="table"/>
+            <p:dataTable id="table" value="#{gisPointBean.allPoints}" var="pointGIS"
+                         styleClass="order-table" paginator="true"
+                         paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"
                          rowClasses="order-table-odd-row,order-table-even-row">
                 <p:column headerText="Id" style="width: 2em">
                     <p:outputLabel value="#{pointGIS.id}"/>
                 </p:column>
                 <p:column headerText="Nazwa">
-
                     <p:outputLabel value=" #{pointGIS.name}"/>
                 </p:column>
-
+                <p:column>
+                    <p:outputLabel value="#{pointGIS.pointJTS.x}"/>
+                </p:column>
+                <p:column>
+                    <p:outputLabel value="#{pointGIS.pointJTS.y}"/>
+                </p:column>
+                <p:column>
+                    <p:outputLabel value="#{pointGIS.pointJTS.}"/>
+                </p:column>
+                <p:column>
+                    <p:outputLabel value="#{pointGIS.}"/>
+                </p:column>
             </p:dataTable>
         </h:form>
     </ui:define>

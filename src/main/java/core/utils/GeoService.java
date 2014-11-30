@@ -4,9 +4,13 @@ import com.google.common.collect.Lists;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
+import com.vividsolutions.jts.io.WKTReader;
+import com.vividsolutions.jts.io.WKTWriter;
 import core.point.*;
 import core.polygon.PolygonDao;
 import core.polyline.PolylineDao;
+import org.geolatte.geom.builder.internal.GeometryBuilder3D;
+import org.geotools.geometry.jts.GeometryBuilder;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -79,14 +83,13 @@ public class GeoService {
     private void splitLinesAndSaveGisPoints(List<String> lines) {
         List<GisPoint> pointList = Lists.newArrayList();
         LegacyPoint legacyPoint;
-        GeometryFactory geometryFactory = new GeometryFactory();
-        Coordinate coordinate = new Coordinate();
+        GeometryBuilder geometryBuilder = new GeometryBuilder();
+        WKTWriter wktWriter = new WKTWriter();
+        WKTReader wktReader =new WKTReader();
+        wktReader.
         for (String line : lines) {
             legacyPoint = splitIternal(line);
-            coordinate.x = legacyPoint.getX();
-            coordinate.y = legacyPoint.getY();
-            coordinate.z = legacyPoint.getZ();
-            Point point = geometryFactory.createPoint(coordinate);
+            Point point = geometryBuilder.pointZ(legacyPoint.getX(), legacyPoint.getY(), legacyPoint.getZ());
             GisPoint gisPoint = new GisPoint(legacyPoint.getName(), legacyPoint.getCode(), point);
             pointList.add(gisPoint);
         }

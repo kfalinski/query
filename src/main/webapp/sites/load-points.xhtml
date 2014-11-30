@@ -5,14 +5,19 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <h:form>
-        <p:panelGrid>
-            <p:row>
-                <p:column>
-                    <p:fileUpload fileUploadListener="#{geoService.saveLegacyPoints}" value="a"  cancelLabel="Anuluj"
-                                  uploadLabel="Wgraj plik"/>
-                </p:column>
-            </p:row>
-        </p:panelGrid>
+            <p:panelGrid>
+                <p:row>
+                    <p:column>
+                        <p:fileUpload fileUploadListener="#{geoService.saveLegacyPoints}" value="legacy"
+                                      cancelLabel="Anuluj"
+                                      uploadLabel="Wgraj plik"/>
+                    </p:column>
+                    <p:column>
+                        <p:fileUpload fileUploadListener="#{geoService.saveGisPoints}" value="gis" cancelLabel="Anuluj"
+                                      uploadLabel="Wgraj plik z gisami"/>
+                    </p:column>
+                </p:row>
+            </p:panelGrid>
         </h:form>
     </ui:define>
 </ui:composition>

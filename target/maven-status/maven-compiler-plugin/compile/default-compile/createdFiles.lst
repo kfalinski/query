@@ -12,6 +12,7 @@ core\gis\GeometryGis_.class
 core\point\QLegacyPoint.class
 core\polygon\LegacyPolygon_.class
 core\gis\GeometryGisDao.class
+core\point\GisPointBean.class
 core\polygon\PolygonDao.class
 core\utils\GenericDao.class
 core\QBaseEntity.class

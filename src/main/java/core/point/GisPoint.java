@@ -20,7 +20,10 @@ public class GisPoint extends BaseEntity {
     private String code;
 
     @Type(type = "org.hibernate.spatial.GeometryType")
-    private Point pointJTS;
+    private Geometry pointJTS;
+
+    public GisPoint() {
+    }
 
     public GisPoint(String name, String code, Point point) {
         this.name = name;
