@@ -3,11 +3,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/sites" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/templates" charset="UTF-8" />
   </component>
 </project>
-

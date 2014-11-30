@@ -10,6 +10,7 @@ core\polyline\LegacyPolyline.class
 core\utils\GeoCollectors.class
 core\gis\GeometryGis_.class
 core\point\QLegacyPoint.class
+core\utils\Dupa.class
 core\polygon\LegacyPolygon_.class
 core\gis\GeometryGisDao.class
 core\point\GisPointBean.class

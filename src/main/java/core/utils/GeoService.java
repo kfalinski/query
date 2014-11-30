@@ -1,6 +1,9 @@
 package core.utils;
 
 import com.google.common.collect.Lists;
+import com.mysema.query.jpa.JPQLQuery;
+import com.mysema.query.jpa.hibernate.HibernateQuery;
+import com.mysema.query.jpa.impl.JPAQuery;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
@@ -58,6 +61,7 @@ public class GeoService {
         }
     }
 
+
     public List<String> loadFile(InputStream event) throws IOException {
         List<String> lines = Lists.newArrayList();
         InputStreamReader ipsr = new InputStreamReader(event);
@@ -86,7 +90,6 @@ public class GeoService {
         GeometryBuilder geometryBuilder = new GeometryBuilder();
         WKTWriter wktWriter = new WKTWriter();
         WKTReader wktReader =new WKTReader();
-        wktReader.
         for (String line : lines) {
             legacyPoint = splitIternal(line);
             Point point = geometryBuilder.pointZ(legacyPoint.getX(), legacyPoint.getY(), legacyPoint.getZ());
