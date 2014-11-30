@@ -25,9 +25,4 @@ public class GeometryGis extends BaseEntity {
 
     @Type(type = "org.hibernate.spatial.GeometryType")
     private Geometry geometryJTS;
-
-//    @Convert(converter = PostgisConverter.class)
-    private org.geolatte.geom.Geometry geometryLatte;
-
-    private org.postgis.Geometry geometryPOSTGIS;
 }

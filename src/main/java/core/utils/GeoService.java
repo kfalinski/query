@@ -1,31 +1,32 @@
 package core.utils;
 
 import com.google.common.collect.Lists;
-import core.point.LegacyPoint;
-import core.point.LegacyPointDao;
-import core.point.LegayPointBean;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.Point;
+import core.point.*;
 import core.polygon.PolygonDao;
 import core.polyline.PolylineDao;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import java.io.*;
-import java.util.Date;
 import java.util.List;
 
 @Service
 public class GeoService {
 
     @Autowired
-    private LegayPointBean legayPointBean;
+    private LegacyPointBean legacyPointBean;
 
     @Autowired
     private LegacyPointDao legacyPointDao;
+
+    @Autowired
+    private GisPointDao gisPointDao;
 
     @Autowired
     private PolygonDao polygonDao;
@@ -33,9 +34,9 @@ public class GeoService {
     @Autowired
     private PolylineDao polylineDao;
 
-    public void savePoints(FileUploadEvent event) throws IOException {
+    public void saveLegacyPoints(FileUploadEvent event) throws IOException {
         try {
-            splitLinesAndSave(loadFile(event.getFile().getInputstream()));
+            splitLinesAndSaveLegacyPoints(loadFile(event.getFile().getInputstream()));
             FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
             FacesContext.getCurrentInstance().addMessage(null, msg);
         } catch (IOException e) {
@@ -43,11 +44,14 @@ public class GeoService {
         }
     }
 
-
-    @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public void deleteSelectedPoints() {
-        List<LegacyPoint> selectedPoints = legayPointBean.getSelectedPoints();
-        legacyPointDao.removeAll(selectedPoints);
+    public void saveGisPoints(FileUploadEvent event) throws IOException {
+        try {
+            splitLinesAndSaveGisPoints(loadFile(event.getFile().getInputstream()));
+            FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
+            FacesContext.getCurrentInstance().addMessage(null, msg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public List<String> loadFile(InputStream event) throws IOException {
@@ -62,29 +66,51 @@ public class GeoService {
         return lines;
     }
 
-    private void splitLinesAndSave(List<String> lines) {
+    private void splitLinesAndSaveLegacyPoints(List<String> lines) {
         List<LegacyPoint> pointList = Lists.newArrayList();
+        LegacyPoint legacyPoint;
         for (String line : lines) {
-            String[] splitted = line.split(" ");
-            List<String> splittedList = Lists.newArrayList();
-            for (String s : splitted) {
-                if (!s.contentEquals(""))
-                    splittedList.add(s);
-            }
-            if (splittedList.size() < 5) {
-                while (splittedList.size() < 5) {
-                    splittedList.add("0");
-                }
-            }
-            String name = splittedList.get(0);
-            String code = splittedList.get(1);
-            double x = Double.valueOf(splittedList.get(2));
-            double y = Double.valueOf(splittedList.get(3));
-            double z = Double.valueOf(splittedList.get(4));
-            LegacyPoint pointCustom = new LegacyPoint(name, code, x, y, z);
-            pointList.add(pointCustom);
+            legacyPoint = splitIternal(line);
+            pointList.add(legacyPoint);
         }
         legacyPointDao.saveMany(pointList);
+    }
+
+    private void splitLinesAndSaveGisPoints(List<String> lines) {
+        List<GisPoint> pointList = Lists.newArrayList();
+        LegacyPoint legacyPoint;
+        GeometryFactory geometryFactory = new GeometryFactory();
+        Coordinate coordinate = new Coordinate();
+        for (String line : lines) {
+            legacyPoint = splitIternal(line);
+            coordinate.x = legacyPoint.getX();
+            coordinate.y = legacyPoint.getY();
+            coordinate.z = legacyPoint.getZ();
+            Point point = geometryFactory.createPoint(coordinate);
+            GisPoint gisPoint = new GisPoint(legacyPoint.getName(), legacyPoint.getCode(), point);
+            pointList.add(gisPoint);
+        }
+        gisPointDao.saveMany(pointList);
+    }
+
+    private LegacyPoint splitIternal(String line) {
+        String[] splitted = line.split(" ");
+        List<String> splittedList = Lists.newArrayList();
+        for (String s : splitted) {
+            if (!s.contentEquals(""))
+                splittedList.add(s);
+        }
+        if (splittedList.size() < 5) {
+            while (splittedList.size() < 5) {
+                splittedList.add("0");
+            }
+        }
+        String name = splittedList.get(0);
+        String code = splittedList.get(1);
+        double x = Double.valueOf(splittedList.get(2));
+        double y = Double.valueOf(splittedList.get(3));
+        double z = Double.valueOf(splittedList.get(4));
+        return new LegacyPoint(name, code, x, y, z);
     }
 
 //    public void populatePolygonBean() {

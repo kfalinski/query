@@ -1,11 +1,10 @@
 package core.utils;
 
 import com.mysema.query.jpa.JPQLQuery;
+import com.mysema.query.jpa.impl.JPADeleteClause;
 import com.mysema.query.jpa.impl.JPAQuery;
-import com.mysema.query.types.EntityPath;
 import com.mysema.query.types.PathMetadataFactory;
 import com.mysema.query.types.path.EntityPathBase;
-import com.mysema.query.types.path.EnumPath;
 import com.mysema.query.types.path.NumberPath;
 import core.BaseEntity;
 import core.QBaseEntity;
@@ -16,9 +15,10 @@ import javax.persistence.PersistenceContext;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static core.utils.Collectors.toOrderedSet;
+import static core.utils.GeoCollectors.toOrderedSet;
 import static java.util.stream.Collectors.toList;
 
 // Created by krzysztoff on 2014-11-21.
@@ -84,10 +84,15 @@ public abstract class GenericDao {
         em.flush();
     }
 
-    public <T extends BaseEntity> void removeAll(List<T> entityList) {
-        for (T entity : entityList) {
-            em.remove(entity);
-        }
+    public <T extends BaseEntity> void removeMany(EntityPathBase<T> entityPathBase, List<Long> ids) {
+        List<T> newList = findManyNoFetch(entityPathBase, ids);
+        newList.forEach(em::remove);
+        em.flush();
+    }
+
+    public <T extends BaseEntity> void removeAllEntities(EntityPathBase<T> entityPathBase) {
+        List<T> list = findAllNoFetch(entityPathBase);
+        list.forEach(em::remove);
         em.flush();
     }
 

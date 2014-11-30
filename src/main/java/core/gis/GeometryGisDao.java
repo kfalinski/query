@@ -40,20 +40,17 @@ public class GeometryGisDao extends GenericDao  {
 
     public List<GeometryGis> loadPointGises() {
         JPQLQuery query = buildQuery(qGeometryGis);
-        Geometry geometry = Wkt.fromWkt("LINESTRING(2 3,4 5,6 5,7 8)");
-        GeometryPath<Geometry> geometryPath = new GeometryPath(org.geolatte.geom.Geometry.class,
-                PathMetadataFactory.forProperty(QGeometryGis.geometryGis, qGeometryGis.geometryLatte.getMetadata().getName()));
-        query.where(geometryPath.intersects(geometry));
+//        Geometry geometry = Wkt.fromWkt("LINESTRING(2 3,4 5,6 5,7 8)");
+//        GeometryPath<Geometry> geometryPath = new GeometryPath(org.geolatte.geom.Geometry.class,
+//                PathMetadataFactory.forProperty(QGeometryGis.geometryGis, qGeometryGis.geometryLatte.getMetadata().getName()));
+//        query.where(geometryPath.intersects(geometry));
         return query.list(qGeometryGis);
-    }
-    public static Predicate spatialWithin(com.vividsolutions.jts.geom.Geometry geometry) {
-        return QGeometryGis.geometryGis.geometryJTS.in(geometry);
     }
     public void saveGeometryGIS(GeometryGis geometryGis) {
         save(geometryGis);
     }
 
-    public void saveGeometryGIS(List<GeometryGis> geometryGises) {
+    public void saveGeometryGISes(List<GeometryGis> geometryGises) {
         saveMany(geometryGises);
     }
 }

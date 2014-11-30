@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.toCollection;
 /**
  * Created by Krzysztof on 2014-11-24.
  */
-public class Collectors {
+public class GeoCollectors {
     public static <T> Collector<T, ?, Set<T>> toOrderedSet() {
         return toCollection(LinkedHashSet::new);
     }

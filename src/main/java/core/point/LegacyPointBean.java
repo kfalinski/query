@@ -12,8 +12,7 @@ import java.util.List;
 @Component
 @Getter
 @Setter
-public class LegayPointBean {
-
+public class LegacyPointBean {
     private List<LegacyPoint> selectedPoints;
-    private List<LegacyPoint> allPoint;
+    private List<LegacyPoint> allPoints;
 }
