@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * Created by Krzysztof on 2014-11-30.
+ * Created by Krzysztof on 2014-12-01.
  */
 @Component
 @Setter
 @Getter
-public class GisPointBean {
-    private List<GisPoint> selectedPoints;
-    private List<GisPoint> allPoints;
+public class GeolatteBean {
+    private List<GeolattePointEntity> selectedPoints;
+    private List<GeolattePointEntity> allPoints;
 }

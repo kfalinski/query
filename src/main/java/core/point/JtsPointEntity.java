@@ -15,19 +15,23 @@ import javax.persistence.Entity;
 @Setter
 @Getter
 @Entity
-public class GisPoint extends BaseEntity {
+public class JtsPointEntity extends BaseEntity {
+    private static final long serialVersionUID = 65483473675794478L;
+
     private String name;
     private String code;
+    private double z;
 
     @Type(type = "org.hibernate.spatial.GeometryType")
-    private Geometry pointJTS;
+    private Point jtsPoint;
 
-    public GisPoint() {
+    public JtsPointEntity() {
     }
 
-    public GisPoint(String name, String code, Point point) {
+    public JtsPointEntity(String name, String code, Point point, double z) {
         this.name = name;
         this.code = code;
-        this.pointJTS = point;
+        this.jtsPoint = point;
+        this.z = z;
     }
 }

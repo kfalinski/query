@@ -25,4 +25,5 @@ public class GeometryGis extends BaseEntity {
 
     @Type(type = "org.hibernate.spatial.GeometryType")
     private Geometry geometryJTS;
+
 }

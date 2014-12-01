@@ -6,10 +6,10 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{gisPointDao.loadGisPoints}"
+            <p:commandButton actionListener="#{jtsPointDao.loadGisPoints}"
                              update="table" value="ładuj punkty z bazy"/>
             <p:commandButton actionListener="#{geoService.saveGisPoints}" value="Zapisz gisy" update="table"/>
-            <p:dataTable id="table" value="#{gisPointBean.allPoints}" var="pointGIS"
+            <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
                          styleClass="order-table" paginator="true"
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                          headerClass="order-table-header" rows="15"
@@ -21,13 +21,13 @@
                     <p:outputLabel value=" #{pointGIS.name}"/>
                 </p:column>
                 <p:column>
-                    <p:outputLabel value="#{pointGIS.pointJTS.x}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.x}"/>
                 </p:column>
                 <p:column>
-                    <p:outputLabel value="#{pointGIS.pointJTS.y}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.y}"/>
                 </p:column>
                 <p:column>
-                    <p:outputLabel value="#{pointGIS.pointJTS.}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.}"/>
                 </p:column>
                 <p:column>
                     <p:outputLabel value="#{pointGIS.}"/>

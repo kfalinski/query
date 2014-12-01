@@ -1,18 +1,14 @@
 package core.utils;
 
 import com.google.common.collect.Lists;
-import com.mysema.query.jpa.JPQLQuery;
-import com.mysema.query.jpa.hibernate.HibernateQuery;
-import com.mysema.query.jpa.impl.JPAQuery;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.io.WKTReader;
-import com.vividsolutions.jts.io.WKTWriter;
+import core.gis.GeometryGisDao;
 import core.point.*;
 import core.polygon.PolygonDao;
 import core.polyline.PolylineDao;
-import org.geolatte.geom.builder.internal.GeometryBuilder3D;
+import org.geolatte.geom.CoordinateComponent;
+import org.geolatte.geom.PointSequence;
+import org.geolatte.geom.Points;
 import org.geotools.geometry.jts.GeometryBuilder;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +23,16 @@ import java.util.List;
 public class GeoService {
 
     @Autowired
+    private GeolattePointDao geolattePointDao;
+
+    @Autowired
     private LegacyPointBean legacyPointBean;
 
     @Autowired
     private LegacyPointDao legacyPointDao;
 
     @Autowired
-    private GisPointDao gisPointDao;
+    private JtsPointDao jtsPointDao;
 
     @Autowired
     private PolygonDao polygonDao;
@@ -85,18 +84,30 @@ public class GeoService {
     }
 
     private void splitLinesAndSaveGisPoints(List<String> lines) {
-        List<GisPoint> pointList = Lists.newArrayList();
+        List<JtsPointEntity> jtsPointEntityList = Lists.newArrayList();
+        List<GeolattePointEntity> geolattePointEntityList = Lists.newArrayList();
         LegacyPoint legacyPoint;
+        JtsPointEntity jtsPointEntity;
+        GeolattePointEntity geolattePointEntity;
         GeometryBuilder geometryBuilder = new GeometryBuilder();
-        WKTWriter wktWriter = new WKTWriter();
-        WKTReader wktReader =new WKTReader();
         for (String line : lines) {
             legacyPoint = splitIternal(line);
-            Point point = geometryBuilder.pointZ(legacyPoint.getX(), legacyPoint.getY(), legacyPoint.getZ());
-            GisPoint gisPoint = new GisPoint(legacyPoint.getName(), legacyPoint.getCode(), point);
-            pointList.add(gisPoint);
+            double x = legacyPoint.getX();
+            double y = legacyPoint.getY();
+            double z = legacyPoint.getZ();
+            Point point = geometryBuilder.pointZ(x, y, z);
+            String name = legacyPoint.getName();
+            String code = legacyPoint.getCode();
+            jtsPointEntity = new JtsPointEntity(name, code, point, z);
+            jtsPointEntityList.add(jtsPointEntity);
+            geolattePointEntity = new GeolattePointEntity(name, code, Points.create3D(x, y, z));
+            geolattePointEntityList.add(geolattePointEntity);
+            geolattePointDao.save(geolattePointEntity);
+            JtsPointEntity jtsPointEntity1 = null;
+//            jtsPointEntity1.setJtsPoint(Points.create3D(x, y, z));
         }
-        gisPointDao.saveMany(pointList);
+        jtsPointDao.saveMany(jtsPointEntityList);
+        geolattePointDao.saveMany(geolattePointEntityList);
     }
 
     private LegacyPoint splitIternal(String line) {

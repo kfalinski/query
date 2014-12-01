@@ -28,24 +28,15 @@ public abstract class GenericDao {
     protected EntityManager em;
 
     @Transactional
-    public <T extends BaseEntity> T save(T entity) {
-        T savedEntity = saveInternal(entity);
+    public <T extends BaseEntity> void save(T entity) {
+        saveInternal(entity);
         em.flush();
-        return savedEntity;
     }
 
     @Transactional
-    public <T extends BaseEntity> List<T> saveMany(List<T> entityList) {
-        List<T> savedEntities = saveManyInternal(entityList).collect(toList());
+    public <T extends BaseEntity> void saveMany(Collection<T> entityList) {
+        entityList.forEach(e -> saveInternal(e));
         em.flush();
-        return savedEntities;
-    }
-
-    @Transactional
-    public <T extends BaseEntity> Set<T> saveMany(Set<T> entityList) {
-        Set<T> savedEntities = saveManyInternal(entityList).collect(toOrderedSet(entityList.size()));
-        em.flush();
-        return savedEntities;
     }
 
     public <T extends BaseEntity> T findOneNoFetch(EntityPathBase<T> entityPath, Long id) {
@@ -96,18 +87,12 @@ public abstract class GenericDao {
         em.flush();
     }
 
-    private <T extends BaseEntity> T saveInternal(T entity) {
-        T savedEntity;
+    private <T extends BaseEntity> void saveInternal(T entity) {
         if (entity.getId() == null) {
             em.persist(entity);
-            savedEntity = entity;
+//            savedEntity = entity;
         } else {
-            savedEntity = em.merge(entity);
+            em.merge(entity);
         }
-        return savedEntity;
-    }
-
-    private <T extends BaseEntity> Stream<T> saveManyInternal(Collection<T> tmp) {
-        return tmp.stream().map(this::saveInternal);
     }
 }
