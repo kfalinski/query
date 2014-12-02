@@ -97,8 +97,11 @@
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-jpamodelgen:4.3.6.Final" />
           <element id="library" level="project" name="Maven: org.geolatte:geolatte-common:0.7" />
-          <element id="library" level="project" name="Maven: org.realityforge.geolatte.jpa:geolatte-geom-jpa:0.1" />
+          <element id="library" level="project" name="Maven: org.geolatte:geolatte-common-hibernate:0.7" />
+          <element id="library" level="project" name="Maven: org.hibernatespatial:hibernate-spatial:1.1.1" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.11.0.GA" />
           <element id="library" level="project" name="Maven: org.geolatte:geolatte-geom:0.14" />
+          <element id="library" level="project" name="Maven: org.realityforge.geolatte.jpa:geolatte-geom-jpa:0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

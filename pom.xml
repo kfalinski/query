@@ -214,16 +214,21 @@
             <version>0.7</version>
         </dependency>
         <dependency>
+            <groupId>org.geolatte</groupId>
+            <artifactId>geolatte-common-hibernate</artifactId>
+            <version>0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geolatte</groupId>
+            <artifactId>geolatte-geom</artifactId>
+            <version>0.14</version>
+        </dependency>
+        <dependency>
             <groupId>org.realityforge.geolatte.jpa</groupId>
             <artifactId>geolatte-geom-jpa</artifactId>
             <version>0.1</version>
         </dependency>
 
-        <dependency>
-        <groupId>org.geolatte</groupId>
-        <artifactId>geolatte-geom</artifactId>
-        <version>0.14</version>
-        </dependency>
     </dependencies>
     <repositories>
         <repository>

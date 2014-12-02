@@ -170,7 +170,10 @@
     <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-jpamodelgen:4.3.6.Final" level="project" />
     <orderEntry type="library" name="Maven: org.geolatte:geolatte-common:0.7" level="project" />
-    <orderEntry type="library" name="Maven: org.realityforge.geolatte.jpa:geolatte-geom-jpa:0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.geolatte:geolatte-common-hibernate:0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernatespatial:hibernate-spatial:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: javassist:javassist:3.11.0.GA" level="project" />
     <orderEntry type="library" name="Maven: org.geolatte:geolatte-geom:0.14" level="project" />
+    <orderEntry type="library" name="Maven: org.realityforge.geolatte.jpa:geolatte-geom-jpa:0.1" level="project" />
   </component>
 </module>

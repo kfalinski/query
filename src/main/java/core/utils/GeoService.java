@@ -100,7 +100,7 @@ public class GeoService {
             String code = legacyPoint.getCode();
             jtsPointEntity = new JtsPointEntity(name, code, point, z);
             jtsPointEntityList.add(jtsPointEntity);
-            geolattePointEntity = new GeolattePointEntity(name, code, Points.create3D(x, y, z));
+            geolattePointEntity = new GeolattePointEntity(name, code, Points.create2D(x, y));
             geolattePointEntityList.add(geolattePointEntity);
             geolattePointDao.save(geolattePointEntity);
             JtsPointEntity jtsPointEntity1 = null;
