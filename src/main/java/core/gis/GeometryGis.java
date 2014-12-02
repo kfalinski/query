@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Type;
+import org.realityforge.jeo.geolatte.jpa.PostgisConverter;
 
 import javax.persistence.Convert;
 import javax.persistence.Converter;

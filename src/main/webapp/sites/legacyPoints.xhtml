@@ -12,6 +12,8 @@
                              update="table" value="usuń wszystkie punkty"/>
             <p:commandButton actionListener="#{legacyPointService.deleteSelectedPoints}"
                              update="table" value="usuń zaznaczone punkty"/>
+            <p:commandButton actionListener="#{jtsPointDao.loadClose(5.0)}"
+                             update="table" value="odpal"/>
             <p:dataTable id="table" value="#{legacyPointBean.allPoints}" var="point"
                          styleClass="order-table" paginator="true" selection="#{legacyPointBean.selectedPoints}"
                          selectionMode="multiple"

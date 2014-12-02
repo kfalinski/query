@@ -16,6 +16,6 @@ import java.util.prefs.BackingStoreException;
 public class GeometryLatte extends BaseEntity {
     private String name;
     private String code;
-
+    //    @Convert( converter = PostgisConverter.class )
     private org.geolatte.geom.Geometry geometryLatte;
 }

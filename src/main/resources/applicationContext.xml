@@ -40,7 +40,7 @@
     </bean>
     <bean id="peristenceExceptionTranslationPostProcessor"
           class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
-
+    <bean id="postgisConverter" class="org.realityforge.jeo.geolatte.jpa.PostgisConverter"/>
     <tx:annotation-driven/>
     <context:annotation-config/>
     <context:component-scan base-package="core"/>

@@ -90,7 +90,6 @@ public abstract class GenericDao {
     private <T extends BaseEntity> void saveInternal(T entity) {
         if (entity.getId() == null) {
             em.persist(entity);
-//            savedEntity = entity;
         } else {
             em.merge(entity);
         }
