@@ -13,7 +13,9 @@
             <p:commandButton actionListener="#{legacyPointService.deleteSelectedPoints}"
                              update="table" value="usuń zaznaczone punkty"/>
             <p:commandButton actionListener="#{jtsPointDao.loadClose(5.0)}"
-                             update="table" value="odpal"/>
+                             update="table" value="odpalJTS"/>
+            <p:commandButton actionListener="#{geolattePointDao.loadClose(5.0)}"
+                             update="table" value="odpalGEOLATTE"/>
             <p:dataTable id="table" value="#{legacyPointBean.allPoints}" var="point"
                          styleClass="order-table" paginator="true" selection="#{legacyPointBean.selectedPoints}"
                          selectionMode="multiple"

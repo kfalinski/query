@@ -22,11 +22,9 @@ public class GeolattePointEntity extends BaseEntity {
 
     private String name;
     private String code;
-
-
     @Column(name = "geolattePoint")
 //    @Convert( converter = PostgisConverter.class )
-    private Geometry geolattePoint;
+    private Point geolattePoint;
 
     public GeolattePointEntity() {
     }
