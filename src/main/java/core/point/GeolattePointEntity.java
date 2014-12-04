@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.geolatte.geom.Geometry;
 import org.geolatte.geom.Point;
-import org.realityforge.jeo.geolatte.jpa.PostgisConverter;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
@@ -22,7 +21,7 @@ public class GeolattePointEntity extends BaseEntity {
 
     private String name;
     private String code;
-    @Column(name = "geolattePoint")
+//    @Column(name = "geolattePoint")
 //    @Convert( converter = PostgisConverter.class )
     private Point geolattePoint;
 
