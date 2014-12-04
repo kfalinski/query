@@ -1,22 +1,17 @@
 package core.point;
 
-import com.mysema.query.jpa.JPQLQuery;
 import com.mysema.query.sql.Configuration;
 import com.mysema.query.sql.SQLQuery;
+import com.mysema.query.sql.SQLQueryFactory;
 import com.mysema.query.sql.SQLTemplates;
-import com.mysema.query.sql.dml.SQLInsertClause;
 import com.mysema.query.sql.spatial.PostGISTemplates;
 import core.utils.GenericDao;
-import org.hibernate.dialect.function.SQLFunctionTemplate;
 import org.postgis.PGgeometry;
 import org.postgis.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.Collection;
+import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -30,15 +25,34 @@ public class GeolattePointDao extends GenericDao {
     @Autowired
     private GeolatteBean geolatteBean;
 
+    @Autowired
+    private DataSource dataSourceDupa;
+
     public void loadGisPoints() {
         List<GeolattePointEntity> allNoFetch = findAllNoFetch(qGeolattePoint);
         geolatteBean.setAllPoints(allNoFetch);
     }
 
-    public void saveManyGeolatte(Collection<GeolattePointEntity> geolattePointEntities) {
-//        Connection  connection ;
+    public void saveManyGeolatte() {
+//        Connection  connection = new Jdbc4Connection("jdbc:postgres://localhost:5432/baza",);
         SQLTemplates templates = new PostGISTemplates();
         Configuration configuration = new Configuration(templates);
+//
+//        SQLQuery sqlQuery =new SQLQuery(connection,configuration);
+//
+//
+//
+
+        SQLQueryFactory factory = new SQLQueryFactory(configuration, dataSourceDupa);
+        SQLQuery query = factory.query();
+        List<GeolattePointEntity> geolattePointEntities = query.list(qGeolattePoint);
+//
+//        <property name="driverClassName" value="org.postgresql.Driver"/>
+//        <property name="url" value="jdbc:postgres://localhost:5432/baza"/>
+//        <property name="username" value="postgres"/>
+//        <property name="password" value="123"/>
+
+
 //        SQLInsertClause query = new SQLInsertClause(new java.sql.Connection() {
 //        }configuration);
 //        new SQLInsertClause()
@@ -47,11 +61,11 @@ public class GeolattePointDao extends GenericDao {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-            Point point = new Point();
-            point.x = 2;
-            point.y = 3;
-            point.z = 4;
-            PGgeometry geometry = new PGgeometry(point);
+        Point point = new Point();
+        point.x = 2;
+        point.y = 3;
+        point.z = 4;
+        PGgeometry geometry = new PGgeometry(point);
 //            mPreparedStatementInsertObservation.setObject(1, geometry);
 //            Connection mConnection = DriverManager.getConnection("jdbc:postgres://localhost:5432/baza", "postgres", "123");
 //            ((org.postgresql.PGConnection) mConnection).addDataType("geometry",org.postgis.PGgeometry.class);

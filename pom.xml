@@ -136,6 +136,12 @@
             <artifactId>gt-swing</artifactId>
             <version>${geotools.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.3-1102-jdbc41</version>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -337,7 +343,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>test-export</goal>
+                            <goal>export</goal>
                         </goals>
                     </execution>
                 </executions>
