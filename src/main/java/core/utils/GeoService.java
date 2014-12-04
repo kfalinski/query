@@ -102,12 +102,12 @@ public class GeoService {
             jtsPointEntityList.add(jtsPointEntity);
             geolattePointEntity = new GeolattePointEntity(name, code, Points.create2D(x, y));
             geolattePointEntityList.add(geolattePointEntity);
-            geolattePointDao.save(geolattePointEntity);
+//            geolattePointDao.save(geolattePointEntity);
             JtsPointEntity jtsPointEntity1 = null;
 //            jtsPointEntity1.setJtsPoint(Points.create3D(x, y, z));
         }
         jtsPointDao.saveMany(jtsPointEntityList);
-        geolattePointDao.saveMany(geolattePointEntityList);
+//        geolattePointDao.saveMany(geolattePointEntityList);
     }
 
     private LegacyPoint splitIternal(String line) {

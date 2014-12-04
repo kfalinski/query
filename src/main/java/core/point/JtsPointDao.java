@@ -1,10 +1,17 @@
 package core.point;
 
 import com.mysema.query.jpa.JPQLQuery;
+import com.mysema.query.sql.Configuration;
+import com.mysema.query.sql.SQLQuery;
+import com.mysema.query.sql.SQLQueryFactory;
+import com.mysema.query.sql.SQLTemplates;
+import com.mysema.query.sql.dml.SQLInsertClause;
+import com.mysema.query.sql.spatial.PostGISTemplates;
 import core.utils.GenericDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -18,9 +25,20 @@ public class JtsPointDao extends GenericDao {
     @Autowired
     private JtsPointBean jtsPointBean;
 
+    @Autowired
+    private DataSource dataSource;
+
     public void loadGisPoints() {
-        List<JtsPointEntity> allNoFetch = findAllNoFetch(qJtsPointEntity);
-        jtsPointBean.setAllPoints(allNoFetch);
+
+
+        SQLTemplates templates = new PostGISTemplates();
+        Configuration configuration = new Configuration(templates);
+        SQLQueryFactory factory = new SQLQueryFactory(configuration, dataSource);
+
+        SQLQuery query = factory.query();
+
+        List<JtsPointEntity> list = query.from(qJtsPointEntity).list(qJtsPointEntity);
+        System.out.println(list);
     }
 
     public List<JtsPointEntity> loadClose(double meters) {

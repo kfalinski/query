@@ -12,7 +12,7 @@
                              update="table" value="usuń wszystkie punkty"/>
             <p:commandButton actionListener="#{legacyPointService.deleteSelectedPoints}"
                              update="table" value="usuń zaznaczone punkty"/>
-            <p:commandButton actionListener="#{jtsPointDao.loadClose(5.0)}"
+            <p:commandButton actionListener="#{jtsPointDao.loadGisPoints}"
                              update="table" value="odpalJTS"/>
             <p:commandButton actionListener="#{geolattePointDao.saveManyGeolatte}"
                              update="table" value="odpalGEOLATTE"/>
