@@ -1,4 +1,4 @@
-package core.point;
+package core.point.geoltte;
 
 import lombok.Getter;
 import lombok.Setter;

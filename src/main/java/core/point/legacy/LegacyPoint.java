@@ -1,4 +1,4 @@
-package core.point;
+package core.point.legacy;
 
 import core.BaseEntity;
 import lombok.AllArgsConstructor;

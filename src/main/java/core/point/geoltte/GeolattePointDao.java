@@ -1,21 +1,16 @@
-package core.point;
+package core.point.geoltte;
 
-import com.mysema.query.jpa.JPQLQuery;
 import com.mysema.query.sql.Configuration;
-import com.mysema.query.sql.SQLQuery;
 import com.mysema.query.sql.SQLTemplates;
-import com.mysema.query.sql.dml.SQLInsertClause;
 import com.mysema.query.sql.spatial.PostGISTemplates;
+import core.point.QGeolattePointEntity;
 import core.utils.GenericDao;
-import org.hibernate.dialect.function.SQLFunctionTemplate;
+import core.utils.GeoService;
 import org.postgis.PGgeometry;
 import org.postgis.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
 
@@ -29,6 +24,9 @@ public class GeolattePointDao extends GenericDao {
 
     @Autowired
     private GeolatteBean geolatteBean;
+
+    @Autowired
+    private GeoService geoService;
 
     public void loadGisPoints() {
         List<GeolattePointEntity> allNoFetch = findAllNoFetch(qGeolattePoint);

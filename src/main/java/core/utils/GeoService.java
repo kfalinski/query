@@ -1,116 +1,35 @@
 package core.utils;
 
 import com.google.common.collect.Lists;
-import com.vividsolutions.jts.geom.Point;
-import core.gis.GeometryGisDao;
-import core.point.*;
-import core.polygon.PolygonDao;
-import core.polyline.PolylineDao;
-import org.geolatte.geom.CoordinateComponent;
-import org.geolatte.geom.PointSequence;
-import org.geolatte.geom.Points;
-import org.geotools.geometry.jts.GeometryBuilder;
-import org.primefaces.event.FileUploadEvent;
-import org.springframework.beans.factory.annotation.Autowired;
+import core.point.legacy.LegacyPoint;
 import org.springframework.stereotype.Service;
 
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 
 @Service
 public class GeoService {
 
-    @Autowired
-    private GeolattePointDao geolattePointDao;
-
-    @Autowired
-    private LegacyPointBean legacyPointBean;
-
-    @Autowired
-    private LegacyPointDao legacyPointDao;
-
-    @Autowired
-    private JtsPointDao jtsPointDao;
-
-    @Autowired
-    private PolygonDao polygonDao;
-
-    @Autowired
-    private PolylineDao polylineDao;
-
-    public void saveLegacyPoints(FileUploadEvent event) throws IOException {
-        try {
-            splitLinesAndSaveLegacyPoints(loadFile(event.getFile().getInputstream()));
-            FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
-            FacesContext.getCurrentInstance().addMessage(null, msg);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void saveGisPoints(FileUploadEvent event) throws IOException {
-        try {
-            splitLinesAndSaveGisPoints(loadFile(event.getFile().getInputstream()));
-            FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
-            FacesContext.getCurrentInstance().addMessage(null, msg);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public List<String> loadFile(InputStream event) throws IOException {
+    public List<String> loadFile(InputStream event) {
         List<String> lines = Lists.newArrayList();
         InputStreamReader ipsr = new InputStreamReader(event);
         BufferedReader br = new BufferedReader(ipsr);
         String line;
-        while ((line = br.readLine()) != null) {
-            lines.add(line);
+        try {
+            while ((line = br.readLine()) != null) {
+                lines.add(line);
+            }
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        br.close();
         return lines;
     }
 
-    private void splitLinesAndSaveLegacyPoints(List<String> lines) {
-        List<LegacyPoint> pointList = Lists.newArrayList();
-        LegacyPoint legacyPoint;
-        for (String line : lines) {
-            legacyPoint = splitIternal(line);
-            pointList.add(legacyPoint);
-        }
-        legacyPointDao.saveMany(pointList);
-    }
-
-    private void splitLinesAndSaveGisPoints(List<String> lines) {
-        List<JtsPointEntity> jtsPointEntityList = Lists.newArrayList();
-        List<GeolattePointEntity> geolattePointEntityList = Lists.newArrayList();
-        LegacyPoint legacyPoint;
-        JtsPointEntity jtsPointEntity;
-        GeolattePointEntity geolattePointEntity;
-        GeometryBuilder geometryBuilder = new GeometryBuilder();
-        for (String line : lines) {
-            legacyPoint = splitIternal(line);
-            double x = legacyPoint.getX();
-            double y = legacyPoint.getY();
-            double z = legacyPoint.getZ();
-            Point point = geometryBuilder.pointZ(x, y, z);
-            String name = legacyPoint.getName();
-            String code = legacyPoint.getCode();
-            jtsPointEntity = new JtsPointEntity(name, code, point, z);
-            jtsPointEntityList.add(jtsPointEntity);
-            geolattePointEntity = new GeolattePointEntity(name, code, Points.create2D(x, y));
-            geolattePointEntityList.add(geolattePointEntity);
-            geolattePointDao.save(geolattePointEntity);
-            JtsPointEntity jtsPointEntity1 = null;
-//            jtsPointEntity1.setJtsPoint(Points.create3D(x, y, z));
-        }
-        jtsPointDao.saveMany(jtsPointEntityList);
-        geolattePointDao.saveMany(geolattePointEntityList);
-    }
-
-    private LegacyPoint splitIternal(String line) {
+    public LegacyPoint splitIternal(String line) {
         String[] splitted = line.split(" ");
         List<String> splittedList = Lists.newArrayList();
         for (String s : splitted) {

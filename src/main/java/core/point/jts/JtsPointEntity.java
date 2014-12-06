@@ -1,4 +1,4 @@
-package core.point;
+package core.point.jts;
 
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.Point;

@@ -1,9 +1,12 @@
-package core.point;
+package core.point.jts;
 
+import core.point.jts.JtsPointEntity;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 /**
@@ -13,6 +16,14 @@ import java.util.List;
 @Setter
 @Getter
 public class JtsPointBean {
+    @Autowired
+    private JtsPointDao jtsPointDao;
+
     private List<JtsPointEntity> selectedPoints;
     private List<JtsPointEntity> allPoints;
+
+    @PostConstruct
+    public void init() {
+        jtsPointDao.loadJtsPoints();
+    }
 }
