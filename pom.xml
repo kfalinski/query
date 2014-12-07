@@ -91,6 +91,12 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-spatial</artifactId>
             <version>4.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -99,10 +105,10 @@
             <version>${hibernate.version}</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>com.mysema.querydsl</groupId>-->
-            <!--<artifactId>querydsl-apt</artifactId>-->
-            <!--<version>${querydsl.version}</version>-->
-            <!--<scope>provided</scope>-->
+        <!--<groupId>com.mysema.querydsl</groupId>-->
+        <!--<artifactId>querydsl-apt</artifactId>-->
+        <!--<version>${querydsl.version}</version>-->
+        <!--<scope>provided</scope>-->
         <!--</dependency>-->
 
         <dependency>
@@ -152,7 +158,12 @@
         <dependency>
             <groupId>org.postgis</groupId>
             <artifactId>postgis-jdbc</artifactId>
-            <version>1.3.3</version>
+            <version>1.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.3-1102-jdbc41</version>
         </dependency>
         <!-- JSF -->
         <dependency>
@@ -218,6 +229,11 @@
             <version>0.7.1</version>
         </dependency>
         <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-postgis</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.mysema.querydsl</groupId>
             <artifactId>querydsl-sql-codegen</artifactId>
             <version>${querydsl.version}</version>
@@ -234,9 +250,9 @@
             <version>0.14</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.realityforge.geolatte.jpa</groupId>-->
-            <!--<artifactId>geolatte-geom-jpa</artifactId>-->
-            <!--<version>0.1</version>-->
+        <!--<groupId>org.realityforge.geolatte.jpa</groupId>-->
+        <!--<artifactId>geolatte-geom-jpa</artifactId>-->
+        <!--<version>0.1</version>-->
         <!--</dependency>-->
     </dependencies>
     <repositories>
@@ -267,6 +283,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+
         <repository>
             <id>prime-repo</id>
             <name>PrimeFaces Maven Repository</name>
@@ -337,7 +354,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>test-export</goal>
+                            <goal>export</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -346,7 +363,7 @@
                     <jdbcUrl>jdbc:postgresql://localhost:5432/baza</jdbcUrl>
                     <jdbcUser>postgres</jdbcUser>
                     <jdbcPassword>123</jdbcPassword>
-                    <packageName>core/</packageName>
+                    <packageName>core</packageName>
                     <targetFolder>${project.basedir}/target/generated-sources/java</targetFolder>
                     <spatial>true</spatial>
                 </configuration>
@@ -354,7 +371,12 @@
                     <dependency>
                         <groupId>org.postgis</groupId>
                         <artifactId>postgis-jdbc</artifactId>
-                        <version>1.3.3</version>
+                        <version>1.5.2</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>9.3-1102-jdbc41</version>
                     </dependency>
                 </dependencies>
             </plugin>

@@ -1,6 +1,5 @@
 package core.point.legacy;
 
-import core.point.QLegacyPoint;
 import core.utils.GenericDao;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

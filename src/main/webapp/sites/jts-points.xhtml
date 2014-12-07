@@ -6,9 +6,10 @@
         >
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{jtsPointDao.loadJtsPoints}"
+            <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
                              update="table" value="ładuj punkty z bazy"/>
-
+            <p:commandButton actionListener="#{jtsPointService.loadClose(4)}"
+                             update="table" value="ładuj do4"/>
             <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
                          styleClass="order-table" paginator="true"
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
@@ -30,7 +31,7 @@
                     <p:outputLabel value="#{pointGIS.jtsPoint.y}"/>
                 </p:column>
                 <p:column headerText="Z">
-                    <p:outputLabel value="#{pointGIS.z}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}"/>
                 </p:column>
             </p:dataTable>
         </h:form>

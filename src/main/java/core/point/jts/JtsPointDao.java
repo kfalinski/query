@@ -2,11 +2,18 @@ package core.point.jts;
 
 import com.google.common.collect.Lists;
 import com.mysema.query.jpa.JPQLQuery;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.io.ParseException;
+import com.vividsolutions.jts.io.WKTReader;
 import core.point.legacy.LegacyPoint;
-import core.point.QJtsPointEntity;
 import core.utils.GenericDao;
 import core.utils.GeoService;
+import core.utils.PointToSaveBean;
+import org.geolatte.geom.Point;
 import org.geotools.geometry.jts.GeometryBuilder;
+import org.geotools.geometry.jts.JTSFactoryFinder;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,15 +31,8 @@ public class JtsPointDao extends GenericDao {
     private static final QJtsPointEntity qJtsPointEntity = QJtsPointEntity.jtsPointEntity;
     private static final QJtsPointEntity qJtsPointEntityAlter = QJtsPointEntity.jtsPointEntity;
 
-    @Autowired
-    private JtsPointBean jtsPointBean;
-
-    @Autowired
-    private GeoService geoService;
-
-    public void loadJtsPoints() {
-        List<JtsPointEntity> allNoFetch = findAllNoFetch(qJtsPointEntity);
-        jtsPointBean.setAllPoints(allNoFetch);
+    public List<JtsPointEntity> loadJtsPoints() {
+        return findAllNoFetch(qJtsPointEntity);
     }
 
     public List<JtsPointEntity> loadClose(double meters) {
@@ -44,34 +44,5 @@ public class JtsPointDao extends GenericDao {
         query2 = query2.where(qJtsPointEntity.jtsPoint.distance(jtsPointEntity.getJtsPoint()).lt(meters));
         List<JtsPointEntity> jtsPointEntityList = query2.list(qJtsPointEntity);
         return jtsPointEntityList;
-    }
-
-    public void saveGisPoints(FileUploadEvent event) throws IOException {
-        try {
-            splitLinesAndSaveGisPoints(geoService.loadFile(event.getFile().getInputstream()));
-            FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
-            FacesContext.getCurrentInstance().addMessage(null, msg);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void splitLinesAndSaveGisPoints(List<String> lines) {
-        List<JtsPointEntity> jtsPointEntityList = Lists.newArrayList();
-        LegacyPoint legacyPoint ;
-        JtsPointEntity jtsPointEntity;
-        GeometryBuilder geometryBuilder = new GeometryBuilder();
-        for (String line : lines) {
-            legacyPoint = geoService.splitIternal(line);
-            double x = legacyPoint.getX();
-            double y = legacyPoint.getY();
-            double z = legacyPoint.getZ();
-            com.vividsolutions.jts.geom.Point point = geometryBuilder.pointZ(x, y, z);
-            String name = legacyPoint.getName();
-            String code = legacyPoint.getCode();
-            jtsPointEntity = new JtsPointEntity(name, code, point, z);
-            jtsPointEntityList.add(jtsPointEntity);
-        }
-        saveMany(jtsPointEntityList);
     }
 }

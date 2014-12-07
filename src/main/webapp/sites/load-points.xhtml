@@ -8,15 +8,111 @@
             <p:panelGrid>
                 <p:row>
                     <p:column>
-                        <p:fileUpload fileUploadListener="#{geoService.saveLegacyPoints}" value="legacy"
+                        <p:fileUpload fileUploadListener="#{legacyPointService.saveLegacyPoints}" value="legacy"
                                       cancelLabel="Anuluj"
-                                      uploadLabel="Wgraj plik"/>
+                                      uploadLabel="Wgraj plik zpunktami"/>
                     </p:column>
                     <p:column>
-                        <p:fileUpload fileUploadListener="#{geoService.saveGisPoints}" value="gis" cancelLabel="Anuluj"
-                                      uploadLabel="Wgraj plik z gisami"/>
+                        <p:fileUpload fileUploadListener="#{jtsPointService.saveJtsPointsFromFile}" value="gis"
+                                      cancelLabel="Anuluj"
+                                      uploadLabel="Wgraj plik z punktami do JTS"/>
                     </p:column>
                 </p:row>
+            </p:panelGrid>
+        </h:form>
+        <h:form>
+            <p:panelGrid>
+                <p:row>
+                    <p:column colspan="2" style="background-color: deepskyblue">
+                        <p:outputLabel value="Pojedynczy punkt"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Nazwa punktu"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.name}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Kod"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.code}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="X"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.x}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Y"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.y}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Z"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.z}"/>
+                    </p:column>
+                </p:row>
+            </p:panelGrid>
+            <h:commandButton
+                    action="#{jtsPointService.saveXYZPointToJTS}"
+                    value="Zapisz punkt"/>
+        </h:form>
+        <h:form>
+            <p:panelGrid>
+                <p:row>
+                    <p:column colspan="2" style="background-color: deeppink">
+                        <p:outputLabel value="WKT"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Nazwa punktu"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.wktName}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Kod"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.wktCode}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="WKT"/>
+                    </p:column>
+
+                    <p:column>
+                        <p:inputText value="#{pointToSaveBean.wktValue}" style="width: 35em"/>
+                    </p:column>
+                </p:row>
+                <h:commandButton action="#{jtsGeometryService.saveWktToJtsGeometry()}"
+                                 value="Zapisz geometrię WKT"/>
             </p:panelGrid>
         </h:form>
     </ui:define>

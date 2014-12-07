@@ -21,6 +21,7 @@ public class JtsPointBean {
 
     private List<JtsPointEntity> selectedPoints;
     private List<JtsPointEntity> allPoints;
+    private List<JtsPointEntity> returnedPoints;
 
     @PostConstruct
     public void init() {

@@ -1,7 +1,6 @@
 package core.point.legacy;
 
 import com.google.common.collect.Lists;
-import core.point.QLegacyPoint;
 import core.utils.GeoService;
 import org.primefaces.event.FileUploadEvent;
 import org.springframework.beans.factory.annotation.Autowired;

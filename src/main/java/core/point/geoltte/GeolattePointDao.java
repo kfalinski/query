@@ -1,55 +1,117 @@
 package core.point.geoltte;
 
+import com.mysema.query.jpa.JPQLQuery;
 import com.mysema.query.sql.Configuration;
+import com.mysema.query.sql.SQLQuery;
+import com.mysema.query.sql.SQLQueryFactory;
 import com.mysema.query.sql.SQLTemplates;
+import com.mysema.query.sql.dml.SQLInsertClause;
 import com.mysema.query.sql.spatial.PostGISTemplates;
-import core.point.QGeolattePointEntity;
+import core.QGeolattepointentity;
+import core.point.geoltte.GeolatteBean;
+import core.point.geoltte.GeolattePointEntity;
+import core.point.geoltte.QGeolattePointEntity;
 import core.utils.GenericDao;
-import core.utils.GeoService;
-import org.postgis.PGgeometry;
-import org.postgis.Point;
+import org.geolatte.geom.Point;
+import org.geolatte.geom.Points;
+import org.geotools.data.DataStore;
+import org.geotools.data.DataStoreFinder;
+import org.geotools.data.Query;
+import org.postgresql.util.PGobject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collection;
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Krzysztof on 2014-11-30.
  */
 @Service
 public class GeolattePointDao extends GenericDao {
-    private static final QGeolattePointEntity qGeolattePoint = QGeolattePointEntity.geolattePointEntity;
+    private static final QGeolattePointEntity qGeolattePointEntity = QGeolattePointEntity.geolattePointEntity;
     private static final QGeolattePointEntity qGeolattePointAlter = new QGeolattePointEntity("geolatteAlter");
-
+    private static final QGeolattepointentity qSpatial = QGeolattepointentity.geolattepointentity;
     @Autowired
     private GeolatteBean geolatteBean;
 
     @Autowired
-    private GeoService geoService;
+    private DataSource dataSource;
 
     public void loadGisPoints() {
-        List<GeolattePointEntity> allNoFetch = findAllNoFetch(qGeolattePoint);
+        List<GeolattePointEntity> allNoFetch = findAllNoFetch(qGeolattePointEntity);
         geolatteBean.setAllPoints(allNoFetch);
     }
 
-    public void saveManyGeolatte(Collection<GeolattePointEntity> geolattePointEntities) {
-//        Connection  connection ;
+    @Transactional
+    public void saveManyGeolatte() {
+
+
+        GeolattePointEntity geolattePointEntity = new GeolattePointEntity();
+        org.geolatte.geom.Point point = new org.geolatte.geom.Point(Points.create3D(2.0, 2.3, 4.3));
+        geolattePointEntity.setGeolattePoint(point);
+        geolattePointEntity.setName("name");
         SQLTemplates templates = new PostGISTemplates();
         Configuration configuration = new Configuration(templates);
+        SQLQueryFactory factory = new SQLQueryFactory(configuration, dataSource);
+        SQLInsertClause insert = factory.insert(qSpatial);
+        insert.populate(geolattePointEntity).execute();
+
+        SQLQuery query = factory.query();
+        List<QGeolattepointentity> list = query.from(qSpatial).list(qSpatial);
+        QGeolattepointentity qGeolattepointentity = list.get(0);
+
+        System.out.println(qGeolattepointentity);
+
+        JPQLQuery query1 = buildQuery(qGeolattePointEntity);
+        List<GeolattePointEntity> list1 = query1.list(qGeolattePointEntity);
+        System.out.println(list1);
+        Map<String,Object> params = new HashMap<String,Object>();
+        params.put( "dbtype", "postgis");
+        params.put( "host", "localhost");
+        params.put( "port", 5432);
+        params.put( "schema", "public");
+        params.put( "database", "baza");
+        params.put( "user", "postgres");
+        params.put( "passwd", "123");
+
+        try {
+            DataStore dataStore= DataStoreFinder.getDataStore(params);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+//
+//
+
+//
+//        List<GeolattePointEntity> geolattePointEntities = query.list(qGeolattePoint.geolattePoint);
+//
+//        <property name="driverClassName" value="org.postgresql.Driver"/>
+//        <property name="url" value="jdbc:postgres://localhost:5432/baza"/>
+//        <property name="username" value="postgres"/>
+//        <property name="password" value="123"/>
+
+
 //        SQLInsertClause query = new SQLInsertClause(new java.sql.Connection() {
 //        }configuration);
 //        new SQLInsertClause()
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-            Point point = new Point();
-            point.x = 2;
-            point.y = 3;
-            point.z = 4;
-            PGgeometry geometry = new PGgeometry(point);
+//        try {
+//            Class.forName("org.postgresql.Driver");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        Point point = new Point();
+//        point.x = 2;
+//        point.y = 3;
+//        point.z = 4;
+
+//        PGgeometry geometry = new PGgeometry(point);
 //            mPreparedStatementInsertObservation.setObject(1, geometry);
 //            Connection mConnection = DriverManager.getConnection("jdbc:postgres://localhost:5432/baza", "postgres", "123");
 //            ((org.postgresql.PGConnection) mConnection).addDataType("geometry",org.postgis.PGgeometry.class);
