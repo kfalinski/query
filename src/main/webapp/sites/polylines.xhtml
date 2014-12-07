@@ -2,28 +2,25 @@
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:p="http://primefaces.org/ui"
-                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-        >
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{pointsService.populatepolylineDto}"
-                             update="table" value="ładuj polilinie"/>
-            <p:dataTable id="table" value="#{polylineBean.allPoints}" var="polyline"
-                         styleClass="order-table" paginator="true" paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         headerClass="order-table-header" rows="15"
-                         rowClasses="order-table-odd-row,order-table-even-row">
-                <p:column headerText="Id" style="width: 2em">
-                    <p:outputLabel value="#{polyline.id}"/>
-                </p:column>
-                <p:column headerText="Nazwa">
+            <div id="map" style="height: 500px">
 
-                    <p:outputLabel value=" #{polyline.name}"/>
-                </p:column>
-                <p:column headerText="Długość">
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    var map = L.map('map').setView([151.1, 191.12], 13);
+                    // add an OpenStreetMap tile layer
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    }).addTo(map);
 
-                    <!--<p:outputLabel value=" #{polyline.}"/>-->
-                </p:column>
-            </p:dataTable>
+// add a marker in the given location, attach some popup content to it and open the popup
+                    L.marker([51.5, -0.09]).addTo(map)
+                            .bindPopup('A pretty CSS3 popup. <br/> Easily customizable.')
+                            .openPopup();
+                });
+            </script>
         </h:form>
     </ui:define>
 </ui:composition>

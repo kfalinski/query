@@ -18,6 +18,8 @@ public class JtsGeometryService {
     private PointToSaveBean pointToSaveBean;
     @Autowired
     private JtsGeometryDao jtsGeometryDao;
+    @Autowired
+    private JtsGeometryBean jtsGeometryBean;
 
     @Transactional
     public void saveWktToJtsGeometry() {
@@ -34,5 +36,9 @@ public class JtsGeometryService {
             throw new RuntimeException("Not a WKT string:" + wktValue);
         }
         jtsGeometryDao.save(jtsGeometryEntity);
+    }
+
+    public void loadGeometries() {
+        jtsGeometryBean.setAllJtsGeometry(jtsGeometryDao.loadGeometries());
     }
 }

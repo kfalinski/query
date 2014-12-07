@@ -1,23 +1,6 @@
 package core.point.geoltte;
 
-import com.mysema.query.jpa.JPQLQuery;
-import com.mysema.query.sql.Configuration;
-import com.mysema.query.sql.SQLQuery;
-import com.mysema.query.sql.SQLQueryFactory;
-import com.mysema.query.sql.SQLTemplates;
-import com.mysema.query.sql.dml.SQLInsertClause;
-import com.mysema.query.sql.spatial.PostGISTemplates;
-import core.QGeolattepointentity;
-import core.point.geoltte.GeolatteBean;
-import core.point.geoltte.GeolattePointEntity;
-import core.point.geoltte.QGeolattePointEntity;
 import core.utils.GenericDao;
-import org.geolatte.geom.Point;
-import org.geolatte.geom.Points;
-import org.geotools.data.DataStore;
-import org.geotools.data.DataStoreFinder;
-import org.geotools.data.Query;
-import org.postgresql.util.PGobject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,7 +18,6 @@ import java.util.Map;
 public class GeolattePointDao extends GenericDao {
     private static final QGeolattePointEntity qGeolattePointEntity = QGeolattePointEntity.geolattePointEntity;
     private static final QGeolattePointEntity qGeolattePointAlter = new QGeolattePointEntity("geolatteAlter");
-    private static final QGeolattepointentity qSpatial = QGeolattepointentity.geolattepointentity;
     @Autowired
     private GeolatteBean geolatteBean;
 
@@ -51,39 +33,39 @@ public class GeolattePointDao extends GenericDao {
     public void saveManyGeolatte() {
 
 
-        GeolattePointEntity geolattePointEntity = new GeolattePointEntity();
-        org.geolatte.geom.Point point = new org.geolatte.geom.Point(Points.create3D(2.0, 2.3, 4.3));
-        geolattePointEntity.setGeolattePoint(point);
-        geolattePointEntity.setName("name");
-        SQLTemplates templates = new PostGISTemplates();
-        Configuration configuration = new Configuration(templates);
-        SQLQueryFactory factory = new SQLQueryFactory(configuration, dataSource);
-        SQLInsertClause insert = factory.insert(qSpatial);
-        insert.populate(geolattePointEntity).execute();
-
-        SQLQuery query = factory.query();
-        List<QGeolattepointentity> list = query.from(qSpatial).list(qSpatial);
-        QGeolattepointentity qGeolattepointentity = list.get(0);
-
-        System.out.println(qGeolattepointentity);
-
-        JPQLQuery query1 = buildQuery(qGeolattePointEntity);
-        List<GeolattePointEntity> list1 = query1.list(qGeolattePointEntity);
-        System.out.println(list1);
-        Map<String,Object> params = new HashMap<String,Object>();
-        params.put( "dbtype", "postgis");
-        params.put( "host", "localhost");
-        params.put( "port", 5432);
-        params.put( "schema", "public");
-        params.put( "database", "baza");
-        params.put( "user", "postgres");
-        params.put( "passwd", "123");
-
-        try {
-            DataStore dataStore= DataStoreFinder.getDataStore(params);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        GeolattePointEntity geolattePointEntity = new GeolattePointEntity();
+//        org.geolatte.geom.Point point = new org.geolatte.geom.Point(Points.create3D(2.0, 2.3, 4.3));
+//        geolattePointEntity.setGeolattePoint(point);
+//        geolattePointEntity.setName("name");
+//        SQLTemplates templates = new PostGISTemplates();
+//        Configuration configuration = new Configuration(templates);
+//        SQLQueryFactory factory = new SQLQueryFactory(configuration, dataSource);
+//        SQLInsertClause insert = factory.insert(qSpatial);
+//        insert.populate(geolattePointEntity).execute();
+//
+//        SQLQuery query = factory.query();
+//        List<QGeolattepointentity> list = query.from(qSpatial).list(qSpatial);
+//        QGeolattepointentity qGeolattepointentity = list.get(0);
+//
+//        System.out.println(qGeolattepointentity);
+//
+//        JPQLQuery query1 = buildQuery(qGeolattePointEntity);
+//        List<GeolattePointEntity> list1 = query1.list(qGeolattePointEntity);
+//        System.out.println(list1);
+//        Map<String,Object> params = new HashMap<String,Object>();
+//        params.put( "dbtype", "postgis");
+//        params.put( "host", "localhost");
+//        params.put( "port", 5432);
+//        params.put( "schema", "public");
+//        params.put( "database", "baza");
+//        params.put( "user", "postgres");
+//        params.put( "passwd", "123");
+//
+//        try {
+//            DataStore dataStore= DataStoreFinder.getDataStore(params);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
 //

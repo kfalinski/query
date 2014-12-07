@@ -2,14 +2,11 @@
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:p="http://primefaces.org/ui"
-                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-        >
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <ui:define name="content">
         <h:form>
             <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
                              update="table" value="ładuj punkty z bazy"/>
-            <p:commandButton actionListener="#{jtsPointService.loadClose(4)}"
-                             update="table" value="ładuj do4"/>
             <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
                          styleClass="order-table" paginator="true"
                          paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
@@ -34,6 +31,7 @@
                     <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}"/>
                 </p:column>
             </p:dataTable>
+
         </h:form>
     </ui:define>
 </ui:composition>

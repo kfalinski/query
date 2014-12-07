@@ -10,10 +10,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by Krzysztof on 2014-12-07.
  */
 @Service
 public class JtsGeometryDao extends GenericDao {
+    private final static QJtsGeometryEntity qJtsGeometryEntity = QJtsGeometryEntity.jtsGeometryEntity;
 
+
+    public List<JtsGeometryEntity> loadGeometries() {
+        return findAllNoFetch(qJtsGeometryEntity);
+    }
 }
