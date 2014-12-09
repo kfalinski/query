@@ -32,6 +32,13 @@
             </p:dialog>
             <ui:insert name="content"/>
         </p:layoutUnit>
+        <p:layoutUnit id="mapPanel" styleClass="pa-lists-font panel-left" position="east" resizable="true" size="400" maxSize="500"
+                      collapsible="true" collapseSize="26" effectSpeed="fast" header="Mapa" closable="true">
+            <ui:define name="header">
+                <script src="http://maps.google.com/maps/api/js?sensor=true|false" type="text/javascript"/>
+            </ui:define>
+            <ui:include src="/sites/maps.xhtml"/>
+        </p:layoutUnit>
     </p:layout>
     <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" closable="false">
         <p:commandButton value="Tak" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" ajax="false"/>

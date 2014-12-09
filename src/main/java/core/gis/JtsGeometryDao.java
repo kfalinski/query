@@ -1,5 +1,6 @@
 package core.gis;
 
+import com.mysema.query.jpa.JPQLQuery;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.io.ParseException;
 import com.vividsolutions.jts.io.WKTReader;
@@ -22,5 +23,11 @@ public class JtsGeometryDao extends GenericDao {
 
     public List<JtsGeometryEntity> loadGeometries() {
         return findAllNoFetch(qJtsGeometryEntity);
+    }
+
+    public JtsGeometryEntity findByCode(String id) {
+        JPQLQuery query = buildQuery(qJtsGeometryEntity);
+        query = query.where(qJtsGeometryEntity.jtsGeometryEntity.code.eq(id));
+        return query.singleResult(qJtsGeometryEntity);
     }
 }
