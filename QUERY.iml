@@ -152,6 +152,7 @@
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.mysema.querydsl:querydsl-sql-codegen:3.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.geolatte:geolatte-geom:0.14" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.gmaps4jsf:gmaps4jsf-core:3.0.0" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

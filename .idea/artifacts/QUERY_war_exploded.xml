@@ -107,6 +107,7 @@
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
           <element id="library" level="project" name="Maven: org.geolatte:geolatte-geom:0.14" />
+          <element id="library" level="project" name="Maven: com.googlecode.gmaps4jsf:gmaps4jsf-core:3.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
