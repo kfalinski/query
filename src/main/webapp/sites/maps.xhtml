@@ -7,7 +7,7 @@
     <script src="http://maps.google.com/maps/api/js?sensor=true|false" type="text/javascript"/>
     <p:tabView id="rightMenu">
         <p:growl id="growl" life="3000" showDetail="true"/>
-        <p:tab id="tab1">
+        <p:tab id="tab1" title="punkty">
             <h:form id="pointForm">
                 <p:dialog widgetVar="pointDlg" showEffect="fade">
                     <h:form prependId="false">
@@ -25,13 +25,12 @@
                         <h:inputHidden id="lng" value="#{addMarkersView.lng}"/>
                     </h:form>
                 </p:dialog>
-                <p:gmap id="pointMap" center="36.890257,30.707417" zoom="13" type="HYBRID" widgetVar="pointMap"
+                <p:gmap id="pointMap" center="#{mapsView.mapCenter}" zoom="13" type="HYBRID" widgetVar="pointMap"
                         style="width:100%;height:400px" onPointClick="handlePointClick(event);"
                         model="#{addMarkersView.emptyModel}">
                 </p:gmap>
-                <p:commandButton value="usuń" label="usuń" ajax="true" action="#{polygonsView.deleteOverlay}"
+             <p:commandButton value="usuń" label="usuń" ajax="true" action="#{mapsView.deleteOverlay}"
                                  update="pointMap"/>
-                <p:commandButton label="zapisz" ajax="true" action="#{polygonsView.saveOverlay}" update="pointMap"/>
                 <script type="text/javascript">
                     var currentMarker = null;
 
@@ -68,30 +67,28 @@
                 </script>
             </h:form>
         </p:tab>
-        <p:tab id="tab2">
+        <p:tab id="tab2" title="polilinie">
             <h:form id="polylineForm">
 
-                <p:gmap id="polylineMap" center="36.890257,30.707417" zoom="13" type="HYBRID"
+                <p:gmap id="polylineMap" center="#{mapsView.mapCenter}" zoom="13" type="HYBRID"
                         style="width:100%;height:400px"
-                        model="#{polygonsView.polylineModel}">
-                    <p:ajax event="overlaySelect" listener="#{polygonsView.onPolygonSelect}" update=":rightMenu:growl"/>
+                        model="#{mapsView.polylineModel}">
+                    <p:ajax event="overlaySelect" listener="#{mapsView.onPolygonSelect}" update=":rightMenu:growl"/>
                 </p:gmap>
-                <p:commandButton value="usuń" label="usuń" ajax="true" action="#{polygonsView.deleteOverlay}"
+                <p:commandButton value="usuń" label="usuń" ajax="true" action="#{mapsView.deleteOverlay}"
                                  update="polylineMap"/>
-                <p:commandButton label="zapisz" ajax="true" action="#{polygonsView.saveOverlay}" update="polylineMap"/>
             </h:form>
         </p:tab>
-        <p:tab id="tab3">
+        <p:tab id="tab3" title="poligony">
             <h:form id="polygonForm">
 
                 <p:gmap id="polygonMap" center="36.890257,30.707417" zoom="13" type="HYBRID"
                         style="width:100%;height:400px"
-                        model="#{polygonsView.polygonModel}">
-                    <p:ajax event="overlaySelect" listener="#{polygonsView.onPolygonSelect}" update=":rightMenu:growl"/>
+                        model="#{mapsView.polygonModel}">
+                    <p:ajax event="overlaySelect" listener="#{mapsView.onPolygonSelect}" update=":rightMenu:growl"/>
                 </p:gmap>
-                <p:commandButton value="Usuń poligon" label="usuń" ajax="true" action="#{polygonsView.deletePolygon}"
+                <p:commandButton value="Usuń poligon" label="usuń" ajax="true" action="#{mapsView.deletePolygon}"
                                  update="polygonMap"/>
-                <p:commandButton label="zapisz" ajax="true" action="#{polygonsView.saveOverlay}" update="polygonMap"/>
             </h:form>
         </p:tab>
     </p:tabView>

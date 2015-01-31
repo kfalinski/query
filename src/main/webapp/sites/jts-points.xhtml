@@ -6,7 +6,9 @@
     <ui:define name="content">
         <h:form>
             <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
-                             update="table" value="ładuj punkty z bazy"/>
+                             update="table :rightMenu:pointForm:pointMap"  value="ładuj punkty z bazy" />
+            <p:commandButton actionListener="#{jtsPointService.saveAsPolyline}"
+                             update="table :rightMenu:polylineForm:polylineMap " ajax="true" value="zapisz jako polilinia"/>
             <p:commandButton actionListener="#{jtsPointService.saveAsPolygon}"
                              update="table :rightMenu:polygonForm:polygonMap " ajax="true" value="zapisz jako poligon"/>
             <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
@@ -17,6 +19,9 @@
                          selection="#{jtsPointBean.selectedPoints}"
                          selectionMode="multiple"
                          rowClasses="order-table-odd-row,order-table-even-row">
+                <p:column>
+                    <p:commandButton actionListener="#{mapsView.setMapCenter(pointGIS)}" value="pokaż" update=":rightMenu:pointForm:pointMap"/>
+                </p:column>
                 <p:column headerText="Id" style="width: 2em">
                     <p:outputLabel value="#{pointGIS.id}"/>
                 </p:column>

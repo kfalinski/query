@@ -1,6 +1,7 @@
 package core.utils;
 
 import core.gis.JtsGeometryDao;
+import core.point.jts.JtsPointEntity;
 import lombok.Getter;
 import lombok.Setter;
 import org.primefaces.event.map.OverlaySelectEvent;
@@ -22,17 +23,24 @@ import java.util.List;
 @Component
 @Getter
 @Setter
-public class PolygonsView {
+public class MapsView {
 
     @Autowired
     private JtsGeometryDao jtsGeometryDao;
 
-
+    private String mapCenter;
     private MapModel polygonModel;
     private MapModel polylineModel;
     private MapModel pointModel;
 
     private Overlay selectedOverlay;
+
+    public void setMapCenter(JtsPointEntity jtsPointEntity) {
+        String x = Double.toString(jtsPointEntity.getJtsPoint().getX());
+        String y = Double.toString(jtsPointEntity.getJtsPoint().getY());
+       String result= x.substring(0, x.indexOf(".")+7) +","+ y.substring(0, y.indexOf(".")+7);
+        this.mapCenter = result;
+    }
 
     @Transactional
     public void deletePolygon() {
