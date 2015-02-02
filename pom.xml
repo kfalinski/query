@@ -373,11 +373,6 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>org.postgis</groupId>
-                        <artifactId>postgis-jdbc</artifactId>
-                        <version>1.5.2</version>
-                    </dependency>
-                    <dependency>
                         <groupId>org.postgresql</groupId>
                         <artifactId>postgresql</artifactId>
                         <version>9.3-1102-jdbc41</version>

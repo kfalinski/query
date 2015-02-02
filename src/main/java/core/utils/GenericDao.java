@@ -1,7 +1,6 @@
 package core.utils;
 
 import com.mysema.query.jpa.JPQLQuery;
-import com.mysema.query.jpa.impl.JPADeleteClause;
 import com.mysema.query.jpa.impl.JPAQuery;
 import com.mysema.query.types.PathMetadataFactory;
 import com.mysema.query.types.path.EntityPathBase;
@@ -14,12 +13,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static core.utils.GeoCollectors.toOrderedSet;
-import static java.util.stream.Collectors.toList;
 
 // Created by krzysztoff on 2014-11-21.
 public abstract class GenericDao {
