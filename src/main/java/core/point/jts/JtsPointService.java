@@ -3,12 +3,13 @@ package core.point.jts;
 import com.google.common.collect.Lists;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
+import core.gis.AddMarkersView;
 import core.gis.JtsGeometryDao;
 import core.gis.JtsGeometryEntity;
 import core.point.legacy.LegacyPoint;
 import core.utils.GeoService;
-import core.utils.PointToSaveBean;
 import core.utils.MapsView;
+import core.utils.PointToSaveBean;
 import org.geotools.geometry.jts.GeometryBuilder;
 import org.primefaces.event.FileUploadEvent;
 import org.primefaces.model.map.*;
@@ -26,16 +27,25 @@ import java.util.List;
  */
 @Service
 public class JtsPointService {
+
     @Autowired
     private JtsPointDao jtsPointDao;
+
     @Autowired
     private GeoService geoService;
+
     @Autowired
     private PointToSaveBean pointToSaveBean;
+
     @Autowired
     private JtsPointBean jtsPointBean;
+
     @Autowired
     private MapsView mapsView;
+
+    @Autowired
+    private AddMarkersView addMarkersView;
+
     @Autowired
     private JtsGeometryDao jtsGeometryDao;
 
@@ -46,13 +56,13 @@ public class JtsPointService {
     }
 
     private void populatePointModel(List<JtsPointEntity> allPoints) {
-        MapModel pointModel = mapsView.getPointModel();
+        MapModel pointModel = addMarkersView.getMarkersModel();
         for (JtsPointEntity point : allPoints) {
             LatLng latLng = new LatLng(point.getJtsPoint().getX(), point.getJtsPoint().getY());
             Marker marker = new Marker(latLng);
             pointModel.addOverlay(marker);
         }
-        mapsView.setPointModel(pointModel);
+        addMarkersView.setMarkersModel(pointModel);
     }
 
     public void loadClose(double meters) {

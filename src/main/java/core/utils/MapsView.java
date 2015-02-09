@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 
@@ -29,17 +28,34 @@ public class MapsView {
     private JtsGeometryDao jtsGeometryDao;
 
     private String mapCenter;
+
     private MapModel polygonModel;
+
     private MapModel polylineModel;
+
     private MapModel pointModel;
 
     private Overlay selectedOverlay;
 
+    private String zoom;
+
+    private Marker marker;
+
+    @PostConstruct
+    public void init() {
+        mapCenter = "50.1017948,13.215401";
+        zoom = "4";
+    }
+
+    public void onMarkerSelect(OverlaySelectEvent event) {
+        marker = (Marker) event.getOverlay();
+    }
+
     public void setMapCenter(JtsPointEntity jtsPointEntity) {
         String x = Double.toString(jtsPointEntity.getJtsPoint().getX());
         String y = Double.toString(jtsPointEntity.getJtsPoint().getY());
-       String result= x.substring(0, x.indexOf(".")+7) +","+ y.substring(0, y.indexOf(".")+7);
-        this.mapCenter = result;
+        this.mapCenter = x.substring(0, x.indexOf(".") + 7) + "," + y.substring(0, y.indexOf(".") + 7);
+        this.zoom = "15";
     }
 
     @Transactional
@@ -48,7 +64,7 @@ public class MapsView {
             List<Polygon> polygons = polygonModel.getPolygons();
             Iterator iterator = polygons.iterator();
             while (iterator.hasNext()) {
-                Polygon polygon = (Polygon) iterator.next();
+                Polygon polygon = (Polygon)iterator.next();
                 if (polygon.getId().equals(selectedOverlay.getId())) {
                     iterator.remove();
                 }

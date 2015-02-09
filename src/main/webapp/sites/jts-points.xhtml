@@ -1,14 +1,16 @@
 <ui:composition template="/templates/template.xhtml"
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <ui:define name="content">
         <h:form>
             <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
-                             update="table :rightMenu:pointForm:pointMap"  value="ładuj punkty z bazy" />
+                             update="table :rightMenu:pointForm:pointMap" value="ładuj punkty z bazy"/>
             <p:commandButton actionListener="#{jtsPointService.saveAsPolyline}"
-                             update="table :rightMenu:polylineForm:polylineMap " ajax="true" value="zapisz jako polilinia"/>
+                             update="table :rightMenu:polylineForm:polylineMap " ajax="true"
+                             value="zapisz jako polilinia"/>
             <p:commandButton actionListener="#{jtsPointService.saveAsPolygon}"
                              update="table :rightMenu:polygonForm:polygonMap " ajax="true" value="zapisz jako poligon"/>
             <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
@@ -19,8 +21,11 @@
                          selection="#{jtsPointBean.selectedPoints}"
                          selectionMode="multiple"
                          rowClasses="order-table-odd-row,order-table-even-row">
-                <p:column>
-                    <p:commandButton actionListener="#{mapsView.setMapCenter(pointGIS)}" value="pokaż" update=":rightMenu:pointForm:pointMap"/>
+                <p:column style="width: 2em">
+                    <p:commandLink actionListener="#{mapsView.setMapCenter(pointGIS)}"
+                                   update=":rightMenu:pointForm:pointMap">
+                        <p:outputPanel styleClass="glyphicon glyphicon-screenshot"/>
+                    </p:commandLink>
                 </p:column>
                 <p:column headerText="Id" style="width: 2em">
                     <p:outputLabel value="#{pointGIS.id}"/>
@@ -32,13 +37,19 @@
                     <p:outputLabel value="#{pointGIS.code}"/>
                 </p:column>
                 <p:column headerText="X">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.x}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.x}">
+                        <f:convertNumber pattern="#0.0000"/>
+                    </p:outputLabel>
                 </p:column>
                 <p:column headerText="Y">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.y}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.y}">
+                        <f:convertNumber pattern="#0.0000"/>
+                    </p:outputLabel>
                 </p:column>
                 <p:column headerText="Z">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}"/>
+                    <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}">
+                        <f:convertNumber pattern="#0.0000"/>
+                    </p:outputLabel>
                 </p:column>
             </p:dataTable>
 

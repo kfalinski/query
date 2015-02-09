@@ -19,12 +19,12 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.8.0.DATAJPA-629-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.10.0.BUILD-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.0.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.0.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.4" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.10" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.5" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.1.2.RELEASE" />
@@ -91,8 +91,8 @@
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.1" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1102-jdbc41" />
-          <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.1" />
-          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.8-02" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.5" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.5" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:bootstrap:1.0.10" />
@@ -100,6 +100,7 @@
           <element id="library" level="project" name="Maven: org.primefaces.themes:ui-darkness:1.0.10" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:vader:1.0.10" />
           <element id="library" level="project" name="Maven: org.primefaces.themes:midnight:1.0.10" />
+          <element id="library" level="project" name="Maven: org.primefaces.themes:smoothness:1.0.10" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2.1-b03" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-jpamodelgen:4.3.7.Final" />
           <element id="library" level="project" name="Maven: org.geolatte:geolatte-common:0.7.1" />

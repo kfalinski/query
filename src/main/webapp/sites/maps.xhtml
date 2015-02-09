@@ -25,9 +25,16 @@
                         <h:inputHidden id="lng" value="#{addMarkersView.lng}"/>
                     </h:form>
                 </p:dialog>
-                <p:gmap id="pointMap" center="#{mapsView.mapCenter}" zoom="13" type="HYBRID" widgetVar="pointMap"
+                <p:gmap id="pointMap" center="#{mapsView.mapCenter}" zoom="#{mapsView.zoom}" type="HYBRID" widgetVar="pointMap"
                         style="width:100%;height:400px" onPointClick="handlePointClick(event);"
-                        model="#{addMarkersView.emptyModel}">
+                        model="#{addMarkersView.markersModel}">
+                    <p:ajax event="overlaySelect" listener="#{mapsView.onMarkerSelect}" />
+                    <p:gmapInfoWindow id="infoWindow">
+                        <p:outputPanel style="text-align: center; display: block; margin: auto">
+                            <!--<h:outputText value="#{infoWindowView.marker.title}" />-->
+
+                        </p:outputPanel>
+                    </p:gmapInfoWindow>
                 </p:gmap>
              <p:commandButton value="usuń" label="usuń" ajax="true" action="#{mapsView.deleteOverlay}"
                                  update="pointMap"/>
@@ -64,13 +71,14 @@
                         currentMarker = null;
                         return false;
                     }
+
                 </script>
             </h:form>
         </p:tab>
         <p:tab id="tab2" title="polilinie">
             <h:form id="polylineForm">
 
-                <p:gmap id="polylineMap" center="#{mapsView.mapCenter}" zoom="13" type="HYBRID"
+                <p:gmap id="polylineMap" center="36.890257,30.707417" zoom="13" type="HYBRID"
                         style="width:100%;height:400px"
                         model="#{mapsView.polylineModel}">
                     <p:ajax event="overlaySelect" listener="#{mapsView.onPolygonSelect}" update=":rightMenu:growl"/>

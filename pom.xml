@@ -168,12 +168,12 @@
         <dependency>
             <groupId>com.sun.faces</groupId>
             <artifactId>jsf-api</artifactId>
-            <version>2.2.1</version>
+            <version>2.2.5</version>
         </dependency>
         <dependency>
             <groupId>com.sun.faces</groupId>
             <artifactId>jsf-impl</artifactId>
-            <version>2.2.8-02</version>
+            <version>2.2.5</version>
         </dependency>
 
         <dependency>
@@ -210,6 +210,11 @@
         <dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>midnight</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.primefaces.themes</groupId>
+            <artifactId>smoothness</artifactId>
             <version>1.0.10</version>
         </dependency>
         <dependency>
