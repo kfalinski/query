@@ -29,7 +29,6 @@ public class AddMarkersView {
     @Autowired
     private JtsPointDao jtsPointDao;
 
-
     private MapModel markersModel;
 
     private String title;

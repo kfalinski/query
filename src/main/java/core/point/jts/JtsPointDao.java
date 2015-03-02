@@ -21,6 +21,9 @@ import org.springframework.stereotype.Service;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -29,20 +32,9 @@ import java.util.List;
 @Service
 public class JtsPointDao extends GenericDao {
     private static final QJtsPointEntity qJtsPointEntity = QJtsPointEntity.jtsPointEntity;
-    private static final QJtsPointEntity qJtsPointEntityAlter = QJtsPointEntity.jtsPointEntity;
 
     public List<JtsPointEntity> loadJtsPoints() {
         return findAllNoFetch(qJtsPointEntity);
     }
-
-    public List<JtsPointEntity> loadClose(double meters) {
-        JPQLQuery query = buildQuery(qJtsPointEntityAlter);
-        query = query.where(qJtsPointEntityAlter.id.eq(2L));
-        JtsPointEntity jtsPointEntity = query.singleResult(qJtsPointEntityAlter);
-
-        JPQLQuery query2 = buildQuery(qJtsPointEntity);
-        query2 = query2.where(qJtsPointEntity.jtsPoint.distance(jtsPointEntity.getJtsPoint()).lt(meters));
-        List<JtsPointEntity> jtsPointEntityList = query2.list(qJtsPointEntity);
-        return jtsPointEntityList;
-    }
 }
+

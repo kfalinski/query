@@ -5,14 +5,14 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <p:tabView>
-            <p:tab title="Zwykłe punkty">
+            <p:tab title="Punkty">
                 <h:form>
                     <p:panelGrid>
                         <p:row>
                             <p:column>
                                 <p:fileUpload fileUploadListener="#{legacyPointService.saveLegacyPoints}" value="legacy"
-                                              cancelLabel="Anuluj"
-                                              uploadLabel="Wgraj plik z punktami"/>
+                                              cancelLabel="Anuluj" label="Wybierz plik"
+                                              uploadLabel="Wgraj plik"/>
                             </p:column>
                         </p:row>
                     </p:panelGrid>
@@ -24,14 +24,14 @@
                         <p:row>
                             <p:column>
                                 <p:fileUpload fileUploadListener="#{jtsPointService.saveJtsPointsFromFile}" value="gis"
-                                              cancelLabel="Anuluj"
-                                              uploadLabel="Wgraj plik z punktami do JTS"/>
+                                              cancelLabel="Anuluj" label="Wybierz plik"
+                                              uploadLabel="Wgraj plik"/>
                             </p:column>
                         </p:row>
                     </p:panelGrid>
                     <p:panelGrid>
                         <p:row>
-                            <p:column colspan="2" style="background-color: deepskyblue">
+                            <p:column colspan="2" style="background-color: dimgrey">
                                 <p:outputLabel value="Pojedynczy punkt jako JTS"/>
                             </p:column>
                         </p:row>
@@ -88,8 +88,8 @@
                 <h:form>
                     <p:panelGrid>
                         <p:row>
-                            <p:column colspan="2" style="background-color: deeppink">
-                                <p:outputLabel value="WKT"/>
+                            <p:column  style="background-color: dimgrey">
+                                <p:outputLabel value="WKT jako JTS"/>
                             </p:column>
                         </p:row>
                         <p:row>
@@ -112,7 +112,7 @@
                         </p:row>
                         <p:row>
                             <p:column>
-                                <p:outputLabel value="WKT jako JTS"/>
+                                <p:outputLabel value="WKT"/>
                             </p:column>
 
                             <p:column>
@@ -121,7 +121,7 @@
                         </p:row>
                     </p:panelGrid>
                     <h:commandButton action="#{jtsGeometryService.saveWktToJtsGeometry()}"
-                                     value="Zapisz geometrię WKT"/>
+                                     value="Zapisz geometrię"/>
                 </h:form>
             </p:tab>
         </p:tabView>

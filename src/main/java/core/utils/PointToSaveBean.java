@@ -25,6 +25,4 @@ public class PointToSaveBean {
     private String wktName;
     private String wktCode;
     private String wktValue;
-
-
 }

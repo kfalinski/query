@@ -12,7 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Collection;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.SortedSet;
 
 // Created by krzysztoff on 2014-11-21.
 public abstract class GenericDao {
@@ -32,16 +34,30 @@ public abstract class GenericDao {
         em.flush();
     }
 
-    public <T extends BaseEntity> T findOneNoFetch(EntityPathBase<T> entityPath, Long id) {
-        JPQLQuery query = buildQuery(entityPath);
-        NumberPath<Long> longNumberPath = getLongNumberPath(entityPath);
-        query = query.where(longNumberPath.eq(id));
-        return query.singleResult(entityPath);
+    private <T extends BaseEntity> void saveInternal(T entity) {
+        if (entity.getId() == null) {
+            em.persist(entity);
+        } else {
+            em.merge(entity);
+        }
     }
 
     public <T extends BaseEntity> List<T> findAllNoFetch(EntityPathBase<T> entityPath) {
         JPQLQuery query = buildQuery(entityPath);
         return query.list(entityPath);
+    }
+
+    protected <T extends BaseEntity> JPQLQuery buildQuery(EntityPathBase<T> entityPath) {
+        JPQLQuery query = new JPAQuery(em);
+        query = query.from(entityPath);
+        return query;
+    }
+
+    public <T extends BaseEntity> T findOneNoFetch(EntityPathBase<T> entityPath, Long id) {
+        JPQLQuery query = buildQuery(entityPath);
+        NumberPath<Long> longNumberPath = getLongNumberPath(entityPath);
+        query = query.where(longNumberPath.eq(id));
+        return query.singleResult(entityPath);
     }
 
     public <T extends BaseEntity> List<T> findManyNoFetch(EntityPathBase<T> entityPath, List<Long> ids) {
@@ -55,12 +71,6 @@ public abstract class GenericDao {
         NumberPath<Long> qId = QBaseEntity.baseEntity.id;
         return new NumberPath<>(qId.getType(),
                 PathMetadataFactory.forProperty(entityPath, qId.getMetadata().getName()));
-    }
-
-    protected <T extends BaseEntity> JPQLQuery buildQuery(EntityPathBase<T> entityPath) {
-        JPQLQuery query = new JPAQuery(em);
-        query = query.from(entityPath);
-        return query;
     }
 
     public <T extends BaseEntity> void remove(T entity) {
@@ -78,13 +88,5 @@ public abstract class GenericDao {
         List<T> list = findAllNoFetch(entityPathBase);
         list.forEach(em::remove);
         em.flush();
-    }
-
-    private <T extends BaseEntity> void saveInternal(T entity) {
-        if (entity.getId() == null) {
-            em.persist(entity);
-        } else {
-            em.merge(entity);
-        }
     }
 }
