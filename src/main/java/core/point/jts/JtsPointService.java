@@ -65,10 +65,6 @@ public class JtsPointService {
         addMarkersView.setMarkersModel(pointModel);
     }
 
-    public void loadClose(double meters) {
-        jtsPointBean.setReturnedPoints(jtsPointDao.loadClose(meters));
-    }
-
     @Transactional
     public void saveJtsPointsFromFile(FileUploadEvent event) throws IOException {
         try {
@@ -82,10 +78,12 @@ public class JtsPointService {
 
     @Transactional
     public void saveXYZPointToJTS() {
-        Coordinate coordinate = new Coordinate(pointToSaveBean.getX(), pointToSaveBean.getY(), pointToSaveBean.getZ());
+        Coordinate coordinate = new Coordinate(pointToSaveBean.getX(), pointToSaveBean.getY(),
+                pointToSaveBean.getZ());
         GeometryFactory geometryFactory = new GeometryFactory();
         com.vividsolutions.jts.geom.Point point = geometryFactory.createPoint(coordinate);
-        JtsPointEntity jtsPointEntity = new JtsPointEntity(pointToSaveBean.getName(), pointToSaveBean.getCode(), point, pointToSaveBean.getZ());
+        JtsPointEntity jtsPointEntity = new JtsPointEntity(pointToSaveBean.getName(),
+                pointToSaveBean.getCode(), point, pointToSaveBean.getZ());
         jtsPointDao.save(jtsPointEntity);
     }
 
