@@ -30,4 +30,10 @@ public class JtsGeometryDao extends GenericDao {
         query = query.where(qJtsGeometryEntity.jtsGeometryEntity.code.eq(id));
         return query.singleResult(qJtsGeometryEntity);
     }
+
+    @Transactional
+    public void deleteAllGeometries() {
+        removeAllEntities(qJtsGeometryEntity);
+    }
+
 }

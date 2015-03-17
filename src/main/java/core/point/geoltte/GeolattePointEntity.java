@@ -19,6 +19,8 @@ import javax.persistence.Entity;
 @Entity
 public class GeolattePointEntity extends BaseEntity {
 
+    private static final long serialVersionUID = -6626062098992827490L;
+
     private String name;
     private String code;
 //    @Column(name = "geolattePoint")

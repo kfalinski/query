@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Krzysztof on 2014-11-30.
@@ -35,6 +36,14 @@ public class JtsPointDao extends GenericDao {
 
     public List<JtsPointEntity> loadJtsPoints() {
         return findAllNoFetch(qJtsPointEntity);
+    }
+
+    public void removeAllPoints() {
+        removeAllEntities(qJtsPointEntity);
+    }
+
+    public void removePoints(List<JtsPointEntity> entities) {
+        removeMany(qJtsPointEntity, entities.stream().map(p -> p.getId()).collect(Collectors.toList()));
     }
 }
 

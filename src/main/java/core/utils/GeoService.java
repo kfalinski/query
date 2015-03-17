@@ -100,16 +100,6 @@ public class GeoService {
 //        pointDto.setAllPoints(pointDaoImpl.loadPoints());
 //    }
 //
-//    private double getPolygonArea(double[] x, double[] y, int count) {
-//        double sum_but_no_result = 0;
-//
-//        for (int i = 0; i < (count - 1); i++)      // count is point number of polygon
-//        {
-//            sum_but_no_result += x[i] * y[i + 1] + y[i] * x[i + 1];
-//        }
-//        sum_but_no_result += x[count - 1] * y[0] + y[count - 1] * x[0];
-//
-//        return Math.abs(sum_but_no_result) / 2.0f;
-//    }
+
 }
 

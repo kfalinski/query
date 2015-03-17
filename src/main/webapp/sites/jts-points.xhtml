@@ -11,6 +11,10 @@
             <p:commandButton actionListener="#{jtsPointService.saveAsPolyline}"
                              update="table :rightMenu:polylineForm:polylineMap " ajax="true"
                              value="zapisz jako polilinia"/>
+            <p:commandButton actionListener="#{jtsPointService.deleteAllPoints}"
+                             ajax="true" update="table" value="usuń wszystkie punkty"/>
+            <p:commandButton actionListener="#{jtsPointService.deleteSelectedPoints}"
+                             ajax="true" update="table" value="usuń zaznaczone punkty"/>
             <p:commandButton actionListener="#{jtsPointService.saveAsPolygon}"
                              update="table :rightMenu:polygonForm:polygonMap " ajax="true" value="zapisz jako poligon"/>
             <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"

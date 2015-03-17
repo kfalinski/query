@@ -21,6 +21,7 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by Krzysztof on 2014-12-07.
@@ -55,6 +56,22 @@ public class JtsPointService {
         populatePointModel(allPoints);
     }
 
+    @Transactional
+    public void deleteAllPoints() {
+        jtsPointDao.removeAllPoints();
+    }
+
+    @Transactional
+    public void deleteSelectedPoints() {
+        jtsPointDao.removePoints(jtsPointBean.getSelectedPoints());
+        List<JtsPointEntity> allPoints = jtsPointBean.getAllPoints();
+        allPoints.removeAll(jtsPointBean.getSelectedPoints());
+        jtsPointBean.setAllPoints(allPoints);
+        addMarkersView.setMarkersModel(new DefaultMapModel());
+        populatePointModel(jtsPointBean.getAllPoints());
+    }
+
+
     private void populatePointModel(List<JtsPointEntity> allPoints) {
         MapModel pointModel = addMarkersView.getMarkersModel();
         for (JtsPointEntity point : allPoints) {
@@ -69,8 +86,6 @@ public class JtsPointService {
     public void saveJtsPointsFromFile(FileUploadEvent event) throws IOException {
         try {
             splitLinesAndSaveGisPoints(geoService.loadFile(event.getFile().getInputstream()));
-            FacesMessage msg = new FacesMessage("Success! ", event.getFile().getFileName() + " is uploaded.");
-            FacesContext.getCurrentInstance().addMessage(null, msg);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -116,9 +131,28 @@ public class JtsPointService {
             stringBuilder.append(selectedPoint.getName()).append(" ");
         }
         jtsGeometryEntity.setName(stringBuilder.toString());
-        jtsGeometryEntity.setCode(polygon.getId());
+        jtsGeometryEntity.setCode("poligon stworzony");
+        double[] xArray = new double[selectedPoints.size()];
+        double[] yArray = new double[selectedPoints.size()];
+        for (int j = 0; i < selectedPoints.size(); i++) {
+            xArray[j] = selectedPoints.get(i).getJtsPoint().getX();
+            yArray[j] = selectedPoints.get(i).getJtsPoint().getY();
+        }
+        jtsGeometryEntity.setArea(getPolygonArea(xArray, yArray, selectedPoints.size()));
         jtsGeometryDao.save(jtsGeometryEntity);
         populatePolygonModel(polygon);
+    }
+
+    private double getPolygonArea(double[] x, double[] y, int count) {
+        double sum_but_no_result = 0;
+
+        for (int i = 0; i < (count - 1); i++)      // count is point number of polygon
+        {
+            sum_but_no_result += x[i] * y[i + 1] + y[i] * x[i + 1];
+        }
+        sum_but_no_result += x[count - 1] * y[0] + y[count - 1] * x[0];
+
+        return Math.abs(sum_but_no_result) / 2.0f;
     }
 
     private void populatePolygonModel(Polygon polygon) {
@@ -163,6 +197,14 @@ public class JtsPointService {
             stringBuilder.append(selectedPoint.getName()).append(" ");
         }
         jtsGeometryEntity.setName(stringBuilder.toString());
+        jtsGeometryEntity.setCode("stworzona polilinia");
+        double[] xArray = new double[selectedPoints.size()];
+        double[] yArray = new double[selectedPoints.size()];
+        for (int j = 0; i < selectedPoints.size(); i++) {
+            xArray[j] = selectedPoints.get(i).getJtsPoint().getX();
+            yArray[j] = selectedPoints.get(i).getJtsPoint().getY();
+        }
+        jtsGeometryEntity.setArea(getPolygonArea(xArray, yArray, selectedPoints.size()));
         jtsGeometryDao.save(jtsGeometryEntity);
         populatePolylineModel(polyline, jtsGeometryEntity);
     }

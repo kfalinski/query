@@ -17,9 +17,11 @@ import javax.persistence.Entity;
 @Getter
 @Setter
 public class JtsGeometryEntity extends BaseEntity {
+    private static final long serialVersionUID = 8760553370681310590L;
 
     private String name;
     private String code;
+    private double area;
     @Type(type = "org.hibernate.spatial.GeometryType")
     private Geometry geometry;
 

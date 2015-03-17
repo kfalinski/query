@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c67244e-281f-451f-abc7-072c68d88bae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java" afterPath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/utils/GeoService.java" afterPath="$PROJECT_DIR$/src/main/java/core/utils/GeoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java" afterPath="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointEntity.java" afterPath="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java" afterPath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java" afterPath="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java" afterPath="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java" afterPath="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/utils/MapsView.java" afterPath="$PROJECT_DIR$/src/main/java/core/utils/MapsView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QUERY.iml" afterPath="$PROJECT_DIR$/QUERY.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/QUERY_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/QUERY_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_4_1_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Spring_4_1_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/sites/jts-geometry.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/sites/jts-geometry.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="QUERY.iws" />
@@ -36,87 +48,104 @@
     <favorites_list name="QUERY" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.78351957">
+    <splitter split-orientation="horizontal" split-proportion="0.38671875">
       <split-first>
         <leaf>
-          <file leaf-file-name="JtsPointService.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java">
+          <file leaf-file-name="FastArrayList.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar!/org/apache/commons/collections/FastArrayList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="3502">
-                  <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="22253">
+                  <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JtsPointDao.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="GeolatteBean.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolatteBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
+                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JtsPointBean.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="612">
+                  <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JtsPointDao.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40215054" vertical-offset="0" max-vertical-offset="465">
-                  <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#1227#1228#0" expanded="true" />
-                    <element signature="e#1281#1282#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JtsGeometryDao.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="663">
-                  <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.44835165" vertical-offset="0" max-vertical-offset="455">
+                  <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JtsGeometryEntity.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java">
+          <file leaf-file-name="QJtsPointEntity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/target/generated-sources/java/core/point/jts/QJtsPointEntity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629">
-                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="935">
+                  <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JtsGeometryService.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java">
+          <file leaf-file-name="JtsPointEntity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointEntity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="986">
-                  <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="714">
+                  <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="load-points.xhtml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+          <file leaf-file-name="GeolattePointDao.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="2193">
-                  <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="629">
+                  <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GenericDao.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GenericDao.java">
+          <file leaf-file-name="AddMarkersView.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1428">
-                  <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1003">
+                  <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LinkedHashSet.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/LinkedHashSet.java">
+          <file leaf-file-name="GeolattePointEntity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointEntity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="3417">
-                  <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="748">
+                  <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Object.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/lang/Object.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="9554">
+                  <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -126,11 +155,110 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
+          <file leaf-file-name="JtsPointService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="6732">
-                  <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3791">
+                  <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="62" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jts-geometry.xhtml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/jts-geometry.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.230769" vertical-offset="153" max-vertical-offset="969">
+                  <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MapsView.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/MapsView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1445">
+                  <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#1171#1172#0" expanded="true" />
+                    <element signature="e#1223#1224#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="maps.xhtml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-14.615385" vertical-offset="1184" max-vertical-offset="1836">
+                  <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JtsGeometryService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="714">
+                  <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#1323#1324#0" expanded="true" />
+                    <element signature="e#1405#1406#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JtsGeometryDao.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.73006135" vertical-offset="0" max-vertical-offset="510">
+                  <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#1130#1131#0" expanded="true" />
+                    <element signature="e#1183#1184#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JtsGeometryEntity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+                  <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LegacyPointService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/point/legacy/LegacyPointService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1326">
+                  <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GeoService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GeoService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1751">
+                  <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jts-points.xhtml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-6.5384617" vertical-offset="255" max-vertical-offset="1139">
+                  <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -151,28 +279,37 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/core/utils/GeoService.java" />
         <option value="/CSS Fragment (jts-points.xhtml:1805).css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/template.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/core/utils/MapsView.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/menu.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/core/utils/PointToSaveBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/utils/Dupa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/utils/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/gis/A.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/gis/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/gis/B.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/gis/Solution2.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Clazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/AB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolatteBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/utils/GeoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/core/utils/MapsView.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sites/jts-geometry.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java" />
       </list>
     </option>
   </component>
@@ -191,11 +328,6 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Java\apache-maven-3.2.5" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -265,7 +397,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1848" />
+    <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -301,6 +433,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,7 +449,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -326,15 +459,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -344,23 +481,67 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -370,27 +551,27 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -400,33 +581,130 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="point" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="point" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="point" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geoltte" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QUERY" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gis" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +720,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -579,16 +857,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -886,7 +1154,6 @@
             <option name="goals">
               <list>
                 <option value="install" />
-                <option value="-X" />
               </list>
             </option>
             <option name="profilesMap">
@@ -1261,11 +1528,22 @@
       <workItem from="1425564321048" duration="1341000" />
       <workItem from="1425567216854" duration="599000" />
       <workItem from="1425571055676" duration="2149000" />
+      <workItem from="1426188626774" duration="114000" />
+      <workItem from="1426188753378" duration="24000" />
+      <workItem from="1426188791065" duration="835000" />
+      <workItem from="1426330664536" duration="4680000" />
+      <workItem from="1426354402287" duration="235000" />
+      <workItem from="1426354657437" duration="2329000" />
+      <workItem from="1426357004596" duration="1141000" />
+      <workItem from="1426358159887" duration="662000" />
+      <workItem from="1426359996903" duration="6963000" />
+      <workItem from="1426423189912" duration="8920000" />
+      <workItem from="1426524219335" duration="3989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227471000" />
+    <option name="totallyTimeSpent" value="257363000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1288,11 +1566,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1848" height="1096" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34094617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26821542" sideWeight="0.26614583" order="13" side_tool="true" content_ui="tabs" />
@@ -1303,22 +1580,23 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47720364" sideWeight="0.8591703" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4439834" sideWeight="0.7004405" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47720364" sideWeight="0.1408297" order="16" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44409937" sideWeight="0.29955947" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928064" sideWeight="0.8591703" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32401657" sideWeight="0.7411894" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15556769" sideWeight="0.62441313" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15418503" sideWeight="0.62441313" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18814056" sideWeight="0.37323943" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34094617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
@@ -1414,36 +1692,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java</url>
-          <line>35</line>
           <properties />
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/core/utils/MapsView.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/src/main/webapp/sites/js/prime-map.js</url>
           <line>3</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml</url>
-          <line>33</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml</url>
-          <line>34</line>
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="org.springframework.jms.IllegalStateException" package="org.springframework.jms" />
@@ -1457,7 +1712,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="62" />
+      <option name="time" value="66" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1465,1238 +1720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/LinkedHashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="3417">
-          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6732">
-          <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/ee7/taglib/html_basic.taglib.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="122211" max-vertical-offset="189737">
-          <caret line="7202" column="4" selection-start-line="7202" selection-start-column="4" selection-end-line="7202" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/polylines.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="782">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.1.1.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.88" vertical-offset="6339" max-vertical-offset="10132">
-          <caret line="432" column="22" selection-start-line="432" selection-start-column="22" selection-end-line="432" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-core-4.1.1.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="1269" max-vertical-offset="2499">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk1.8/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="46889" max-vertical-offset="85017">
-          <caret line="2838" column="23" selection-start-line="2838" selection-start-column="23" selection-end-line="2838" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/js/leaflet-src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5394323" vertical-offset="2754" max-vertical-offset="156077">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/js/leaflet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28391168" vertical-offset="14100" max-vertical-offset="49164">
-          <caret line="840" column="117" selection-start-line="840" selection-start-column="117" selection-end-line="840" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/core:geo:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>core:geo:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="-58.0" y="-14.5">com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-spatial:jar:3.6.0</node>
-            <node x="-32.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1</node>
-            <node x="-22.0" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/com.vividsolutions:jts:jar:1.13</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-55.0" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate:hibernate-core:jar:4.3.7.Final</node>
-            <node x="-58.0" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0</node>
-            <node x="-37.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-main:jar:12-RC1</node>
-            <node x="-52.5" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/javax.validation:validation-api:jar:1.1.0.Final</node>
-            <node x="-37.0" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-45.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1</node>
-            <node x="-69.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10</node>
-            <node x="-82.0" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.mysema.commons:mysema-commons-lang:jar:0.2.4</node>
-            <node x="-22.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/com.vividsolutions:jts:jar:1.13</node>
-            <node x="-96.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final</node>
-            <node x="-36.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-54.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-context:jar:4.0.8.RELEASE</node>
-            <node x="-54.5" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE</node>
-            <node x="-45.0" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE</node>
-            <node x="-32.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/org.geotools:gt-api:jar:12-RC1</node>
-            <node x="-54.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1</node>
-            <node x="-88.0" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/com.infradna.tool:bridge-method-annotation:jar:1.13</node>
-            <node x="-49.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.slf4j:jcl-over-slf4j:jar:1.7.7</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-48.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1</node>
-            <node x="-36.5" y="-14.5">com.sun.faces:jsf-impl:jar:2.2.8-02</node>
-            <node x="-33.0" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1</node>
-            <node x="-50.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE</node>
-            <node x="-32.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5/com.google.guava:guava:jar:18.0</node>
-            <node x="-82.0" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-core:jar:4.0.8.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-46.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_imageio:jar:1.1</node>
-            <node x="-50.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.springframework:spring-beans:jar:4.0.8.RELEASE</node>
-            <node x="-22.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/com.vividsolutions:jts:jar:1.13</node>
-            <node x="-57.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="-38.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
-            <node x="-33.0" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1</node>
-            <node x="-49.5" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-apt:jar:3.6.0</node>
-            <node x="-59.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-dbcp:commons-dbcp:jar:1.4</node>
-            <node x="-55.5" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/org.geolatte:geolatte-geom:jar:0.13</node>
-            <node x="-46.0" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="-37.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="-78.5" y="-14.5">org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final</node>
-            <node x="-40.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_codec:jar:1.1.3</node>
-            <node x="-66.0" y="-14.5">org.springframework:spring-core:jar:4.1.2.RELEASE/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="-43.5" y="-14.5">org.postgresql:postgresql:jar:9.3-1102-jdbc41</node>
-            <node x="-74.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-collections:commons-collections:jar:3.1</node>
-            <node x="-37.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-30.5" y="-14.5">org.primefaces.themes:vader:jar:1.0.10</node>
-            <node x="-57.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3</node>
-            <node x="-39.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-tx:jar:4.0.8.RELEASE</node>
-            <node x="-37.0" y="-14.5">org.geolatte:geolatte-geom:jar:0.14/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-64.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-apt:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0</node>
-            <node x="-88.0" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.infradna.tool:bridge-method-annotation:jar:1.13</node>
-            <node x="-46.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_imageio:jar:1.1</node>
-            <node x="-52.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
-            <node x="-86.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1</node>
-            <node x="-55.5" y="-14.5">org.geolatte:geolatte-common:jar:0.7.1/org.geolatte:geolatte-geom:jar:0.13</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.springframework:spring-core:jar:4.0.8.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-37.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1/org.geotools:gt-main:jar:12-RC1</node>
-            <node x="-86.5" y="-14.5">org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1</node>
-            <node x="-39.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE</node>
-            <node x="-48.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-zonalstats:jar:1.3.1</node>
-            <node x="-96.5" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-expression:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-52.5" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0</node>
-            <node x="-38.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.aspectj:aspectjrt:jar:1.8.4</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-47.5" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1</node>
-            <node x="-86.5" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1</node>
-            <node x="-57.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1</node>
-            <node x="-40.5" y="-14.5">org.primefaces.themes:midnight:jar:1.0.10</node>
-            <node x="-35.5" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-data:jar:12-RC1</node>
-            <node x="-22.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/com.vividsolutions:jts:jar:1.13</node>
-            <node x="-39.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-tx:jar:4.0.8.RELEASE</node>
-            <node x="-104.5" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final</node>
-            <node x="-104.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final</node>
-            <node x="-28.0" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="-32.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1</node>
-            <node x="-45.0" y="-14.5">org.primefaces:primefaces:jar:5.1</node>
-            <node x="-37.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-main:jar:12-RC1</node>
-            <node x="-64.0" y="-14.5">com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0</node>
-            <node x="-57.5" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="-39.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/jgridshift:jgridshift:jar:1.0</node>
-            <node x="-64.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0</node>
-            <node x="-33.0" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss:jandex:jar:1.1.0.Final</node>
-            <node x="-72.0" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-33.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-zonalstats:jar:1.3.1/org.jaitools:jt-utils:jar:1.3.1</node>
-            <node x="-32.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-api:jar:12-RC1</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE</node>
-            <node x="-52.5" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
-            <node x="-35.5" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1</node>
-            <node x="-37.0" y="-14.5">org.slf4j:slf4j-log4j12:jar:1.6.1/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-39.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-tx:jar:4.1.2.RELEASE</node>
-            <node x="-54.5" y="-14.5">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="-34.0" y="-14.5">javax.servlet.jsp:jsp-api:jar:2.2.1-b03</node>
-            <node x="-72.0" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
-            <node x="-49.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1</node>
-            <node x="-39.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5</node>
-            <node x="-44.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE</node>
-            <node x="-36.5" y="-14.5">org.projectlombok:lombok:jar:1.14.8</node>
-            <node x="-32.5" y="-14.5">com.sun.faces:jsf-api:jar:2.2.1</node>
-            <node x="-37.5" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-main:jar:12-RC1</node>
-            <node x="-30.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.jdom:jdom:jar:1.1.3</node>
-            <node x="-52.5" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
-            <node x="-43.5" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/postgresql:postgresql:jar:8.4-701.jdbc3</node>
-            <node x="-33.0" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/dom4j:dom4j:jar:1.6.1</node>
-            <node x="-37.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-54.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE</node>
-            <node x="-46.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-52.5" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0</node>
-            <node x="-57.0" y="-14.5">com.googlecode.gmaps4jsf:gmaps4jsf-core:jar:3.0.0</node>
-            <node x="-63.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE</node>
-            <node x="-46.0" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-29.0" y="-14.5">org.slf4j:slf4j-log4j12:jar:1.6.1/log4j:log4j:jar:1.2.16</node>
-            <node x="-128.5" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/org.apache.servicemix.bundles:org.apache.servicemix.bundles.javax-inject:jar:1_2</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-50.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE</node>
-            <node x="-57.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="-49.0" y="-14.5">org.postgis:postgis-jdbc:jar:1.5.2</node>
-            <node x="-33.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2</node>
-            <node x="-40.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_codec:jar:1.1.3</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-48.5" y="-14.5">com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-sql:jar:3.6.0</node>
-            <node x="-23.5" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5/org.eclipse.jdt.core.compiler:ecj:jar:4.3.1</node>
-            <node x="-35.5" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1</node>
-            <node x="-52.5" y="-14.5">org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-45.0" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-62.5" y="-14.5">org.apache.commons:commons-math3:jar:3.3</node>
-            <node x="-31.0" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.google.code.findbugs:jsr305:jar:1.3.9</node>
-            <node x="-23.5" y="-14.5">javax.servlet:jstl:jar:1.2</node>
-            <node x="-39.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1</node>
-            <node x="-41.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1</node>
-            <node x="-74.0" y="-14.5">com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0</node>
-            <node x="-31.0" y="-14.5">org.apache.tomcat:el-api:jar:6.0.41</node>
-            <node x="-37.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.javassist:javassist:jar:3.18.1-GA</node>
-            <node x="-53.0" y="30.0">core:geo:1.0-SNAPSHOT</node>
-            <node x="-33.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-utils:jar:1.3.1</node>
-            <node x="-22.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-utils:jar:1.3.1/com.vividsolutions:jts:jar:1.12</node>
-            <node x="-37.5" y="-14.5">org.javassist:javassist:jar:3.18.2-GA</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-43.5" y="-14.5">javax.servlet:servlet-api:jar:2.5</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-52.5" y="-14.5">com.mysema.querydsl:querydsl-jpa:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-54.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1</node>
-            <node x="-43.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/com.miglayout:miglayout:jar:swing:3.7</node>
-            <node x="-37.0" y="-14.5">com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-54.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE</node>
-            <node x="-48.5" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0</node>
-            <node x="-77.5" y="-14.5">org.springframework:spring-context-support:jar:4.1.2.RELEASE</node>
-            <node x="-36.0" y="-14.5">org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-32.0" y="-14.5">com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.google.guava:guava:jar:18.0</node>
-            <node x="-76.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61</node>
-            <node x="-60.5" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3</node>
-            <node x="-50.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE</node>
-            <node x="-37.5" y="-14.5">org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.javassist:javassist:jar:3.18.1-GA</node>
-            <node x="-39.5" y="-14.5">org.primefaces.themes:afterdark:jar:1.0.10</node>
-            <node x="-46.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE</node>
-            <node x="-39.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/java3d:vecmath:jar:1.3.2</node>
-            <node x="-37.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:jcl-over-slf4j:jar:1.7.7/org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="-30.0" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/org.jdom:jdom:jar:1.1.3</node>
-            <node x="-49.0" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/org.postgis:postgis-jdbc:jar:1.5.2</node>
-            <node x="-50.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE</node>
-            <node x="-52.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA</node>
-            <node x="-28.0" y="-14.5">junit:junit:jar:4.11</node>
-            <node x="-54.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE</node>
-            <node x="-41.5" y="-14.5">org.primefaces.themes:bootstrap:jar:1.0.10</node>
-            <node x="-37.0" y="-14.5">com.mysema.querydsl:querydsl-jpa:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="-45.0" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/javax.inject:javax.inject:jar:1</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-22.0" y="-14.5">org.geolatte:geolatte-geom:jar:0.14/com.vividsolutions:jts:jar:1.13</node>
-            <node x="-54.5" y="-14.5">org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE</node>
-            <node x="-86.5" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1</node>
-            <node x="-45.0" y="-14.5">org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE</node>
-            <node x="-64.5" y="-14.5">org.geolatte:geolatte-common:jar:0.7.1</node>
-            <node x="-55.0" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/org.hibernate:hibernate-core:jar:4.3.0.Final</node>
-            <node x="-50.5" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-beans:jar:4.0.8.RELEASE</node>
-            <node x="-57.5" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10</node>
-            <node x="-39.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/java3d:vecmath:jar:1.3.2</node>
-            <node x="-42.0" y="-14.5">com.mysema.querydsl:querydsl-sql:jar:3.6.0/joda-time:joda-time:jar:1.6</node>
-            <node x="-55.5" y="-14.5">org.geolatte:geolatte-geom:jar:0.14</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-69.5" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0</node>
-            <node x="-45.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-aop:jar:4.0.8.RELEASE</node>
-            <node x="-62.5" y="-14.5">org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-expression:jar:4.1.2.RELEASE</node>
-            <node x="-49.0" y="-14.5">com.mysema.querydsl:querydsl-jpa:jar:3.6.0</node>
-            <node x="-46.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/javax.media:jai_imageio:jar:1.1</node>
-            <node x="-49.0" y="-14.5">org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:jcl-over-slf4j:jar:1.7.7</node>
-            <node x="-48.0" y="-14.5">org.slf4j:slf4j-log4j12:jar:1.6.1</node>
-            <node x="-55.0" y="-14.5">org.hibernate:hibernate-core:jar:4.3.7.Final</node>
-            <node x="-86.5" y="-14.5">org.hibernate:hibernate-spatial:jar:4.3/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1</node>
-            <node x="-46.5" y="-14.5">org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE</node>
-            <node x="-37.5" y="-14.5">org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1</node>
-            <node x="-52.5" y="-14.5">com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0</node>
-            <node x="-36.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_core:jar:1.1.3</node>
-            <node x="-46.5" y="-14.5">org.primefaces.themes:ui-darkness:jar:1.0.10</node>
-            <node x="-54.0" y="-14.5">org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-sql:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.infradna.tool:bridge-method-annotation:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces.themes:bootstrap:jar:1.0.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5/com.google.guava:guava:jar:18.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces.themes:midnight:jar:1.0.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.mysema.commons:mysema-commons-lang:jar:0.2.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/org.apache.servicemix.bundles:org.apache.servicemix.bundles.javax-inject:jar:1_2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_imageio:jar:1.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-api:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="junit:junit:jar:4.11">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.geolatte:geolatte-common:jar:0.7.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.javassist:javassist:jar:3.18.1-GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/javax.inject:javax.inject:jar:1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geolatte:geolatte-common:jar:0.7.1" target="org.geolatte:geolatte-common:jar:0.7.1/org.geolatte:geolatte-geom:jar:0.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/aopalliance:aopalliance:jar:1.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1" target="org.hibernate:hibernate-core:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.sun.faces:jsf-impl:jar:2.2.8-02">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:jcl-over-slf4j:jar:1.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context-support:jar:4.1.2.RELEASE" target="org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-utils:jar:1.3.1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-utils:jar:1.3.1/com.vividsolutions:jts:jar:1.12">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geolatte:geolatte-geom:jar:0.14" target="org.geolatte:geolatte-geom:jar:0.14/com.vividsolutions:jts:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-beans:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss:jandex:jar:1.1.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework:spring-jms:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:jcl-over-slf4j:jar:1.7.7" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:jcl-over-slf4j:jar:1.7.7/org.slf4j:slf4j-api:jar:1.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces.themes:ui-darkness:jar:1.0.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1/org.geotools:gt-main:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-tx:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-tx:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/dom4j:dom4j:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate:hibernate-core:jar:4.3.7.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context:jar:4.1.2.RELEASE" target="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-main:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/org.jboss.logging:jboss-logging:jar:3.1.3.GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework:spring-context:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.slf4j:slf4j-api:jar:1.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/com.vividsolutions:jts:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/java3d:vecmath:jar:1.3.2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_codec:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-core:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.sun.faces:jsf-api:jar:2.2.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/javax.media:jai_imageio:jar:1.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-collections:commons-collections:jar:3.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.springframework:spring-beans:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-jpa:jar:3.6.0" target="com.mysema.querydsl:querydsl-jpa:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-utils:jar:1.3.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/javax.validation:validation-api:jar:1.1.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces.themes:vader:jar:1.0.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/postgresql:postgresql:jar:8.4-701.jdbc3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-dbcp:commons-dbcp:jar:1.4" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework:spring-context-support:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/org.jdom:jdom:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-jpa:jar:3.6.0" target="com.mysema.querydsl:querydsl-jpa:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/org.hibernate:hibernate-core:jar:4.3.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5/org.eclipse.jdt.core.compiler:ecj:jar:4.3.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/org.postgis:postgis-jdbc:jar:1.5.2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="javax.servlet:jstl:jar:1.2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-cql:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-messaging:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final" target="org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context-support:jar:4.1.2.RELEASE" target="org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/joda-time:joda-time:jar:1.6">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.geotools:gt-swing:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geolatte:geolatte-geom:jar:0.14" target="org.geolatte:geolatte-geom:jar:0.14/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.apache.tomcat:el-api:jar:6.0.41">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-main:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.slf4j:slf4j-api:jar:1.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-apt:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.geolatte:geolatte-geom:jar:0.14">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0/com.mysema.codegen:codegen:jar:0.6.5">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.aspectj:aspectjrt:jar:1.8.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.apache.commons:commons-math3:jar:3.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.slf4j:jcl-over-slf4j:jar:1.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.6.1/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.javassist:javassist:jar:3.18.1-GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces.themes:afterdark:jar:1.0.10">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/org.geolatte:geolatte-geom:jar:0.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.geotools:gt-shapefile:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/com.infradna.tool:bridge-method-annotation:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.googlecode.gmaps4jsf:gmaps4jsf-core:jar:3.0.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.google.code.findbugs:jsr305:jar:1.3.9">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/dom4j:dom4j:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.postgis:postgis-jdbc:jar:1.5.2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-data:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final" target="org.hibernate:hibernate-jpamodelgen:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="javax.servlet:servlet-api:jar:2.5">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/com.mysema.querydsl:querydsl-spatial:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.jdom:jdom:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-core:jar:4.1.2.RELEASE" target="org.springframework:spring-core:jar:4.1.2.RELEASE/commons-logging:commons-logging:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/com.vividsolutions:jts:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.projectlombok:lombok:jar:1.14.8">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context:jar:4.1.2.RELEASE" target="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:4.3.7.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-tx:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="javax.servlet.jsp:jsp-api:jar:2.2.1-b03">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-jdbc:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.mysema.querydsl:querydsl-jpa:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0/com.google.guava:guava:jar:18.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-aop:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/antlr:antlr:jar:2.7.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_imageio:jar:1.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-sql:jar:3.6.0" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/com.miglayout:miglayout:jar:swing:3.7">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-expression:jar:4.1.2.RELEASE" target="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-expression:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_codec:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-apt:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/com.mysema.querydsl:querydsl-apt:jar:3.6.0/com.mysema.querydsl:querydsl-codegen:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.geotools:gt-main:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-orm:jar:4.0.8.RELEASE/org.springframework:spring-core:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.6.1" target="org.slf4j:slf4j-log4j12:jar:1.6.1/log4j:log4j:jar:1.2.16">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-spatial:jar:3.6.0" target="com.mysema.querydsl:querydsl-spatial:jar:3.6.0/com.mysema.querydsl:querydsl-core:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-spatial:jar:4.3" target="org.hibernate:hibernate-spatial:jar:4.3/com.vividsolutions:jts:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.postgresql:postgresql:jar:9.3-1102-jdbc41">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context:jar:4.1.2.RELEASE" target="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/commons-pool:commons-pool:jar:1.5.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-context:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework:spring-beans:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE" target="org.springframework:spring-web:jar:4.1.2.RELEASE/org.springframework:spring-aop:jar:4.1.2.RELEASE/org.springframework:spring-beans:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/org.geotools:gt-api:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.primefaces:primefaces:jar:5.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/jgridshift:jgridshift:jar:1.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/com.vividsolutions:jts:jar:1.13">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework:spring-core:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.1.10/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-zonalstats:jar:1.3.1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-zonalstats:jar:1.3.1/org.jaitools:jt-utils:jar:1.3.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/org.jaitools:jt-zonalstats:jar:1.3.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="com.mysema.querydsl:querydsl-collections:jar:3.6.0" target="com.mysema.querydsl:querydsl-collections:jar:3.6.0/org.slf4j:slf4j-api:jar:1.6.1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context-support:jar:4.1.2.RELEASE" target="org.springframework:spring-context-support:jar:4.1.2.RELEASE/org.springframework:spring-context:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61" target="org.springframework.data:spring-data-jpa:jar:1.8.0.DATAJPA-629-20141125.141411-3/org.springframework.data:spring-data-commons:jar:1.10.0.BUILD-20150130.142159-61/org.springframework:spring-core:jar:4.0.8.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.javassist:javassist:jar:3.18.2-GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="junit:junit:jar:4.11" target="junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.1.10/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="org.hibernate:hibernate-spatial:jar:4.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-context:jar:4.1.2.RELEASE" target="org.springframework:spring-context:jar:4.1.2.RELEASE/org.springframework:spring-expression:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1" target="org.geotools:gt-shapefile:jar:12-RC1/org.geotools:gt-data:jar:12-RC1/org.geotools:gt-main:jar:12-RC1/org.geotools:gt-api:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.mysema.querydsl:querydsl-sql:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/java3d:vecmath:jar:1.3.2">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/org.geotools:gt-jdbc:jar:12-RC1/commons-dbcp:commons-dbcp:jar:1.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-referencing:jar:12-RC1/org.geotools:gt-metadata:jar:12-RC1/org.geotools:gt-opengis:jar:12-RC1/commons-pool:commons-pool:jar:1.5.4">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1" target="org.geotools:gt-swing:jar:12-RC1/org.geotools:gt-render:jar:12-RC1/org.geotools:gt-coverage:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1" target="org.geotools.jdbc:gt-jdbc-postgis:jar:12-RC1/javax.media:jai_core:jar:1.1.3">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="core:geo:1.0-SNAPSHOT" target="com.mysema.querydsl:querydsl-sql-codegen:jar:3.6.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:4.3.7.Final" target="org.hibernate:hibernate-core:jar:4.3.7.Final/org.hibernate.common:hibernate-commons-annotations:jar:4.0.5.Final">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-jms:jar:4.1.2.RELEASE" target="org.springframework:spring-jms:jar:4.1.2.RELEASE/org.springframework:spring-tx:jar:4.1.2.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final" target="org.hibernate:hibernate-entitymanager:jar:4.3.7.Final/org.jboss.logging:jboss-logging:jar:3.1.3.GA">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="26.0" y="19.0" />
-          <SelectedNodes>
-            <node>core:geo:1.0-SNAPSHOT</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/core/gis/QJtsGeometryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="697">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/core/point/jts/QJtsPointEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="731">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/core/QBaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GeoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="527">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/glyphicons_free/glyphicons/png/glyphicons-2-leaf.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/glyphicons_free/glyphicons/png/glyphicons-1-glass.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/marker-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/marker-icon-2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/marker-shadow.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/layers-2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/img/layers.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2743,29 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1071">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/MapsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1360">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1836">
-          <caret line="45" column="95" selection-start-line="45" selection-start-column="95" selection-end-line="45" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6579" max-vertical-offset="49249">
@@ -2780,29 +1780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GeoCollectors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
@@ -2814,15 +1791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="6732">
-          <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2837,14 +1805,280 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="2924">
           <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_mysema_querydsl_querydsl_collections_3_6_0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1287" max-vertical-offset="12155">
+          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="9843">
+          <caret line="153" column="7" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1.jar!/org/apache/commons/collections/FastArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3434">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="878" max-vertical-offset="7616">
+          <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13.jar!/com/vividsolutions/jts/geom/CoordinateList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16156463" vertical-offset="41" max-vertical-offset="697">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1118" max-vertical-offset="23715">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/CoordinateArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="7361">
+          <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1762" max-vertical-offset="2431">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13-sources.jar!/com/vividsolutions/jts/geom/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1483" max-vertical-offset="3621">
+          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar!/org/apache/commons/collections/FastArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="21692">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_40/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="833">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/legacy-points.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="952">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2193">
+          <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/legacy/LegacyPointDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="917" max-vertical-offset="1428">
+          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/primefaces/primefaces/5.1/primefaces-5.1.jar!/org/primefaces/model/map/Marker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60444444" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3315" max-vertical-offset="6732">
+          <caret line="195" column="24" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/legacy/LegacyPointService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1122">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/core/point/jts/QJtsPointEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="544">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolattePointDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/AddMarkersView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/geoltte/GeolatteBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.1.1.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="578">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/maps.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.615385" vertical-offset="1184" max-vertical-offset="1836">
+          <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44835165" vertical-offset="0" max-vertical-offset="455">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/jts-points.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="255" max-vertical-offset="1139">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/MapsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1445">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/jts-geometry.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="153" max-vertical-offset="969">
+          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="714">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3791">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2852,50 +2086,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GeoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="952">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="1751">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sites/load-points.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/gis/JtsGeometryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="2193">
-          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="3162">
-          <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/utils/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1428">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/point/jts/JtsPointDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40215054" vertical-offset="0" max-vertical-offset="465">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.73006135" vertical-offset="0" max-vertical-offset="510">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
           </folding>
         </state>
       </provider>

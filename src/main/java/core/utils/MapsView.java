@@ -1,6 +1,7 @@
 package core.utils;
 
 import core.gis.JtsGeometryDao;
+import core.gis.JtsGeometryEntity;
 import core.point.jts.JtsPointEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -56,6 +57,13 @@ public class MapsView {
         String y = Double.toString(jtsPointEntity.getJtsPoint().getY());
         this.mapCenter = x.substring(0, x.indexOf(".") + 7) + "," + y.substring(0, y.indexOf(".") + 7);
         this.zoom = "15";
+    }
+
+    public void setMapCenter(JtsGeometryEntity jtsGeometryEntity) {
+        String x = Double.toString(jtsGeometryEntity.getGeometry().getCentroid().getX());
+        String y = Double.toString(jtsGeometryEntity.getGeometry().getCentroid().getY());
+        this.mapCenter = x.substring(0, x.indexOf(".") + 7) + "," + y.substring(0, y.indexOf(".") + 7);
+        this.zoom = "4";
     }
 
     @Transactional
