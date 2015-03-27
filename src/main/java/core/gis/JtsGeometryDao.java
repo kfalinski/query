@@ -32,8 +32,11 @@ public class JtsGeometryDao extends GenericDao {
     }
 
     @Transactional
-    public void deleteAllGeometries() {
+    public void deleteAll() {
         removeAllEntities(qJtsGeometryEntity);
     }
 
+    public void removeMany(List<JtsGeometryEntity> selectedJtsGeometries) {
+        removeAllEntities(qJtsGeometryEntity);
+    }
 }

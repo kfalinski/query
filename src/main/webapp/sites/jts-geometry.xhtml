@@ -15,12 +15,17 @@
                     <p:column>
                         <p:commandButton actionListener="#{jtsGeometryService.loadGeometries}"
                                          update="table" value="ładuj geometrie z bazy"/>
-                        <p:commandButton actionListener="#{jtsGeometryService.deleteGeometries}"
-                                         update="table" value="ładuj geometrie z bazy"/>
+                        <p:commandButton actionListener="#{jtsGeometryService.deleteAllGeometries}"
+                                         update="table" value="usuń wszystkie geometrie"/>
+                        <p:commandButton actionListener="#{jtsGeometryService.deleteSelectedGeometries}"
+                                         ajax="true" update="table" value="usuń zaznaczone geometrie"/>
                         <p:dataTable id="table" value="#{jtsGeometryBean.allJtsGeometry}" var="geometryJTS"
                                      styleClass="order-table" paginator="true"
                                      paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
                                      headerClass="order-table-header" rows="15"
+                                     selectionMode="multiple"
+                                     rowKey="#{geometryJTS.id}"
+                                     selection="#{jtsGeometryBean.selectedJtsGeometries}"
                                      rowClasses="order-table-odd-row,order-table-even-row">
                             <p:column style="width: 2em">
                                 <p:commandLink actionListener="#{mapsView.setMapCenter(geometryJTS)}"

@@ -6,57 +6,68 @@
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <ui:define name="content">
         <h:form>
-            <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
-                             update="table :rightMenu:pointForm:pointMap" value="ładuj punkty z bazy"/>
-            <p:commandButton actionListener="#{jtsPointService.saveAsPolyline}"
-                             update="table :rightMenu:polylineForm:polylineMap " ajax="true"
-                             value="zapisz jako polilinia"/>
-            <p:commandButton actionListener="#{jtsPointService.deleteAllPoints}"
-                             ajax="true" update="table" value="usuń wszystkie punkty"/>
-            <p:commandButton actionListener="#{jtsPointService.deleteSelectedPoints}"
-                             ajax="true" update="table" value="usuń zaznaczone punkty"/>
-            <p:commandButton actionListener="#{jtsPointService.saveAsPolygon}"
-                             update="table :rightMenu:polygonForm:polygonMap " ajax="true" value="zapisz jako poligon"/>
-            <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
-                         styleClass="order-table" paginator="true"
-                         paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-                         headerClass="order-table-header" rows="15"
-                         rowKey="#{pointGIS.id}"
-                         selection="#{jtsPointBean.selectedPoints}"
-                         selectionMode="multiple"
-                         rowClasses="order-table-odd-row,order-table-even-row">
-                <p:column style="width: 2em">
-                    <p:commandLink actionListener="#{mapsView.setMapCenter(pointGIS)}"
-                                   update=":rightMenu:pointForm:pointMap">
-                        <p:outputPanel styleClass="glyphicon glyphicon-screenshot"/>
-                    </p:commandLink>
-                </p:column>
-                <p:column headerText="Id" style="width: 2em">
-                    <p:outputLabel value="#{pointGIS.id}"/>
-                </p:column>
-                <p:column headerText="Nazwa">
-                    <p:outputLabel value=" #{pointGIS.name}"/>
-                </p:column>
-                <p:column headerText="Kod">
-                    <p:outputLabel value="#{pointGIS.code}"/>
-                </p:column>
-                <p:column headerText="X">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.x}">
-                        <f:convertNumber pattern="#0.0000"/>
-                    </p:outputLabel>
-                </p:column>
-                <p:column headerText="Y">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.y}">
-                        <f:convertNumber pattern="#0.0000"/>
-                    </p:outputLabel>
-                </p:column>
-                <p:column headerText="Z">
-                    <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}">
-                        <f:convertNumber pattern="#0.0000"/>
-                    </p:outputLabel>
-                </p:column>
-            </p:dataTable>
-
+            <p:panelGrid>
+                <p:row>
+                    <p:column>
+                        <p:outputLabel value="Punkty JTS"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
+                        <p:commandButton actionListener="#{jtsPointService.loadJtsPoints}"
+                                         update="table :rightMenu:pointForm:pointMap" value="ładuj punkty z bazy"/>
+                        <p:commandButton actionListener="#{jtsPointService.saveAsPolyline}"
+                                         update="table :rightMenu:polylineForm:polylineMap " ajax="true"
+                                         value="zapisz jako polilinia"/>
+                        <p:commandButton actionListener="#{jtsPointService.deleteAllPoints}"
+                                         ajax="true" update="table :rightMenu:pointForm:pointMap" value="usuń wszystkie punkty"/>
+                        <p:commandButton actionListener="#{jtsPointService.deleteSelectedPoints}"
+                                         ajax="true" update="table :rightMenu:pointForm:pointMap" value="usuń zaznaczone punkty"/>
+                        <p:commandButton actionListener="#{jtsPointService.saveAsPolygon}"
+                                         update="table :rightMenu:polygonForm:polygonMap " ajax="true"
+                                         value="zapisz jako poligon"/>
+                        <p:dataTable id="table" value="#{jtsPointBean.allPoints}" var="pointGIS"
+                                     styleClass="order-table" paginator="true"
+                                     paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                                     headerClass="order-table-header" rows="15"
+                                     rowKey="#{pointGIS.id}"
+                                     selection="#{jtsPointBean.selectedPoints}"
+                                     selectionMode="multiple"
+                                     rowClasses="order-table-odd-row,order-table-even-row">
+                            <p:column style="width: 2em">
+                                <p:commandLink actionListener="#{mapsView.setMapCenter(pointGIS)}"
+                                               update=":rightMenu:pointForm:pointMap">
+                                    <p:outputPanel styleClass="glyphicon glyphicon-screenshot"/>
+                                </p:commandLink>
+                            </p:column>
+                            <p:column headerText="Id" style="width: 2em">
+                                <p:outputLabel value="#{pointGIS.id}"/>
+                            </p:column>
+                            <p:column headerText="Nazwa">
+                                <p:outputLabel value=" #{pointGIS.name}"/>
+                            </p:column>
+                            <p:column headerText="Kod">
+                                <p:outputLabel value="#{pointGIS.code}"/>
+                            </p:column>
+                            <p:column headerText="X">
+                                <p:outputLabel value="#{pointGIS.jtsPoint.x}">
+                                    <f:convertNumber pattern="#0.0000"/>
+                                </p:outputLabel>
+                            </p:column>
+                            <p:column headerText="Y">
+                                <p:outputLabel value="#{pointGIS.jtsPoint.y}">
+                                    <f:convertNumber pattern="#0.0000"/>
+                                </p:outputLabel>
+                            </p:column>
+                            <p:column headerText="Z">
+                                <p:outputLabel value="#{pointGIS.jtsPoint.coordinates[0].getOrdinate(2)}">
+                                    <f:convertNumber pattern="#0.0000"/>
+                                </p:outputLabel>
+                            </p:column>
+                        </p:dataTable>
+                    </p:column>
+                </p:row>
+            </p:panelGrid>
         </h:form>
     </ui:define>
 </ui:composition>

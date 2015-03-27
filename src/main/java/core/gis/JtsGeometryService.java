@@ -5,8 +5,13 @@ import com.vividsolutions.jts.io.ParseException;
 import com.vividsolutions.jts.io.WKTReader;
 import core.utils.PointToSaveBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by Krzysztof on 2014-12-07.
@@ -36,6 +41,18 @@ public class JtsGeometryService {
             throw new RuntimeException("Not a WKT string:" + wktValue);
         }
         jtsGeometryDao.save(jtsGeometryEntity);
+
+
+    }
+
+    @Transactional
+    public void deleteSelectedGeometries() {
+        jtsGeometryDao.removeMany(jtsGeometryBean.getSelectedJtsGeometries());
+    }
+
+    @Transactional
+    public void deleteAllGeometries() {
+        jtsGeometryDao.deleteAll();
     }
 
     public void loadGeometries() {

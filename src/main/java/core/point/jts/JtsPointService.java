@@ -59,6 +59,7 @@ public class JtsPointService {
     @Transactional
     public void deleteAllPoints() {
         jtsPointDao.removeAllPoints();
+        addMarkersView.setMarkersModel(new DefaultMapModel());
     }
 
     @Transactional
@@ -131,7 +132,7 @@ public class JtsPointService {
             stringBuilder.append(selectedPoint.getName()).append(" ");
         }
         jtsGeometryEntity.setName(stringBuilder.toString());
-        jtsGeometryEntity.setCode("poligon stworzony");
+        jtsGeometryEntity.setCode(polygon.getId());
         double[] xArray = new double[selectedPoints.size()];
         double[] yArray = new double[selectedPoints.size()];
         for (int j = 0; i < selectedPoints.size(); i++) {
