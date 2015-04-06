@@ -83,15 +83,9 @@ public class MapsView {
         }
     }
 
-    public void saveOverlay() {
-
-
-    }
-
 
     public void onPolygonSelect(OverlaySelectEvent event) {
         this.selectedOverlay = event.getOverlay();
-//        overlay.
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Polygon Selected", null));
     }
 }

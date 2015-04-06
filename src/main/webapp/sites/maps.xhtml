@@ -4,7 +4,7 @@
         xmlns:h="http://xmlns.jcp.org/jsf/html"
         xmlns:f="http://xmlns.jcp.org/jsf/core"
         >
-    <script src="http://maps.google.com/maps/api/js?sensor=true|false" type="text/javascript"/>
+    <script src="http://maps.google.com/maps/api/js?sensor=true|false" type="text/javascript"></script>
     <p:tabView id="rightMenu">
         <p:growl id="growl" life="3000" showDetail="true"/>
         <p:tab id="tab1" title="punkty">
@@ -25,19 +25,18 @@
                         <h:inputHidden id="lng" value="#{addMarkersView.lng}"/>
                     </h:form>
                 </p:dialog>
-                <p:gmap id="pointMap" center="#{mapsView.mapCenter}" zoom="#{mapsView.zoom}" type="HYBRID" widgetVar="pointMap"
+                <p:gmap id="pointMap" center="#{mapsView.mapCenter}" zoom="#{mapsView.zoom}" type="HYBRID"
+                        widgetVar="pointMap"
                         style="width:100%;height:400px" onPointClick="handlePointClick(event);"
                         model="#{addMarkersView.markersModel}">
-                    <p:ajax event="overlaySelect" listener="#{mapsView.onMarkerSelect}" />
+                    <p:ajax event="overlaySelect" listener="#{mapsView.onMarkerSelect}"/>
                     <p:gmapInfoWindow id="infoWindow">
                         <p:outputPanel style="text-align: center; display: block; margin: auto">
-                            <h:outputText value="#{infoWindowView.marker.title}" />
+                            <h:outputText value="#{infoWindowView.marker.title}"/>
 
                         </p:outputPanel>
                     </p:gmapInfoWindow>
                 </p:gmap>
-             <p:commandButton value="usuń" label="usuń" ajax="true" action="#{mapsView.deleteOverlay}"
-                                 update="pointMap"/>
                 <script type="text/javascript">
                     var currentMarker = null;
 
@@ -58,7 +57,7 @@
 
                     function markerAddComplete() {
                         var title = document.getElementById('rightMenu:pointForm:title');
-                        currentMarker.title(title.value);
+                        currentMarker.title = title.value;
                         title.value = "";
 
                         currentMarker = null;
@@ -82,8 +81,6 @@
                         model="#{mapsView.polylineModel}">
                     <p:ajax event="overlaySelect" listener="#{mapsView.onPolygonSelect}" update=":rightMenu:growl"/>
                 </p:gmap>
-                <p:commandButton value="usuń" label="usuń" ajax="true" action="#{mapsView.deleteOverlay}"
-                                 update="polylineMap"/>
             </h:form>
         </p:tab>
         <p:tab id="tab3" title="poligony">
