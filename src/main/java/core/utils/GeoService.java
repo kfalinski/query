@@ -48,58 +48,5 @@ public class GeoService {
         double z = Double.valueOf(splittedList.get(4));
         return new LegacyPoint(name, code, x, y, z);
     }
-
-//    public void populatePolygonBean() {
-//        double length = 0.0;
-//        List<PointCustom> pointCustomList = pointDto.getSelectedPoints();
-//        polygonBean.setAllPoints(pointDto.getSelectedPoints());
-//        Polygon polygon = new Polygon();
-//        for (int i = 0; i < pointCustomList.size() - 2; i++) {
-//            length += getLength(pointCustomList.get(i), pointCustomList.get(i + 1));
-//        }
-//        double[] xArray = new double[pointCustomList.size()];
-//        double[] yArray = new double[pointCustomList.size()];
-//        for (int i = 0; i < pointCustomList.size(); i++) {
-//            xArray[i] = pointCustomList.get(i).getX();
-//            yArray[i] = pointCustomList.get(i).getY();
-//        }
-//        polygonBean.setArea(getPolygonArea(xArray, yArray, pointCustomList.size()));
-//        polygonBean.setLength(length);
-//        polygonDao.savePolygon(polygon);
-//    }
-//
-//    public void populatePolylineBean() {
-//        double length = 0.0;
-//        List<PointCustom> pointCustomList = pointDto.getSelectedPoints();
-//        polylineBean.setAllPoints(pointCustomList);
-//        Polyline polyline = new Polyline();
-//        for (int i = 0; i < pointCustomList.size() - 2; i++) {
-//            length += getLength(pointCustomList.get(i), pointCustomList.get(i + 1));
-//        }
-//
-//        polylineBean.setLength(length);
-//        polylineDao.savePolylile(polyline);
-//    }
-//
-//    private double getLength(PointCustom p1, PointCustom p2) {
-//        return Math.sqrt(
-//                (p1.getX() - p2.getX()) * (p1.getX() - p2.getX()) +
-//                        (p1.getY() - p2.getY()) * (p1.getY() - p2.getY())
-//        );
-//    }
-//
-//    public void populatepolylineDto() {
-//        polylineDto.setAllPolylines(polylineDao.loadPolylines());
-//    }
-//
-//    public void populatepolygonDto() {
-//        polygonDto.setAllPolygons(polygonDao.loadPolygons());
-//    }
-//
-//    public void populatePointDto() {
-//        pointDto.setAllPoints(pointDaoImpl.loadPoints());
-//    }
-//
-
 }
 

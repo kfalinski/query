@@ -10,6 +10,7 @@
     <data-source name="PostgreSQL - baza@localhost" uuid="b67c57a7-297f-49fd-a32d-700be81a5fcf">
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
+      <user-password>df9bdf98df99</user-password>
       <schema-pattern>baza.pg_catalog baza.public</schema-pattern>
       <default-schemas>baza.pg_catalog baza.public</default-schemas>
     </data-source>
